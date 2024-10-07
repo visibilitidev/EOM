@@ -1,6 +1,7 @@
 import React from 'react'
+import videoimg from '../../../public/videoimg.png'
 
-function Hero() {
+function HeroSection() {
   return (
     <>
     <div className='max-w-full flex justify-center mt-12'>
@@ -10,11 +11,14 @@ function Hero() {
         <h6 className='text-center font-OpenSans text-base font-normal my-1 leading-5'>EOM is an exclusive community for growth-focused entrepreneurs who are ready <br /> for the next big leap.</h6>
         <button type="button" class="focus:outline-none font-OpenSans font-extrabold text-lg text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-lg px-5 py-2.5 me-2 mb-2 my-4 dark:focus:ring-yellow-900">Become a Member</button>
       </div>
-      <div>
-      </div>
     </div>
+    <div className='max-w-full flex justify-center mt-12'>
+       <div>
+        <img src={videoimg} alt="" className='max-w-4xl rounded-3xl'  />
+        </div>
+      </div>
     </>
   )
 }
 
-export default Hero
+export default HeroSection
