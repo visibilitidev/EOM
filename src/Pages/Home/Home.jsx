@@ -6,6 +6,7 @@ import Features from '../../Components/Features/Features'
 import Reviewcontainer from '../../Components/Reviewcontainer/Reviewcontainer'
 import AccordionCon from '../../Components/AccordionCon/AccordionCon'
 import WhyEOM from '../../Components/WhyEOMCon/WhyEOM'
+import FAQ from '../../Components/Faq/Faq'
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <Reviewcontainer/>
             <AccordionCon/>
             <WhyEOM/>
+            <FAQ/>
         </>
     )
 }
