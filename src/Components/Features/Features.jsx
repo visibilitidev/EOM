@@ -25,7 +25,7 @@ function Features() {
   return (
     <>
       <div className="max-w-full flex justify-center mt-12">
-        <div className="max-w-3xl flex flex-col justify-center items-center">
+        <div className="max-w-3xl max-h-80 flex flex-col justify-center items-center">
           <h1 className=" font-Montserrat font-black text-text_54px text-center leading-LH_65px my-1">
             No more solo journeys
           </h1>
