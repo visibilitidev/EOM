@@ -12,11 +12,16 @@ function HeroSection() {
         <button type="button" class="focus:outline-none font-OpenSans font-extrabold text-lg text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-lg px-5 py-2.5 me-2 mb-2 my-4 dark:focus:ring-yellow-900">Become a Member</button>
       </div>
     </div>
-    <div className='max-w-full flex justify-center mt-12'>
-       <div>
-        <img src={videoimg} alt="" className='max-w-4xl rounded-3xl'  />
-        </div>
-      </div>
+    <div className='flex justify-center mt-12'>
+  <div>
+    <img 
+      src={videoimg} 
+      alt="video" 
+      className='w-full max-w-3xl h-auto rounded-3xl' 
+    />
+  </div>
+</div>
+
     </>
   )
 }
