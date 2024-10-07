@@ -1,5 +1,4 @@
 import React from "react";
-import carddetail from '../JSON/CardImage.json'
 
 const WhyEOM = () => {
   return (
