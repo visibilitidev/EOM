@@ -7,6 +7,7 @@ import Reviewcontainer from '../../Components/Reviewcontainer/Reviewcontainer'
 import AccordionCon from '../../Components/AccordionCon/AccordionCon'
 import WhyEOM from '../../Components/WhyEOMCon/WhyEOM'
 import FAQ from '../../Components/Faq/Faq'
+import EOMGrid from '../../Components/EOM_cards/WhyEom'
 
 const Home = () => {
     return (
@@ -17,7 +18,8 @@ const Home = () => {
             <Features />
             <Reviewcontainer/>
             <AccordionCon/>
-            <WhyEOM/>
+            {/* <WhyEOM/> */}
+            <EOMGrid/>
             <FAQ/>
         </>
     )
