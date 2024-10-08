@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 import './Faq.css';
 
 const FAQItem = ({ question, answer, isOpen, toggleOpen }) => (
-    <div className={`border-1 rounded-xl mb-6 overflow-hidden transition-colors shadow-[2px_2px_8px_rgba(0,0,0,0.1)] ${isOpen ? 'border-[#041334] border-2' : 'border-gray-200'}`}>
+    <div className={`border-2 rounded-xl mb-6 overflow-hidden transition-colors shadow-[2px_2px_8px_rgba(0,0,0,0.1)] ${isOpen ? 'border-[#041334]' : 'border-gray-200'}`}>
     <button
       className="w-full text-left p-4 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors"
       onClick={toggleOpen}

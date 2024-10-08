@@ -3,7 +3,7 @@ import React from "react";
 const WhyEOM = () => {
   return (
     <>
-      <div className="max-w-full flex flex-col justify-center mt-32 bg-[url('public/palace.png')] bg-cover bg-center py-12">
+      <div className="max-w-full flex flex-col justify-center mt-2 bg-[url('public/palace.png')] bg-cover bg-center py-12">
         <h1 className="font-Montserrat font-bold text-3xl text-center my-1">
           Why is EOM one of a kind?
         </h1>
