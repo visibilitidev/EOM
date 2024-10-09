@@ -3,7 +3,7 @@ import React from "react";
 const WhyEOM = () => {
   return (
     <>
-      <div className="max-w-full flex flex-col justify-center mt-32 bg-[url('./public/palace.png')] bg-cover bg-center py-12">
+      <div cqqlassName="max-w-full flex flex-col justify-center mt-32 bg-[url('./public/palace.png')] bg-cover bg-center py-12">
         <h1 className="font-Montserrat font-bold text-3xl text-center my-1">
           Why is EOM one of a kind?
         </h1>
@@ -16,7 +16,7 @@ const WhyEOM = () => {
           <Card
             title={["Candid", "Conversations"]}
             imgSrc="Cardimg/img1.png"
-            backgroundImage="./public/mountain.png"
+            backgroundImage="public/mountain.png"
             imgWidth="215px"
             imgHeight="210px"
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads."
@@ -27,7 +27,7 @@ const WhyEOM = () => {
           <Card
             title={["Founder-to-", "Founder Support"]}
             imgSrc="Cardimg/img2.png"
-            backgroundImage="./public/mountain.png"
+            backgroundImage="public/mountain.png"
             imgWidth="215px"
             imgHeight="210px"
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads."
@@ -37,7 +37,7 @@ const WhyEOM = () => {
           <Card
             title={["Curated", "Knowledge"]}
             imgSrc="Cardimg/img3.png"
-            backgroundImage="./public/mountain.png"
+            backgroundImage="public/mountain.png"
             imgWidth="200px"
             imgHeight="220px"
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads."
@@ -47,7 +47,7 @@ const WhyEOM = () => {
           <Card
             title={["Closed-Door", "Events"]}
             imgSrc="Cardimg/img4.png"
-            backgroundImage="./public/mountain.png"
+            backgroundImage="public/mountain.png"
             imgWidth="145px"
             imgHeight="205px"
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads"
@@ -57,7 +57,7 @@ const WhyEOM = () => {
           <Card
             title={["Focus on", "Scaling"]}
             imgSrc="Cardimg/img5.png"
-            backgroundImage="./public/mountain.png"
+            backgroundImage="public/mountain.png"
             imgWidth="200px"
             imgHeight="215px"
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads"
@@ -67,7 +67,7 @@ const WhyEOM = () => {
           <Card
             title={["Masterclass", "Sessions"]}
             imgSrc="Cardimg/img6.png"
-            backgroundImage="./public/mountain.png"
+            backgroundImage="public/mountain.png"
             imgWidth="210px"
             imgHeight="230px"
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads"

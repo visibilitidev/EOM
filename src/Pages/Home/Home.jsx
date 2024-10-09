@@ -11,6 +11,12 @@ import EOMGrid from '../../Components/EOM_cards/WhyEom'
 import AIConnect from '../../Components/AI/Ai'
 import NoSoloJourneys from '../../Components/NoSoloJourneys/NoSoloJourneys'
 import NetworkCommunity from '../../Components/NetworkCommunity/NetworkCommunity'
+import JoinTheCommunity from '../../Components/JoinTheCommunity/JoinTheCommunity'
+import TestimonialsSection from '../../Components/TestimonialsSection/TestimonialsSection'
+import Networking101 from '../../Components/Networking101/Networking101'
+import MarqueeCards from '../../Components/MarqueeCards/MarqueeCards'
+import MarqueeImages from '../../Components/MarqueeImages/MarqueeImages'
+import TestimonialCarousel from '../../Components/Testimonials/Testimonials'
 
 const Home = () => {
     return (
@@ -22,10 +28,16 @@ const Home = () => {
             {/* <Reviewcontainer/> */}
             {/* <AccordionCon/> */}
             {/* <WhyEOM/> */}
+            <MarqueeCards/>
             <NoSoloJourneys/>
+            <TestimonialCarousel/>
             <AIConnect/>
+             <MarqueeImages/>
             <NetworkCommunity/>
             <EOMGrid/>
+            <Networking101/>
+            <TestimonialsSection/>
+            <JoinTheCommunity/>
             <FAQ/>
         </>
     )

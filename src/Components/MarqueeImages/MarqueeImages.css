@@ -1,0 +1,14 @@
+/* ScrollTransform.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Webkit browsers */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Smooth scrolling behavior */
+.scroll-container {
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}

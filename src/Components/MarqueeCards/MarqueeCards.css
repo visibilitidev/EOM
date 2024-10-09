@@ -1,0 +1,40 @@
+/* Define the continuous scroll behavior */
+.marquee {
+  display: flex;
+  overflow: hidden; /* Hide overflowing content */
+  width: 100%; /* Full width container */
+}
+
+.track {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures no line breaks */
+  white-space: nowrap; /* Keeps items on a single line */
+  animation: scroll 20s linear infinite; /* Continuous scroll animation */
+}
+
+.card {
+  width: 9rem; /* Width of each card */
+  height: 9rem; /* Height of each card */
+  margin-right: 1.5rem; /* Space between cards */
+  background-color: #e5e7eb; /* Light gray background */
+  display: inline-flex; /* Display each card inline */
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for infinite scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the initial position */
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Scroll half the container width for smooth looping */
+  }
+}
