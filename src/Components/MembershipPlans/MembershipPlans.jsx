@@ -1,17 +1,21 @@
 import React from 'react';
 
-const NoSoloJourneys = ({ backgroundImageUrl }) => {
+const MembershipPlans = () => {
   return (
-    <div className="min-h-screen bg-cover bg-center p-8 pt-0 mb-8 bg-[url('public/palace.png')]">
+    <div className="min-h-screen bg-cover bg-center p-8 pt-0 mb-8 bg-[url('public/palace.png')] mt-16 sm:mb-48">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">No more solo journeys</h1>
-        <p className="text-xl text-center mb-12">If you're serious about scaling—join the like-minded people to fast-track success.</p>
-        
-        <div className="flex flex-col md:flex-row gap-8 justify-center items-center mx-auto">
+        <h1 className="text-4xl md:text-2xl font-bold text-center mb-4 ">Membership Plans</h1>
+        <p className="text-base text-center mb-12"> Learn, network, grow & scale - unlatch bigger milestones with us.</p>
+       
+        <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch mx-auto" style={{alignItems:'center'}}>
           {/* For Product Founders */}
-          <div className="bg-blue rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full">
+          <div className="bg-blue rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full min-h-full">
             <div className="p-6 flex-grow">
               <h2 className="text-3xl font-bold text-white mb-6 font-Inter">For Product Founders</h2>
+              <div className="mb-4">
+                <span className="line-through text-white text-xl">₹45999/Yr</span>
+                <span className="text-3xl font-bold text-yellow-400 ml-2">₹24999/Yr</span>
+              </div>
               <ul className="space-y-4 font-OpenSans">
                 {[
                   "Access to 100 Cr founders-only WhatsApp group",
@@ -35,9 +39,9 @@ const NoSoloJourneys = ({ backgroundImageUrl }) => {
           </div>
 
           {/* For Service Providers */}
-          <div className="bg-blue rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full">
+          <div className="bg-[#F0F0F0] rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full min-h-full relative">
             <div className="p-6 flex-grow">
-              <h2 className="text-3xl font-bold text-white mb-6 font-Inter">For Service Providers</h2>
+              <h2 className="text-3xl font-bold text-black mb-6  font-Inter">For Service Providers</h2>
               <ul className="space-y-4 font-OpenSans">
                 {[
                   "Access to Madrasi Connect AI bot for hiring",
@@ -49,11 +53,14 @@ const NoSoloJourneys = ({ backgroundImageUrl }) => {
                   "Get more visibility beyond the ecosystem"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center">
-                    <span className="text-yellow-400 text-3xl font-extrabold mr-2 leading-none">•</span>
-                    <span className="text-white">{item}</span>
+                    <span className="text-black text-3xl font-extrabold mr-2 leading-none">•</span>
+                    <span className="text-black">{item}</span>
                   </li>
                 ))}
               </ul>
+            </div>
+            <div className="absolute bottom-12">
+              <img src='public/Group 147.png' alt='' />
             </div>
             <div className="bg-yellow-400 p-4">
               <button className="w-full py-2 text-navy-900 font-extrabold text-lg">COMING SOON</button>
@@ -65,4 +72,4 @@ const NoSoloJourneys = ({ backgroundImageUrl }) => {
   );
 };
 
-export default NoSoloJourneys;
+export default MembershipPlans;

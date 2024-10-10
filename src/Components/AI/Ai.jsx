@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-const AIChatComponent = () => {
+const AIChatComponent = ({heading, imgsrc}) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -9,22 +9,22 @@ const AIChatComponent = () => {
   };
 
   return (
-    <section className='my-2'>
+    <section className='my-2 sm:mt-[-10rem] md:mt-[-10rem]'>
     <h2 className="text-2xl lg:text-3xl font-bold  text-center"> {/* Center text */}
-    Connecting Made Simple — <br /> With AI Power
+    {heading}
   </h2>
     <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:px-20 p-8 lg:py-16">
       {/* Left side with image (Message Box) */}
       <div className="lg:w-1/2 flex justify-center mb-8 lg:mb-0">
         <img
-          src="public/Group 81.png" // Replace with your image path
+          src={imgsrc} // Replace with your image path
           alt="AI Chat"
           className="w-full max-w-sm"
         />
       </div>
 
       {/* Right side - Accordion */}
-      <div className="lg:w-1/2 space-y-4">
+      <div className="w-[90%] lg:w-1/2 space-y-4">
        
 
         {/* Accordion Item 1 */}
@@ -37,7 +37,7 @@ const AIChatComponent = () => {
             <span>{activeIndex === 0 ? <ChevronUp  className='bg-yellow-500 rounded-full text-white'/> : <ChevronDown className='bg-yellow-500 rounded-full text-white'/>}</span>
           </div>
           {activeIndex === 0 && (
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-black">
               Our Madrasi Connect is your go-to AI-driven assistant, built exclusively for the members of EOM club to make networking easier & efficient than ever.
             </p>
           )}
@@ -53,7 +53,7 @@ const AIChatComponent = () => {
             <span>{activeIndex === 0 ? <ChevronUp  className='bg-yellow-500 rounded-full text-white'/> : <ChevronDown className='bg-yellow-500 rounded-full text-white'/>}</span>
           </div>
           {activeIndex === 1 && (
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-black">
               Find people and opportunities that match your interests instantly using AI.
             </p>
           )}
@@ -69,7 +69,7 @@ const AIChatComponent = () => {
             <span>{activeIndex === 0 ? <ChevronUp  className='bg-yellow-500 rounded-full text-white'/> : <ChevronDown className='bg-yellow-500 rounded-full text-white'/>}</span>
           </div>
           {activeIndex === 2 && (
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-black">
               Madrasi Connect uses AI to analyze your profile and suggest personalized connections and content.
             </p>
           )}
@@ -85,7 +85,7 @@ const AIChatComponent = () => {
             <span>{activeIndex === 0 ? <ChevronUp  className='bg-yellow-500 rounded-full text-white'/> : <ChevronDown className='bg-yellow-500 rounded-full text-white'/>}</span>
           </div>
           {activeIndex === 3 && (
-            <p className="mt-2 text-gray-600">
+             <p className="mt-2 text-black">
               AI provides instant recommendations for connections and opportunities based on your preferences.
             </p>
           )}

@@ -34,7 +34,7 @@ const MarqueeImages = () => {
 
   return (
     <div
-      className="scroll-container overflow-x-scroll whitespace-nowrap no-scrollbar bg-slate-100 py-8 mb-24"
+      className="scroll-container overflow-x-scroll whitespace-nowrap no-scrollbar bg-slate-100 py-8 mb-22"
       ref={containerRef}
     >
       <div className="inline-flex space-x-6">

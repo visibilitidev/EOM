@@ -3,21 +3,21 @@ import React from 'react';
 const NetworkCommunity = ({ backgroundImageUrl }) => {
   return (
     <div 
-      className="relative min-h-96 flex items-center justify-center overflow-hidden  bg-center bg-cover bg-no-repeat" 
+      className="relative min-h-96 flex items-center justify-center overflow-hidden  bg-center bg-cover bg-no-repeat md:mt-12" 
       style={{
         backgroundImage: `url(${backgroundImageUrl || 'public/palace.png'})`,
         backgroundSize: 'cover',
       }}
     >
-      <div className="w-full max-w-6xl px-4 py-8 lg:px-0">
+      <div className="w-full max-w-6xl px-4 py-8 lg:px-0 mt-20 sm:mt-20">
         <div className="bg-[#000033] rounded-[40px] overflow-visible w-full lg:w-3/4 mx-auto flex flex-col md:flex-row items-center p-6 lg:p-8 relative">
           
           {/* Laptop Image */}
-          <div className="w-full md:w-1/2 relative flex justify-center lg:justify-start mb-10 md:mb-0">
+          <div className="w-full z-50 md:w-1/2 relative flex justify-center lg:justify-start mb-10 md:mb-0">
             <img 
               src="laptop.png" 
               alt="Woman with laptop" 
-              className="w-40 h-56 sm:w-48 sm:h-64 md:w-56 md:h-72 lg:w-64 lg:h-80 absolute -top-28 sm:-top-36 md:-top-48 lg:-top-52 object-cover"
+              className="w-40 h-56 sm:w-48 sm:h-64  md:w-56 md:h-72 lg:w-64 lg:h-80 absolute -top-28 sm:-top-36 md:-top-48 lg:-top-52 object-cover"
               style={{ zIndex: 1 }} // Ensure the image stays above other content
             />
           </div>

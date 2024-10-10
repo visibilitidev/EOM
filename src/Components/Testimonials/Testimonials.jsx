@@ -107,32 +107,32 @@ const TestimonialCarousel = () => {
     };
   
     const sizeClasses = {
-      sm: 'w-16 h-16',
-      md: 'w-20 h-20',
-      lg: 'w-24 h-24',
-      xl: 'w-32 h-32',
+      sm: 'w-8 h-8 md:w-10 Md:h-10',
+      md: 'w-12 h-12 md:w-16 md:h-16',
+      lg: 'w-16 h-16 md:w-20 md:h-20',
+      xl: 'w-24 h-24 md:w-32 md:h-32',
     };
   
     const positionStyles = {
-      'left-far': { left: '30%', top: '30%' },
-      'left-mid': { left: '10%', top: '10%' },
-      'left-near': { left: '15%', top: '45%' },
-      'center': { left: '50%', bottom: '30%' },
-      'right-near': { right: '10%', top: '10%' },
-      'right-mid': { right: '30%', top: '20%' },
-      'right-far': { right: '15%', top: '45%' },
+      'left-far': { left: '20%', top: '50%' },
+      'left-mid': { left: '5%', top: '40%' },
+      'left-near': { left: '10%', top: '80%' },
+      'center': { left: '50%', bottom: '-10%' },
+      'right-near': { right: '5%', top: '40%' },
+      'right-mid': { right: '20%', top: '50%' },
+      'right-far': { right: '10%', top: '80%' },
     };
   
     return (
-      <div className="max-w-6xl mx-auto p-4 my-20">
-        <h2 className="text-2xl font-bold text-center mb-8">
+      <div className="max-w-6xl mx-auto p-4 my-20 ">
+        <h2 className="text-2xl font-bold text-center mb-2">
           Members Of EOM Club Are Constantly Progressing Every Month.
         </h2>
-        <p className="text-center mb-8">Here's what they have to say.</p>
+        <p className="text-center ">Here's what they have to say.</p>
         
         <div className="relative h-[600px]">
           {/* Profile circles */}
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 h-1/2 -top-20">
             {profiles.map((profile, index) => (
               <button
                 key={profile.id}
@@ -153,15 +153,15 @@ const TestimonialCarousel = () => {
           </div>
   
           {/* Testimonial content */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-2xl">
+          <div className="absolute top-14 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-2xl">
           <img src='public/double.png' alt='' className='w-16 h-16 absolute -top-10 -left-6'/>
-            <div className="bg-white rounded-lg shadow-lg p-6 transition-all duration-300">
+            <div className="bg-white rounded-lg shadow-md p-6 transition-all duration-300">
               <div className="relative text-center mb-4">
 
                 <blockquote className="text-lg italic px-8">
                   {profiles[activeIndex]?.quote}
                 </blockquote>
-                <span className="absolute bottom-0 right-0 text-6xl text-blue-500 opacity-25">"</span>
+    
               </div>
               <div className="text-center">
                 <h3 className="font-bold text-lg">{profiles[activeIndex]?.name}</h3>

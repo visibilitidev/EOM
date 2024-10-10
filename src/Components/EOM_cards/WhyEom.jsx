@@ -3,7 +3,7 @@ import React from "react";
 const WhyEOM = () => {
   return (
     <>
-      <div cqqlassName="max-w-full flex flex-col justify-center mt-32 bg-[url('./public/palace.png')] bg-cover bg-center py-12">
+      <div className="max-w-full flex flex-col justify-center mb-8  bg-[url('public/palace.png')] bg-cover bg-center py-12">
         <h1 className="font-Montserrat font-bold text-3xl text-center my-1">
           Why is EOM one of a kind?
         </h1>
@@ -16,7 +16,7 @@ const WhyEOM = () => {
           <Card
             title={["Candid", "Conversations"]}
             imgSrc="Cardimg/img1.png"
-            backgroundImage="public/mountain.png"
+            backgroundImage="public/palace.png"
             imgWidth="215px"
             imgHeight="210px"
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads."
@@ -79,7 +79,7 @@ const WhyEOM = () => {
 };
 
 const Card = ({ title, imgSrc, backgroundImage, imgWidth, imgHeight, description, isBottomLeft }) => (
-  <div className="relative w-full h-48 rounded-2xl overflow-hidden group bg-gray-300 transition-all duration-300 group-hover:rounded-none">
+  <div className="relative w-full h-48 rounded-2xl overflow-visible hover:overflow-hidden group bg-gray-300 transition-all duration-300 group-hover:rounded-none">
     <div className="absolute inset-0 flex flex-col justify-center items-center bg-blue opacity-0 group-hover:opacity-100 transition duration-300 overflow-hidden rounded-2xl ">
       <div className="absolute top-6 left-5 font-bold z-50 text-white text-base">
         {title.map((line, index) => (
@@ -109,9 +109,11 @@ const Card = ({ title, imgSrc, backgroundImage, imgWidth, imgHeight, description
       }`}
     />
 
-    <div
-      className={`absolute inset-0 h-full bg-[url('${backgroundImage}')] bg-contain bg-no-repeat bg-bottom group-hover:opacity-0`}
-    ></div>
+<div
+  className={`absolute inset-0 h-full bg-contain bg-no-repeat group-hover:opacity-0 bg-bottom`}
+  style={{ backgroundImage: `url('${'public/mountain.png'}')` }}
+></div>
+
 
     <div className="absolute inset-0 bg-blue opacity-0 group-hover:opacity-50 transition duration-300"></div>
   </div>

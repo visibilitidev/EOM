@@ -31,7 +31,7 @@ const JoinTheCommunity = () => {
         <img 
           src="Group 123.png"  // Replace with actual image of the phone and chat bubbles
           alt="Phone with chats" 
-          className="w-4/5 sm:w-3/4"  // Responsive width for different screen sizes
+          className="w-full sm:w-3/4"  // Responsive width for different screen sizes
         />
       </div>
     </div>

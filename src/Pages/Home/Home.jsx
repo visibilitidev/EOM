@@ -19,22 +19,22 @@ import MarqueeImages from '../../Components/MarqueeImages/MarqueeImages'
 import TestimonialCarousel from '../../Components/Testimonials/Testimonials'
 
 const Home = () => {
+    const imgsrc = "public/Group 81.png";
     return (
         <>
             <HeroSection />
              <AboutContainer />
-            {/* <ImageCarousel />
-            <Features /> */}
-            {/* <Reviewcontainer/> */}
-            {/* <AccordionCon/> */}
-            {/* <WhyEOM/> */}
             <MarqueeCards/>
             <NoSoloJourneys/>
             <TestimonialCarousel/>
-            <AIConnect/>
+            <AIConnect   heading={
+          <>
+            Connecting Made Simple —<br /> With AI Power
+          </>
+        } imgsrc={imgsrc}/>
+           <EOMGrid/>
              <MarqueeImages/>
             <NetworkCommunity/>
-            <EOMGrid/>
             <Networking101/>
             <TestimonialsSection/>
             <JoinTheCommunity/>
