@@ -45,7 +45,7 @@ function Navbar() {
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-OpenSans font-extrabold text-base flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
               <li>
-                <a href="#" class="block py-2 px-3 text-black font">
+                <a href="/about" class="block py-2 px-3 text-black font">
                   ABOUT
                 </a>
               </li>
