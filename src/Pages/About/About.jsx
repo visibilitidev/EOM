@@ -8,9 +8,10 @@ import VentureEventsComponent from '../../Components/VentureEventsComponent/Vent
 import VenturePartnersComponent from '../../Components/VentureEventsComponent/VentureEventsComponent';
 import MembershipPlans from '../../Components/MembershipPlans/MembershipPlans';
 import EomRightForYou from '../../Components/EomRightForYou/EomRightForYou';
+import { assets } from '../../assets/assets';
 
 const About = () => {
-  const imgsrc = "public/rob.png";
+  const imgsrc = assets.rob;
   
   return (
     <>

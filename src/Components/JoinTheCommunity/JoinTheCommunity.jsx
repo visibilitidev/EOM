@@ -1,8 +1,9 @@
 import React from 'react';
+import { assets } from '../../assets/assets';
 
 const JoinTheCommunity = () => {
   return (
-    <div className="bg-white py-12 px-6 sm:px-12 lg:px-24 flex my-10 flex-col items-center justify-center text-center bg-[url('./temple.png')] bg-cover bg-center py-12">
+    <div className="bg-white px-6 sm:px-12 lg:px-24 flex my-10 flex-col items-center justify-center text-center bg-[url('./temple.png')] bg-cover bg-center py-12">
       {/* Main Title Section */}
       <div className="mb-8">
         <h1 className="text-2xl sm:text-3xl md:text-3.5xl font-bold mb-4">
@@ -29,7 +30,7 @@ const JoinTheCommunity = () => {
       {/* Phone Image with Chat Bubbles */}
       <div className="flex justify-center">
         <img 
-          src="Group 123.png"  // Replace with actual image of the phone and chat bubbles
+          src={assets.Group123} // Replace with actual image of the phone and chat bubbles
           alt="Phone with chats" 
           className="w-full sm:w-3/4"  // Responsive width for different screen sizes
         />

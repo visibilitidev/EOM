@@ -1,4 +1,5 @@
 import React from 'react';
+import { assets } from '../../assets/assets';
 
 const AboutContainer = () => {
   return (
@@ -21,12 +22,12 @@ const AboutContainer = () => {
         <div className=" w-full mx-auto md:w-1/2 relative">
           <div className="bg-gray-200 h-full rounded-[40px] overflow-hidden">
             <img 
-              src="../../../" 
+              src={assets.videoimg}
               alt="Placeholder" 
               className="w-full h-full object-cover"
             />
             <div className="absolute -bottom-24 -right-16 md:-bottom-16 md:-right-20 w-48 h-52 md:w-[236.32px] md:h-[209.47px] gap-0 rotate-[-15.78deg]">
-              <img src='../../assets/trophy.png' alt=''/>
+              <img src={assets.trophy} alt=''/>
             </div>
           </div>
         </div>

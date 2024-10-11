@@ -17,9 +17,11 @@ import Networking101 from '../../Components/Networking101/Networking101'
 import MarqueeCards from '../../Components/MarqueeCards/MarqueeCards'
 import MarqueeImages from '../../Components/MarqueeImages/MarqueeImages'
 import TestimonialCarousel from '../../Components/Testimonials/Testimonials'
+import { assets } from '../../assets/assets'
+
 
 const Home = () => {
-    const imgsrc = "public/Group 81.png";
+    const imgsrc = assets.group81;
     return (
         <>
             <HeroSection />

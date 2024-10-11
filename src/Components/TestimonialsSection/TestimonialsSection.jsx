@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import { assets } from '../../assets/assets';
+
 
 const TestimonialGrid = () => {
   const scrollContainerRef = useRef(null);
@@ -38,9 +40,9 @@ const TestimonialGrid = () => {
         {[...Array(2)].map((_, index) => (
           <React.Fragment key={index}>
             {/* Testimonial 1 */}
-            <div className="w-[300px] h-[600px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
+            <div className="w-[300px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
-                src="public/ln1.png"
+                src= {assets.ln1}
                 alt="Testimonial 1"
                 className="w-full h-full object-cover rounded-xl"
               />
@@ -49,7 +51,7 @@ const TestimonialGrid = () => {
             {/* Testimonial 2 */}
             <div className="w-[300px] h-[500px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
-                src="public/linkedin3.png"
+                src= {assets.linkedin3}
                 alt="Testimonial 2"
                 className="w-full h-full object-cover rounded-xl"
               />
@@ -58,7 +60,7 @@ const TestimonialGrid = () => {
             {/* Testimonial 3 */}
             <div className="w-[300px] h-[620px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
-                src="public/ln4.png"
+                src= {assets.ln3}
                 alt="Testimonial 3"
                 className="w-full h-full object-cover rounded-xl"
               />
@@ -67,7 +69,7 @@ const TestimonialGrid = () => {
             {/* Testimonial 4 */}
             <div className="w-[300px] h-[550px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
-                src="public/ln5.png"
+                src={assets.ln4}
                 alt="Testimonial 4"
                 className="w-full h-full object-cover rounded-xl"
               />
@@ -76,7 +78,7 @@ const TestimonialGrid = () => {
             {/* Testimonial 5 */}
             <div className="w-[300px] h-[630px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
-                src="public/ln7.png"
+                src= {assets.ln5}
                 alt="Testimonial 5"
                 className="w-full h-full object-cover rounded-xl"
               />

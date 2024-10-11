@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaPlayCircle, FaTimes } from 'react-icons/fa'; // Importing the play and close icons
+import { assets } from '../../assets/assets';
 
 const Networking101 = ({ backgroundImage }) => {
   const [activeVideo, setActiveVideo] = useState(null); // State to track the currently playing video
@@ -9,21 +10,21 @@ const Networking101 = ({ backgroundImage }) => {
     {
       title: "Private Dinner With Million Dollar Brand Founder",
       series: "Founders Meet-Up Series 02",
-      image: "public/network1.png",
+      image: assets.network1,
       videoUrl: "https://www.youtube.com/embed/wtkoBjXsiBQ?si=At8YdyZOhchlI-lg",
       darkOverlay: true
     },
     {
       title: "Entrepreneurs Of Madras Club Edition 1",
       series: "Launched by 200Cr Brand Owner & 15+",
-      image: "public/network2.png",
+      image: assets.network2,
       videoUrl: "https://www.youtube.com/embed/X5zncoKqohk?si=KBycNn9JSjREEOGU",
       darkOverlay: false
     },
     {
       title: "Private Dinner With An Investor",
       series: "Founders Meet-Up Series 01",
-      image: "public/network3.png",
+      image: assets.network3,
       videoUrl: "https://www.youtube.com/embed/90B8SxhbuHA?si=tJ279hXdJBkwvvvW",
       darkOverlay: true
     }

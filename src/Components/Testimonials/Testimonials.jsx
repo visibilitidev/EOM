@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Star } from 'lucide-react';
+import { assets } from '../../assets/assets';
 
 const testimonials = [
     {
       id: 1,
       name: 'Ragapriya',
       role: 'Founder of Paidhu Ethical Foods',
-      image: 'public/testimonial1.jpg',
+      image: assets.testimonial,
       quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
       rating: 4.5,
     },
@@ -14,7 +15,7 @@ const testimonials = [
       id: 2,
       name: 'John Doe',
       role: 'CEO of Tech Innovations',
-      image: 'public/testimonial1.jpg',
+      image: assets.testimonial,
       quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
       rating: 5,
     },
@@ -22,7 +23,7 @@ const testimonials = [
       id: 3,
       name: 'Emma Wilson',
       role: 'Marketing Director at Global Reach',
-      image: 'public/testimonial1.jpg',
+      image: assets.testimonial,
       quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
       rating: 4,
     },
@@ -30,7 +31,7 @@ const testimonials = [
       id: 4,
       name: 'Alex Chen',
       role: 'Founder of GreenTech Solutions',
-      image: 'public/testimonial1.jpg',
+      image: assets.testimonial,
       quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
       rating: 4.5,
     },
@@ -38,23 +39,23 @@ const testimonials = [
       id: 5,
       name: 'Sarah Johnson',
       role: 'CFO at Finance Plus',
-      image: 'public/testimonial1.jpg',
+      image: assets.testimonial,
       quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
       rating: 5,
     },
     {
       id: 6,
-      image: 'public/testimonial1.jpg',
+      name: 'Sarah Johnson2',
       role: 'Head of Operations at Logistics Pro',
-      image: 'public/testimonial1.jpg',
+      image: assets.testimonial,
       quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
       rating: 4,
     },
     {
       id: 7,
-      image: 'public/testimonial1.jpg',
+      name: 'Sarah Johnson3',
       role: 'Founder of Healthy Living Co.',
-      image: 'public/testimonial1.jpg',
+      image: assets.testimonial,
       quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
       rating: 4.5,
     }
@@ -154,7 +155,7 @@ const TestimonialCarousel = () => {
   
           {/* Testimonial content */}
           <div className="absolute top-14 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-2xl">
-          <img src='public/double.png' alt='' className='w-16 h-16 absolute -top-10 -left-6'/>
+          <img src={assets.double} alt='' className='w-16 h-16 absolute -top-10 -left-6'/>
             <div className="bg-white rounded-lg shadow-md p-6 transition-all duration-300">
               <div className="relative text-center mb-4">
 
@@ -180,7 +181,7 @@ const TestimonialCarousel = () => {
                 </div>
               </div>
             </div>
-            <img src='public/double.png' alt='' className='w-5 h-5 absolute bottom-0 right-0 rotate-180'/>
+            <img src={assets.double} alt='' className='w-5 h-5 absolute bottom-0 right-0 rotate-180'/>
           </div>
         </div>
       </div>

@@ -1,11 +1,12 @@
 import React from 'react';
+import { assets } from '../../assets/assets';
 
 const NetworkCommunity = ({ backgroundImageUrl }) => {
   return (
     <div 
       className="relative min-h-96 flex items-center justify-center overflow-hidden  bg-center bg-cover bg-no-repeat md:mt-12" 
       style={{
-        backgroundImage: `url(${backgroundImageUrl || 'public/palace.png'})`,
+        backgroundImage: `url(${backgroundImageUrl || assets.palace})`,
         backgroundSize: 'cover',
       }}
     >
@@ -15,7 +16,7 @@ const NetworkCommunity = ({ backgroundImageUrl }) => {
           {/* Laptop Image */}
           <div className="w-full z-50 md:w-1/2 relative flex justify-center lg:justify-start mb-10 md:mb-0">
             <img 
-              src="laptop.png" 
+              src={assets.laptop}
               alt="Woman with laptop" 
               className="w-40 h-56 sm:w-48 sm:h-64  md:w-56 md:h-72 lg:w-64 lg:h-80 absolute -top-28 sm:-top-36 md:-top-48 lg:-top-52 object-cover"
               style={{ zIndex: 1 }} // Ensure the image stays above other content

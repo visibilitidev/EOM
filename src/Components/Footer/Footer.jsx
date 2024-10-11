@@ -1,15 +1,14 @@
 import React from 'react';
 import { Linkedin, Youtube, Instagram } from 'lucide-react';
 import './Footer.css';
-import logo from '/logo.png'
-
+import { assets } from '../../assets/assets';
 const Footer = () => {
   return (
     <footer className="bg-blue text-white p-6 mt-8">
       <div className="container mx-auto md:w-3/4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-center">
           <div className="mb-6 md:mb-0 w-24">
-            <img src={logo}alt='' />
+            <img src={assets.logo}alt='' />
           </div>
           
           <div className="flex space-x-4 mb-6 md:mb-0">

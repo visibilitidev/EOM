@@ -1,9 +1,13 @@
 import React from 'react';
 import { FaPlayCircle } from 'react-icons/fa';
+import { assets } from '../../assets/assets';
 
 const HeroSection = () => {
   return (
-    <div className=" w-full  mx-auto p-4 font-sans bg-cover bg-center mb-8 bg-[url('public/palace.png')]">
+    <div
+      className="w-full mx-auto p-4 font-sans bg-cover bg-center mb-8"
+      style={{ backgroundImage: `url(${assets.palace})` }}
+    >
       <div className="text-center mb-8">
         <p className="text-base uppercase tracking-wide mb-4 font-OpenSans ">Start strong, scale stronger with</p>
         <h1 className=" text-4xl md:text-5xl font-extrabold mb-4 font-Montserrat">THE FINEST<br />FOUNDERS-ONLY CLUB</h1>
@@ -15,10 +19,10 @@ const HeroSection = () => {
 
       <div className="relative">
         <div className="absolute -left-0 top-1/2 transform -translate-y-1/2">
-          <img src='public/sun.png' className="w-28 h-28 rounded-full"/>
+          <img src={assets.sun} className="w-28 h-28 rounded-full"/>
         </div>
         <div className="border-4 max-w-4xl mx-auto border-black rounded-lg overflow-hidden relative">
-          <img src="public/videoimg.png" alt="Founders meeting" className="w-full h-auto object-cover" />
+          <img src={assets.videoimg} alt="Founders meeting" className="w-full h-auto object-cover" />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
           <FaPlayCircle
                       size={64}

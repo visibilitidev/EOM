@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react';
+import { assets } from '../../assets/assets';
 
 const investors = [
-  {  image: "public/3.png" },
-  { image: "public/4.png" },
-  {  image: "public/5.png" },
-  {  image: "public/6.png" },
-  {  image: "public/567.png" },
+  {  image: assets.png3 },
+  {  image: assets.png4 },
+  {  image: assets.png5 },
+  {  image: assets.png6 },
+  {  image: assets.png567 },
 ];
 
 const InvestorCard = ({ investor }) => (

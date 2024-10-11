@@ -1,9 +1,10 @@
 import React from 'react';
+import { assets } from '../../assets/assets';
 
 const partners = [
-  { name: 'Peaceful Progress', logo: '/logo1.png' },
-  { name: 'V3 Ventures', logo: '/logo2.png' },
-  { name: '100x VC', logo: '/logo3.png' }
+  { name: 'Peaceful Progress', logo: assets.logo1 },
+  { name: 'V3 Ventures', logo: assets.logo2 },
+  { name: '100x VC', logo: assets.logo3 }
 ];
 
 const features = [

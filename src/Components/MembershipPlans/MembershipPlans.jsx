@@ -39,7 +39,7 @@ const MembershipPlans = () => {
           </div>
 
           {/* For Service Providers */}
-          <div className="bg-[#F0F0F0] rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full min-h-full relative">
+          <div className="bg-[#F0F0F0] rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full min-h-full relative items-stretch">
             <div className="p-6 flex-grow">
               <h2 className="text-3xl font-bold text-black mb-6  font-Inter">For Service Providers</h2>
               <ul className="space-y-4 font-OpenSans">
@@ -58,6 +58,8 @@ const MembershipPlans = () => {
                   </li>
                 ))}
               </ul>
+              <h2 className='text-[#F0F0F0]'>.</h2>
+              <h2 className='text-[#F0F0F0]'>.</h2>
             </div>
             <div className="absolute bottom-12">
               <img src='public/Group 147.png' alt='' />

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './MarqueeImages.css'; // Import CSS for custom styles
+import { assets } from '../../assets/assets';
+
 
 const MarqueeImages = () => {
   const containerRef = useRef(null);
@@ -24,12 +26,16 @@ const MarqueeImages = () => {
   }, []);
 
   const images = [
-    'public/award1.jpg',
-    'public/award2.jpg',
-    'public/award3.jpg',
-    'public/award4.jpg',
-    'public/award4.jpg',
-    'public/award3.jpg',
+    assets.marquee1,
+    assets.marquee2,
+    assets.marquee3,
+    assets.marquee4,
+    assets.marquee5,
+    assets.marquee6,
+    assets.marquee7,
+    assets.marquee8,
+    assets.marquee9,
+    assets.marquee10,
   ];
 
   return (

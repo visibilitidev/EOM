@@ -1,9 +1,11 @@
 import React from "react";
+import { assets } from "../../assets/assets";
+
 
 const WhyEOM = () => {
   return (
     <>
-      <div className="max-w-full flex flex-col justify-center mb-8  bg-[url('public/palace.png')] bg-cover bg-center py-12">
+      <div className="max-w-full flex flex-col justify-center mb-8  bg-cover bg-center py-12" style={{ backgroundImage: `url(${assets.palace})` }}>
         <h1 className="font-Montserrat font-bold text-3xl text-center my-1">
           Why is EOM one of a kind?
         </h1>
@@ -15,8 +17,8 @@ const WhyEOM = () => {
           {/* Card 1 - Image aligned to bottom left */}
           <Card
             title={["Candid", "Conversations"]}
-            imgSrc="Cardimg/img1.png"
-            backgroundImage="public/palace.png"
+            imgSrc= {assets.img1}
+            backgroundImage={assets.mountain}
             imgWidth="215px"
             imgHeight="210px"
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads."
@@ -26,8 +28,8 @@ const WhyEOM = () => {
           {/* Card 2 */}
           <Card
             title={["Founder-to-", "Founder Support"]}
-            imgSrc="Cardimg/img2.png"
-            backgroundImage="public/mountain.png"
+            imgSrc= {assets.img2c}
+            backgroundImage={assets.mountain}
             imgWidth="215px"
             imgHeight="210px"
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads."
@@ -36,7 +38,7 @@ const WhyEOM = () => {
           {/* Card 3 */}
           <Card
             title={["Curated", "Knowledge"]}
-            imgSrc="Cardimg/img3.png"
+            imgSrc= {assets.img3c}
             backgroundImage="public/mountain.png"
             imgWidth="200px"
             imgHeight="220px"
@@ -46,7 +48,7 @@ const WhyEOM = () => {
           {/* Card 4 */}
           <Card
             title={["Closed-Door", "Events"]}
-            imgSrc="Cardimg/img4.png"
+            imgSrc= {assets.img4c}
             backgroundImage="public/mountain.png"
             imgWidth="145px"
             imgHeight="205px"
@@ -56,7 +58,7 @@ const WhyEOM = () => {
           {/* Card 5 */}
           <Card
             title={["Focus on", "Scaling"]}
-            imgSrc="Cardimg/img5.png"
+            imgSrc= {assets.img5c}
             backgroundImage="public/mountain.png"
             imgWidth="200px"
             imgHeight="215px"
@@ -66,7 +68,7 @@ const WhyEOM = () => {
           {/* Card 6 */}
           <Card
             title={["Masterclass", "Sessions"]}
-            imgSrc="Cardimg/img6.png"
+            imgSrc= {assets.img6}
             backgroundImage="public/mountain.png"
             imgWidth="210px"
             imgHeight="230px"
@@ -111,7 +113,7 @@ const Card = ({ title, imgSrc, backgroundImage, imgWidth, imgHeight, description
 
 <div
   className={`absolute inset-0 h-full bg-contain bg-no-repeat group-hover:opacity-0 bg-bottom`}
-  style={{ backgroundImage: `url('${'public/mountain.png'}')` }}
+  style={{ backgroundImage: `url(${assets.mountain})` }}
 ></div>
 
 
