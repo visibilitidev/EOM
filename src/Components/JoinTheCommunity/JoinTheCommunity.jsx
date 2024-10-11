@@ -2,7 +2,7 @@ import React from 'react';
 
 const JoinTheCommunity = () => {
   return (
-    <div className="bg-white py-12 px-6 sm:px-12 lg:px-24 flex my-10 flex-col items-center justify-center text-center bg-[url('./public/temple.png')] bg-cover bg-center py-12">
+    <div className="bg-white py-12 px-6 sm:px-12 lg:px-24 flex my-10 flex-col items-center justify-center text-center bg-[url('./temple.png')] bg-cover bg-center py-12">
       {/* Main Title Section */}
       <div className="mb-8">
         <h1 className="text-2xl sm:text-3xl md:text-3.5xl font-bold mb-4">

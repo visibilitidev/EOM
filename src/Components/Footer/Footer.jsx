@@ -1,7 +1,7 @@
 import React from 'react';
 import { Linkedin, Youtube, Instagram } from 'lucide-react';
 import './Footer.css';
-import logo from '/public/logo.png'
+import logo from '/logo.png'
 
 const Footer = () => {
   return (
