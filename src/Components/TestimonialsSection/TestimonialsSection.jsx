@@ -25,7 +25,7 @@ const TestimonialGrid = () => {
   }, []);
 
   return (
-    <div className="bg-blue p-4 md:py-8 my-12 relative min-h-screen h-[855px] lg:block overflow-hidden">
+    <div className="bg-blue p-4 md:py-8 my-12 relative min-h-screen h-[855px] hidden md:block overflow-hidden">
       <p className='text-base font-medium w-2/3 text-center text-white mx-auto mb-6'>
         You can keep scrolling through the 100s of testimonials on this page alone. 
         Or, take the first step in becoming one of our “impact” stories.
@@ -40,7 +40,7 @@ const TestimonialGrid = () => {
         {[...Array(2)].map((_, index) => (
           <React.Fragment key={index}>
             {/* Testimonial 1 */}
-            <div className="w-[300px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
+            <div className="w-[372px] h-[626.71px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
                 src= {assets.ln1}
                 alt="Testimonial 1"
@@ -49,7 +49,7 @@ const TestimonialGrid = () => {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="w-[300px] h-[500px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
+            <div className=" w-[306px] h-[580px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
                 src= {assets.linkedin3}
                 alt="Testimonial 2"
@@ -57,17 +57,17 @@ const TestimonialGrid = () => {
               />
             </div>
 
-            {/* Testimonial 3 */}
+            {/* Testimonial 3
             <div className="w-[300px] h-[620px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
                 src= {assets.ln3}
                 alt="Testimonial 3"
                 className="w-full h-full object-cover rounded-xl"
               />
-            </div>
+            </div> */}
 
             {/* Testimonial 4 */}
-            <div className="w-[300px] h-[550px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
+            <div className=" w-[312px] h-[596px]   bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
                 src={assets.ln4}
                 alt="Testimonial 4"
@@ -75,10 +75,20 @@ const TestimonialGrid = () => {
               />
             </div>
 
-            {/* Testimonial 5 */}
-            <div className="w-[300px] h-[630px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
+            {/* Testimonial5 */}
+            <div className="w-[302px] h-[520px]  bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
               <img
                 src= {assets.ln5}
+                alt="Testimonial 5"
+                className="w-full h-full object-cover rounded-xl"
+              />
+            </div>
+
+                      
+                        {/* Testimonial 7 */}
+                        <div className="w-[302px] h-[598px] bg-white rounded-xl border-2 border-yellow-400 flex-shrink-0">
+              <img
+                src= {assets.ln7}
                 alt="Testimonial 5"
                 className="w-full h-full object-cover rounded-xl"
               />

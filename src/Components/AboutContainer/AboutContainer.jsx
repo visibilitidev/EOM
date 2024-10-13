@@ -26,7 +26,7 @@ const AboutContainer = () => {
               alt="Placeholder" 
               className="w-full h-full object-cover"
             />
-            <div className="absolute -bottom-24 -right-16 md:-bottom-16 md:-right-20 w-48 h-52 md:w-[236.32px] md:h-[209.47px] gap-0 rotate-[-15.78deg]">
+            <div className=" hidden sm:block absolute -bottom-24 -right-16 md:-bottom-16 md:-right-20 w-48 h-52 md:w-[236.32px] md:h-[209.47px] gap-0 rotate-[-15.78deg]">
               <img src={assets.trophy} alt=''/>
             </div>
           </div>

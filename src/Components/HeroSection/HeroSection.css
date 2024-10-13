@@ -1,0 +1,8 @@
+.reflection {
+  -webkit-box-reflect: below -1px linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+}
+
+/* Optional: Additional styling for your content */
+.text-center {
+  z-index: 1; /* Ensure text is above the reflection */
+}

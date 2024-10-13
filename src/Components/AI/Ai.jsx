@@ -24,7 +24,7 @@ const AIChatComponent = ({heading, imgsrc}) => {
       </div>
 
       {/* Right side - Accordion */}
-      <div className="w-[90%] lg:w-1/2 space-y-4">
+      <div className="w-[100%] lg:w-1/2 space-y-4">
        
 
         {/* Accordion Item 1 */}

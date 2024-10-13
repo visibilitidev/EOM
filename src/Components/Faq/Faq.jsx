@@ -3,23 +3,25 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 import './Faq.css';
 
 const FAQItem = ({ question, answer, isOpen, toggleOpen }) => (
-    <div className={`border-2 rounded-xl mb-6 overflow-hidden transition-colors shadow-[2px_2px_8px_rgba(0,0,0,0.1)] ${isOpen ? 'border-[#041334]' : 'border-gray-200'}`}>
-    <button
-      className="w-full text-left p-4 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors"
-      onClick={toggleOpen}
-    >
-      <span className="text-lg md:text-2xl font-medium">{question}</span>
-      {isOpen ? (
-        <ChevronUp className="w-6 h-6 bright-yellow rounded-full text-white" />
-      ) : (
-        <ChevronDown className="w-6 h-6 bright-yellow rounded-full text-white" />
+  <div className={`border-2 rounded-xl mb-6 overflow-hidden transition-colors shadow-[2px_2px_8px_rgba(0,0,0,0.1)] ${isOpen ? 'border-[#041334]' : 'border-gray-200'}`}>
+      <button
+          className="w-full text-left p-4 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors"
+          onClick={toggleOpen}
+      >
+          <span className="text-lg md:text-2xl font-medium">{question}</span>
+          <div className="flex items-center">
+              {isOpen ? (
+                  <ChevronUp className="bright-yellow width-6 height-6 rounded-full text-white" />
+              ) : (
+                  <ChevronDown className="bright-yellow width-6 height-6 rounded-full text-white" />
+              )}
+          </div>
+      </button>
+      {isOpen && (
+          <div className="p-4 bg-gray-50">
+              <p className="text-base">{answer}</p>
+          </div>
       )}
-    </button>
-    {isOpen && (
-      <div className="p-4 bg-gray-50">
-        <p className="text-base">{answer}</p>
-      </div>
-    )}
   </div>
 );
 

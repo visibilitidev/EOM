@@ -1,4 +1,5 @@
 import React from 'react';
+import { assets } from '../../assets/assets';
 
 const EomRightForYou = () => {
   const criteria = [
@@ -31,8 +32,8 @@ const EomRightForYou = () => {
         
         <div className="w-full lg:w-1/2 max-w-xl relative">
           <div className="bg-gray-200 rounded-xl aspect-[4/3] w-full"></div>
-          <div className="absolute -bottom-24 -right-16 md:-bottom-16 md:-right-20 w-48 h-52 md:w-[236.32px] md:h-[209.47px] gap-0 rotate-[-15.78deg]">
-              <img src='public/trophy.png' alt=''/>
+          <div className="hidden sm:block absolute -bottom-24 -right-16 md:-bottom-16 md:-right-20 w-48 h-52 md:w-[236.32px] md:h-[209.47px] gap-0 rotate-[-15.78deg]">
+              <img src={assets.trophy} alt=''/>
             </div>
         </div>
       </div>
