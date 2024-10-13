@@ -1,16 +1,32 @@
-import React from 'react';
-import { FaPlayCircle } from 'react-icons/fa';
+import React, { useRef, useState } from 'react';
+import { FaPlayCircle, FaPauseCircle } from 'react-icons/fa'; // Import the pause icon
 import { assets } from '../../assets/assets';
 import './HeroSection.css';
 
 const HeroSection = () => {
+  // Create a ref for the video element
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false); // State to manage video visibility
+
+  // Function to play/pause the video
+  const handlePlayPauseVideo = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause(); // Pause the video
+      } else {
+        videoRef.current.play(); // Play the video
+      }
+      setIsPlaying(!isPlaying); // Toggle the playing state
+    }
+  };
+
   return (
     <div className="relative w-full mx-auto p-4 font-sans mb-8">
       {/* Background Image */}
       <img
         src={assets.palace}
         alt="Palace Background"
-        className="reflection absolute inset-0 w-full h-full object-cover z-0" // Ensure it covers the whole section
+        className="reflection absolute inset-0 w-full h-full object-cover z-0"
       />
       
       <div className="relative z-10 text-center mb-8">
@@ -27,13 +43,31 @@ const HeroSection = () => {
           <img src={assets.sun} className="w-28 h-28 rounded-full" alt="Sun Icon" />
         </div>
         <div className="border-4 max-w-4xl mx-auto border-black rounded-lg overflow-hidden relative">
-          <img src={assets.videoimg} alt="Founders meeting" className="w-full h-auto object-cover" />
+          {/* Video Element */}
+          <video 
+            ref={videoRef}
+            src={assets.heroVideo} // Ensure this path is correct
+            className={`w-full h-auto object-cover ${isPlaying ? 'block' : 'hidden'}`} // Toggle visibility based on state
+          >
+            <source src={assets.heroVideo} type="video/mp4" /> {/* Ensure the correct type */}
+            Your browser does not support the video tag.
+          </video>
+          <img src={assets.videoimg} alt="Founders meeting" className={`w-full h-auto object-cover ${isPlaying ? 'hidden' : 'block'}`} />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-            <FaPlayCircle
-              size={64}
-              className="text-white opacity-80 hover:opacity-100 cursor-pointer"
-              onClick={() => console.log('Play video')} // Handle video play action
-            />
+            {/* Show play or pause icon based on isPlaying state */}
+            {!isPlaying ? (
+              <FaPlayCircle
+                size={64}
+                className="text-white opacity-80 hover:opacity-100 cursor-pointer"
+                onClick={handlePlayPauseVideo} // Call the play function
+              />
+            ) : (
+              <FaPauseCircle
+                size={64}
+                className="text-white opacity-80 hover:opacity-100 cursor-pointer"
+                onClick={handlePlayPauseVideo} // Call the pause function
+              />
+            )}
           </div>
         </div>
       </div>

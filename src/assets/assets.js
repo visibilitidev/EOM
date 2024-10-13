@@ -58,6 +58,7 @@ import marquee7 from "./marquee7.jpg";
 import marquee8 from "./marquee8.jpg";
 import marquee9 from "./marquee9.jpg";
 import marquee10 from "./marquee10.jpg";
+import heroVideo from "./heroVideo.mp4";
 
 export const assets = {
   img1,
@@ -120,4 +121,5 @@ export const assets = {
   marquee8,
   marquee9,
   marquee10,
+  heroVideo,
 };
