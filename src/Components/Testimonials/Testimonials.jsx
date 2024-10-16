@@ -119,7 +119,7 @@ const TestimonialCarousel = () => {
   };
 
   const sizeClasses = {
-      sm: 'w-8 h-8 md:w-8 md:h-10',
+      sm: 'w-8 h-8 md:w-8 md:h-8',
       md: 'w-12 h-12 md:w-16 md:h-16',
       lg: 'w-16 h-16 md:w-20 md:h-20',
       xl: 'w-24 h-24 md:w-32 md:h-32',
@@ -158,7 +158,7 @@ const TestimonialCarousel = () => {
                           }}
                           onClick={() => handleClick(index)}
                       >
-                          <img src={profile.image} alt={profile.name} className="w-full h-full object-cover" />
+                          <img src={profile.image} alt={profile.name} className="w-full h-full object-cover object-top" />
                       </button>
                   ))}
               </div>
