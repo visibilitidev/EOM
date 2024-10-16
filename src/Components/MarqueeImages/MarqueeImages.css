@@ -1,14 +1,24 @@
-/* ScrollTransform.css */
-.no-scrollbar::-webkit-scrollbar {
-  display: none; /* Hide scrollbar on Webkit browsers */
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-/* Smooth scrolling behavior */
 .scroll-container {
-  scroll-behavior: smooth; /* Smooth scrolling effect */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee-left 60s linear infinite;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

@@ -2,20 +2,19 @@ import React, { useEffect, useRef } from 'react';
 import './MarqueeImages.css'; // Import CSS for custom styles
 import { assets } from '../../assets/assets';
 
-
 const MarqueeImages = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
     const scroll = () => {
       if (containerRef.current) {
-        const { scrollLeft, clientWidth, scrollWidth } = containerRef.current;
-
-        // Scroll right to left, if scrollLeft is 0, reset to the maximum scroll
-        if (scrollLeft <= 0) {
-          containerRef.current.scrollLeft = scrollWidth - clientWidth;
-        } else {
-          containerRef.current.scrollLeft -= 1; // Decrement to scroll left to right
+        containerRef.current.scrollLeft -= 1; // Decrement scroll position to move right to left
+        
+        // Reset to end when start of scroll is reached
+        if (
+          containerRef.current.scrollLeft <= 0
+        ) {
+          containerRef.current.scrollLeft = containerRef.current.scrollWidth / 2;
         }
       }
     };
@@ -40,10 +39,10 @@ const MarqueeImages = () => {
 
   return (
     <div
-      className="scroll-container overflow-x-auto whitespace-nowrap no-scrollbar bg-slate-100 py-8 mb-22"
+      className="scroll-container overflow-hidden whitespace-nowrap no-scrollbar bg-slate-100 py-8 mb-22"
       ref={containerRef}
     >
-      <div className="inline-flex space-x-6">
+      <div className="marquee-content inline-flex space-x-6">
         {images.map((image, index) => (
           <div key={index} className="w-80 h-80 p-2 bg-white rounded-3xl shadow-md">
             <img
