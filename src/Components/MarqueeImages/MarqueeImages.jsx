@@ -26,16 +26,16 @@ const MarqueeImages = () => {
   }, []);
 
   const images = [
-    assets.marquee1,
-    assets.marquee2,
-    assets.marquee3,
-    assets.marquee4,
-    assets.marquee5,
-    assets.marquee6,
-    assets.marquee7,
-    assets.marquee8,
-    assets.marquee9,
-    assets.marquee10,
+    assets.gallery1,
+    assets.gallery2,
+    assets.gallery3,
+    assets.gallery4,
+    assets.gallery5,
+    assets.gallery6,
+    assets.gallery7,
+    assets.gallery8,
+    assets.gallery9,
+    assets.gallery10,
   ];
 
   return (

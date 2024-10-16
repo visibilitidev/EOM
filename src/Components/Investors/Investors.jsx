@@ -2,11 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import { assets } from '../../assets/assets';
 
 const investors = [
+  {  image: assets.png1 },
+  {  image: assets.png2 },
   {  image: assets.png3 },
   {  image: assets.png4 },
   {  image: assets.png5 },
   {  image: assets.png6 },
-  {  image: assets.png567 },
+  {  image: assets.png7 },
+  {  image: assets.png8 },
 ];
 
 const InvestorCard = ({ investor }) => (
@@ -45,7 +48,7 @@ const PoweredByBestComponent = () => {
   }, []);
 
   return (
-    <div className="w-[100%] px-4 font-sans mt-10">
+    <div className="w-[100%] px-4 font-sans mt-20">
       <h2 className="text-3xl font-bold text-center mb-2">Powered By The Best</h2>
       <p className="text-center mb-8">EOM is supported by the top founders & angel investors in the ecosystem</p>
       

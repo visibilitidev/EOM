@@ -26,7 +26,12 @@
   border-radius: 0.75rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.card img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
 /* Animation for infinite scrolling */
 @keyframes scroll {
   0% {

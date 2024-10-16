@@ -3,7 +3,8 @@ import { assets } from '../../assets/assets';
 
 const JoinTheCommunity = () => {
   return (
-    <div className="bg-white px-6 sm:px-12 lg:px-24 flex my-10 flex-col items-center justify-center text-center bg-[url('./temple.png')] bg-cover bg-center py-12">
+    <div className="bg-white px-6 sm:px-12 lg:px-24 flex my-10 flex-col items-center justify-center text-center bg-cover bg-center py-12" 
+    style={{ backgroundImage: `url(${assets.temple})` }}>
       {/* Main Title Section */}
       <div className="mb-8">
         <h1 className="text-2xl sm:text-3xl md:text-3.5xl font-bold mb-4">

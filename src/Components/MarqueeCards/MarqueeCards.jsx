@@ -1,28 +1,34 @@
 import React from 'react';
 import './MarqueeCards.css';
+import { assets } from '../../assets/assets';
 
 const MarqueeCards = () => {
-  const cards = Array.from({ length: 12 }, (_, index) => `Card ${index + 1}`);
+  const images = [
+    assets.marquee1,
+    assets.club1,
+    assets.club2,
+    assets.club3,
+    assets.club4,
+    assets.club5,
+    assets.club6,
+    assets.club7,
+    assets.club8,
+    assets.club9,
+  ];
 
   return (
     <div className="overflow-hidden py-24">
       <div className="marquee">
         <div className="track">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className="card"
-            >
-              {card}
+          {images.map((image, index) => (
+            <div key={index} className="card">
+              <img src={image} alt={`Card ${index + 1}`} />
             </div>
           ))}
-          {/* Duplicate the cards within the same div to create the seamless effect */}
-          {cards.map((card, index) => (
-            <div
-              key={index + 12}  // Adjust key for the second batch
-              className="card"
-            >
-              {card}
+          {/* Duplicate the images within the same div to create the seamless effect */}
+          {images.map((image, index) => (
+            <div key={index + images.length} className="card">
+              <img src={image} alt={`Card ${index + 1}`} />
             </div>
           ))}
         </div>

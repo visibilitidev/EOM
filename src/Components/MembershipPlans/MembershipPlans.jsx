@@ -1,4 +1,5 @@
 import React from 'react';
+import { assets } from '../../assets/assets';
 
 const MembershipPlans = () => {
   return (
@@ -33,7 +34,7 @@ const MembershipPlans = () => {
                 ))}
               </ul>
             </div>
-            <div className="bg-yellow-400 p-4">
+            <div className="bg-yellow-400 px-4">
               <button className="w-full py-2 text-navy-900 font-extrabold text-lg">JOIN THE FOUNDERS' CIRCLE</button>
             </div>
           </div>
@@ -61,10 +62,10 @@ const MembershipPlans = () => {
               <h2 className='text-[#F0F0F0]'>.</h2>
               <h2 className='text-[#F0F0F0]'>.</h2>
             </div>
-            <div className="absolute bottom-12">
-              <img src='public/Group 147.png' alt='' />
+            <div className="absolute bottom-8">
+              <img src={assets.group147} alt='' />
             </div>
-            <div className="bg-yellow-400 p-4">
+            <div className="bg-yellow-400 px-4">
               <button className="w-full py-2 text-navy-900 font-extrabold text-lg">COMING SOON</button>
             </div>
           </div>

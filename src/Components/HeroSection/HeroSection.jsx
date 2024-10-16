@@ -24,25 +24,25 @@ const HeroSection = () => {
     <div className="relative w-full mx-auto p-4 font-sans mb-8">
       {/* Background Image */}
       <img
-        src={assets.palace}
+        src={assets.central}
         alt="Palace Background"
-        className="reflection absolute inset-0 w-full h-full object-cover z-0"
+        className="mt-40 reflection opacity-20 absolute inset-0 w-full h-full object-contain z-0"
       />
       
       <div className="relative z-10 text-center mb-8">
         <p className="text-base uppercase tracking-wide mb-4 font-OpenSans">Start strong, scale stronger with</p>
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 font-Montserrat">THE FINEST<br />FOUNDERS-ONLY CLUB</h1>
         <p className="text-lg mx-auto mb-4 font-OpenSans md:max-w-[45%]">EOM is an exclusive community for growth-focused entrepreneurs who are ready for the next big leap.</p>
-        <button className="bg-yellow-400 text-black font-extrabold py-2 px-4 rounded-lg hover:bg-yellow-500 transition duration-300 text-lg">
+        <button className="bg-yellow-400 text-black font-extrabold  px-4 rounded-lg hover:bg-yellow-500 transition duration-300 text-lg">
           Become a Member
         </button>
       </div>
 
       <div className="relative">
-        <div className="absolute -left-0 top-1/2 transform -translate-y-1/2">
+        <div className="absolute left-6 top-1/2 transform -translate-y-1/2">
           <img src={assets.sun} className="w-28 h-28 rounded-full" alt="Sun Icon" />
         </div>
-        <div className="border-4 max-w-4xl mx-auto border-black rounded-lg overflow-hidden relative">
+        <div className="border-4 max-w-3xl mx-auto border-black rounded-lg overflow-hidden relative">
           {/* Video Element */}
           <video 
             ref={videoRef}

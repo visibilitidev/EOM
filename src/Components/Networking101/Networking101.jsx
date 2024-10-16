@@ -8,22 +8,22 @@ const Networking101 = ({ backgroundImage }) => {
 
   const videos = [
     {
-      title: "Private Dinner With Million Dollar Brand Founder",
-      series: "Founders Meet-Up Series 02",
+      title: "Private Dinner with Million Dollar Brand",
+      series: " founder | Founders Meet-Up Series 02",
       image: assets.network1,
       videoUrl: "https://www.youtube.com/embed/wtkoBjXsiBQ?si=At8YdyZOhchlI-lg",
       darkOverlay: true
     },
     {
-      title: "Entrepreneurs Of Madras Club Edition 1",
-      series: "Launched by 200Cr Brand Owner & 15+",
+      title: "Entrepreneurs of Madras Club Edition 1|",
+      series: " Launched by 2000cr Brand Owner & 15+",
       image: assets.network2,
       videoUrl: "https://www.youtube.com/embed/X5zncoKqohk?si=KBycNn9JSjREEOGU",
       darkOverlay: false
     },
     {
-      title: "Private Dinner With An Investor",
-      series: "Founders Meet-Up Series 01",
+      title: "Private Dinner with an Investor 🤩 |",
+      series: "Founders Meet-up Series-01",
       image: assets.network3,
       videoUrl: "https://www.youtube.com/embed/90B8SxhbuHA?si=tJ279hXdJBkwvvvW",
       darkOverlay: true
@@ -65,7 +65,7 @@ const Networking101 = ({ backgroundImage }) => {
                 />
               </div>
             </div>
-            <div className="mt-4">
+            <div className="mt-4 text-center">
               <h3 className="text-base text-black">{video.title}</h3>
               <p className="text-base text-black">{video.series}</p>
             </div>

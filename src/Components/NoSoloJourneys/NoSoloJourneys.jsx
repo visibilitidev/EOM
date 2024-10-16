@@ -1,8 +1,13 @@
 import React from 'react';
+import { assets } from '../../assets/assets';
+
 
 const NoSoloJourneys = ({ backgroundImageUrl }) => {
   return (
-    <div className="min-h-screen bg-cover bg-center p-8 pt-0 mb-8 bg-[url('public/palace.png')]">
+    <div 
+  className="min-h-screen bg-contain bg-center p-8 pt-0 mb-8" 
+  style={{ backgroundImage: `url(${assets.palace})` }}
+>
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">No more solo journeys</h1>
         <p className="text-xl text-center mb-12">If you're serious about scaling—join the like-minded people to fast-track success.</p>
@@ -29,7 +34,7 @@ const NoSoloJourneys = ({ backgroundImageUrl }) => {
                 ))}
               </ul>
             </div>
-            <div className="bg-yellow-400 p-4">
+            <div className="bg-yellow-400 px-4">
               <button className="w-full py-2 text-navy-900 font-extrabold text-lg">JOIN THE FOUNDERS' CIRCLE</button>
             </div>
           </div>
@@ -55,7 +60,7 @@ const NoSoloJourneys = ({ backgroundImageUrl }) => {
                 ))}
               </ul>
             </div>
-            <div className="bg-yellow-400 p-4">
+            <div className="bg-yellow-400 px-4">
               <button className="w-full py-2 text-navy-900 font-extrabold text-lg">COMING SOON</button>
             </div>
           </div>

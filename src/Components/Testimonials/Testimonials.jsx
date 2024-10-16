@@ -8,7 +8,7 @@ const testimonials = [
         id: 1,
         name: 'Ragapriya',
         role: 'Founder of Paidhu Ethical Foods',
-        image: assets.img1,
+        image: assets.club1,
         quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
         rating: 4.5,
     },
@@ -16,7 +16,7 @@ const testimonials = [
         id: 2,
         name: 'John Doe',
         role: 'CEO of Tech Innovations',
-        image: assets.img2,
+        image: assets.club2,
         quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
         rating: 5,
     },
@@ -24,7 +24,7 @@ const testimonials = [
         id: 3,
         name: 'Emma Wilson',
         role: 'Marketing Director at Global Reach',
-        image: assets.img3,
+        image: assets.club3,
         quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
         rating: 4,
     },
@@ -32,7 +32,7 @@ const testimonials = [
         id: 4,
         name: 'Alex Chen',
         role: 'Founder of GreenTech Solutions',
-        image: assets.img4,
+        image: assets.club4,
         quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
         rating: 4.5,
     },
@@ -40,7 +40,7 @@ const testimonials = [
         id: 5,
         name: 'Sarah Johnson',
         role: 'CFO at Finance Plus',
-        image: assets.img5,
+        image: assets.club5,
         quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
         rating: 5,
     },
@@ -48,7 +48,7 @@ const testimonials = [
         id: 6,
         name: 'Sarah Johnson2',
         role: 'Head of Operations at Logistics Pro',
-        image: assets.img3c,
+        image: assets.club6,
         quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
         rating: 4,
     },
@@ -56,7 +56,7 @@ const testimonials = [
         id: 7,
         name: 'Sarah Johnson3',
         role: 'Founder of Healthy Living Co.',
-        image: assets.img2c,
+        image: assets.club7,
         quote: "The personalized support, including the one-on-one consultations with Mr. Nitin, has been instrumental in refining Paidhu's business approach. These interactions have offered strategic guidance and helped shape our growth trajectory.",
         rating: 4.5,
     }
@@ -119,7 +119,7 @@ const TestimonialCarousel = () => {
   };
 
   const sizeClasses = {
-      sm: 'w-8 h-8 md:w-10 md:h-10',
+      sm: 'w-8 h-8 md:w-8 md:h-10',
       md: 'w-12 h-12 md:w-16 md:h-16',
       lg: 'w-16 h-16 md:w-20 md:h-20',
       xl: 'w-24 h-24 md:w-32 md:h-32',
@@ -137,10 +137,10 @@ const TestimonialCarousel = () => {
 
   return (
       <div className="max-w-6xl mx-auto p-4 my-20">
-          <h2 className="text-2xl font-bold text-center mb-2">
+          <h2 className="text-3xl font-bold text-center mb-2">
               Members Of EOM Club Are Constantly Progressing Every Month.
           </h2>
-          <p className="text-center">Here's what they have to say.</p>
+          <p className="text-center text-lg">Here's what they have to say.</p>
 
           <div className="relative h-[600px]">
               <div className="absolute inset-0 h-1/2 -top-20">
@@ -167,7 +167,7 @@ const TestimonialCarousel = () => {
                   <img src={assets.double} alt='' className='w-10 h-10 md:w-16 md:h-16 absolute -top-10 -left-2 md:-left-6' />
                   <div className="bg-white rounded-lg shadow-md p-6 transition-all duration-300">
                       <div className="relative text-center mb-4">
-                          <blockquote className="text-lg italic px-8">
+                          <blockquote className="text-lg  px-8">
                               {profiles[activeIndex]?.quote}
                           </blockquote>
                       </div>

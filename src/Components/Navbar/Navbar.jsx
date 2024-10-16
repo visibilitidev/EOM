@@ -65,12 +65,15 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <button
-                  type="button"
-                  className="focus:outline-none font-OpenSans font-extrabold text-base text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-lg px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
-                >
-                  JOIN THE CLUB
-                </button>
+              <button
+  type="button"
+  className="focus:outline-none font-OpenSans font-extrabold text-base text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-lg px-5 me-2 mb-2 dark:focus:ring-yellow-900"
+  style={{ height: '36px' }}
+>
+  JOIN THE CLUB
+</button>
+
+
               </li>
             </ul>
           </div>

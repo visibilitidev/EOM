@@ -8,11 +8,15 @@ import img2c from "./Cardimg/img2c.png";
 import img3c from "./Cardimg/img3c.png";
 import img4c from "./Cardimg/img4c.png";
 import img5c from "./Cardimg/img5c.png";
+import img6c from "./Cardimg/img6c.png";
+import png1 from "./1.png";
+import png2 from "./2.png";
 import png3 from "./3.png";
 import png4 from "./4.png";
 import png5 from "./5.png";
 import png6 from "./6.png";
-import png567 from "./567.png";
+import png7 from "./7.png";
+import png8 from "./8.png";
 import book from "./book.png";
 import group81 from "./Group 81.png";
 import group147 from "./Group 147.png";
@@ -59,6 +63,31 @@ import marquee8 from "./marquee8.jpg";
 import marquee9 from "./marquee9.jpg";
 import marquee10 from "./marquee10.jpg";
 import heroVideo from "./heroVideo.mp4";
+import aboutimg from "./aboutimg.jpg";
+import about2 from "./about2.jpg";
+import abouthero from "./abouthero.jpg";
+import aboutimg2 from "./aboutimg2.jpg";
+import central from "./central.png";
+import club1 from "./club1.jpg";
+import club2 from "./club2.jpg";
+import club3 from "./club3.jpg";
+import club4 from "./club4.jpg";
+import club5 from "./club5.jpg";
+import club6 from "./club6.jpg";
+import club7 from "./club7.jpg";
+import club8 from "./club8.jpg";
+import club9 from "./club9.jpg";
+import gallery1 from "./gallery1.jpg";
+import gallery2 from "./gallery2.jpg";
+import gallery3 from "./gallery3.jpg";
+import gallery4 from "./gallery4.jpg";
+import gallery5 from "./gallery5.jpg";
+import gallery6 from "./gallery6.jpg";
+import gallery7 from "./gallery7.jpg";
+import gallery8 from "./gallery8.jpg";
+import gallery9 from "./gallery9.jpg";
+import gallery10 from "./gallery10.jpg";
+import pattern from "./pattern.png";
 
 export const assets = {
   img1,
@@ -67,11 +96,14 @@ export const assets = {
   img4,
   img5,
   img6,
+  png1,
+  png2,
   png3,
   png4,
   png5,
   png6,
-  png567,
+  png7,
+  png8,
   book,
   group81,
   group147,
@@ -122,4 +154,30 @@ export const assets = {
   marquee9,
   marquee10,
   heroVideo,
+  img6c,
+  aboutimg,
+  about2,
+  abouthero,
+  aboutimg2,
+  central,
+  club1,
+  club2,
+  club3,
+  club4,
+  club5,
+  club6,
+  club7,
+  club8,
+  club9,
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
+  gallery7,
+  gallery8,
+  gallery9,
+  gallery10,
+  pattern,
 };

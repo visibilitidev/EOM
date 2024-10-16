@@ -13,9 +13,9 @@ const AIChatComponent = ({heading, imgsrc}) => {
     <h2 className="text-2xl lg:text-3xl font-bold  text-center"> {/* Center text */}
     {heading}
   </h2>
-    <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:px-20 p-8 lg:py-16">
+    <div className="flex flex-col lg:flex-row mx-auto md:max-w-5xl items-center justify-center lg:justify-between gap-20 lg:px-20 p-8 lg:py-16">
       {/* Left side with image (Message Box) */}
-      <div className="lg:w-1/2 flex justify-center mb-8 lg:mb-0">
+      <div className="lg:w-1/2 scale-125 flex justify-center mb-8 lg:mb-0">
         <img
           src={imgsrc} // Replace with your image path
           alt="AI Chat"
@@ -33,7 +33,7 @@ const AIChatComponent = ({heading, imgsrc}) => {
             className={`flex justify-between items-center cursor-pointer pb-2 ${activeIndex === 0 ? 'border-b-2 border-gray-500' : ''}`}
             onClick={() => toggleAccordion(0)}
           >
-            <h3 className="font-semibold">What's The Hype On Madrasi Connect?</h3>
+            <h3 className="font-semibold text-lg">What's The Hype On Madrasi Connect?</h3>
             <span>{activeIndex === 0 ? <ChevronUp  className='bg-yellow-500 rounded-full text-white'/> : <ChevronDown className='bg-yellow-500 rounded-full text-white'/>}</span>
           </div>
           {activeIndex === 0 && (
@@ -49,7 +49,7 @@ const AIChatComponent = ({heading, imgsrc}) => {
             className={`flex justify-between items-center cursor-pointer pb-2 ${activeIndex === 1 ? 'border-b-2 border-gray-500' : ''}`}
             onClick={() => toggleAccordion(1)}
           >
-            <h3 className="font-semibold">You Get Tailored Matches, Instantly</h3>
+            <h3 className="font-semibold text-lg">You Get Tailored Matches, Instantly</h3>
             <span>{activeIndex === 0 ? <ChevronUp  className='bg-yellow-500 rounded-full text-white'/> : <ChevronDown className='bg-yellow-500 rounded-full text-white'/>}</span>
           </div>
           {activeIndex === 1 && (
@@ -65,7 +65,7 @@ const AIChatComponent = ({heading, imgsrc}) => {
             className={`flex justify-between items-center cursor-pointer pb-2 ${activeIndex === 2 ? 'border-b-2 border-gray-500' : ''}`}
             onClick={() => toggleAccordion(2)}
           >
-            <h3 className="font-semibold">How Does Madrasi Connect Work?</h3>
+            <h3 className="font-semibold text-lg">How Does Madrasi Connect Work?</h3>
             <span>{activeIndex === 0 ? <ChevronUp  className='bg-yellow-500 rounded-full text-white'/> : <ChevronDown className='bg-yellow-500 rounded-full text-white'/>}</span>
           </div>
           {activeIndex === 2 && (
@@ -81,7 +81,7 @@ const AIChatComponent = ({heading, imgsrc}) => {
             className={`flex justify-between items-center cursor-pointer pb-2 ${activeIndex === 3 ? 'border-b-2 border-gray-500' : ''}`}
             onClick={() => toggleAccordion(3)}
           >
-            <h3 className="font-semibold">Instant Recommendations With AI</h3>
+            <h3 className="font-semibold text-lg">Instant Recommendations With AI</h3>
             <span>{activeIndex === 0 ? <ChevronUp  className='bg-yellow-500 rounded-full text-white'/> : <ChevronDown className='bg-yellow-500 rounded-full text-white'/>}</span>
           </div>
           {activeIndex === 3 && (

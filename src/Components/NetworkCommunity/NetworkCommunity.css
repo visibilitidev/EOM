@@ -1,0 +1,20 @@
+.pattern-image {
+  opacity: 0.1; /* Control opacity for better visibility */
+  transition: opacity 0.3s ease;
+}
+
+@media screen and (max-width: 1040px) and (min-width: 920px) {
+  .text-content {
+    margin-left: -6rem;
+  }
+}
+@media screen and (max-width: 921px) and (min-width: 769px) {
+  .text-content {
+    margin-left: -4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .text-content {
+    margin-left: 0;
+  }
+}

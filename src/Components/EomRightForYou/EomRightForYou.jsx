@@ -31,7 +31,14 @@ const EomRightForYou = () => {
         </div>
         
         <div className="w-full lg:w-1/2 max-w-xl relative">
-          <div className="bg-gray-200 rounded-xl aspect-[4/3] w-full"></div>
+        <div className="bg-gray-200 rounded-xl aspect-[4/3] w-full overflow-hidden">
+  <img 
+    src={assets.aboutimg2} // Replace 'yourImage' with the actual image reference
+    alt="Description of the image" 
+    className="w-full h-full object-cover"
+  />
+</div>
+
           <div className="hidden sm:block absolute -bottom-24 -right-16 md:-bottom-16 md:-right-20 w-48 h-52 md:w-[236.32px] md:h-[209.47px] gap-0 rotate-[-15.78deg]">
               <img src={assets.trophy} alt=''/>
             </div>
