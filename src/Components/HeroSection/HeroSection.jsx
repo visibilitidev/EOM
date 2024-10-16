@@ -33,7 +33,7 @@ const HeroSection = () => {
         <p className="text-base uppercase tracking-wide mb-4 font-OpenSans">Start strong, scale stronger with</p>
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 font-Montserrat">THE FINEST<br />FOUNDERS-ONLY CLUB</h1>
         <p className="text-lg mx-auto mb-4 font-OpenSans md:max-w-[45%]">EOM is an exclusive community for growth-focused entrepreneurs who are ready for the next big leap.</p>
-        <button className="bg-yellow-400 text-black font-extrabold  px-4 rounded-lg hover:bg-yellow-500 transition duration-300 text-lg">
+        <button className="bg-yellow-400 text-black font-extrabold  px-4 rounded-lg hover:bg-yellow-500 transition duration-300 text-lg" style={{ height: '45px' }}>
           Become a Member
         </button>
       </div>

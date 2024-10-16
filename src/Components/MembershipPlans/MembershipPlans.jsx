@@ -3,7 +3,10 @@ import { assets } from '../../assets/assets';
 
 const MembershipPlans = () => {
   return (
-    <div className="min-h-screen bg-cover bg-center p-8 pt-0 mb-8 bg-[url('public/palace.png')] mt-16 sm:mb-48">
+    <div
+    className="min-h-screen bg-contain bg-center p-8 pt-0 mb-8 mt-16 sm:mb-48 bg-no-repeat"
+    style={{ backgroundImage: `url(${assets.palace})` }}
+  >
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-2xl font-bold text-center mb-4 ">Membership Plans</h1>
         <p className="text-base text-center mb-12"> Learn, network, grow & scale - unlatch bigger milestones with us.</p>
@@ -62,7 +65,7 @@ const MembershipPlans = () => {
               <h2 className='text-[#F0F0F0]'>.</h2>
               <h2 className='text-[#F0F0F0]'>.</h2>
             </div>
-            <div className="absolute bottom-8">
+            <div className="absolute bottom-5">
               <img src={assets.group147} alt='' />
             </div>
             <div className="bg-yellow-400 px-4">

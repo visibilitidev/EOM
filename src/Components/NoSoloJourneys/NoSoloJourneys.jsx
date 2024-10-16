@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets';
 const NoSoloJourneys = ({ backgroundImageUrl }) => {
   return (
     <div 
-  className="min-h-screen bg-contain bg-center p-8 pt-0 mb-8" 
+  className="min-h-screen bg-contain bg-center p-8 pt-0 mb-8 bg-no-repeat" 
   style={{ backgroundImage: `url(${assets.palace})` }}
 >
       <div className="max-w-6xl mx-auto">

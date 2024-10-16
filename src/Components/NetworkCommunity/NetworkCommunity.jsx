@@ -43,7 +43,7 @@ const NetworkCommunity = ({ backgroundImageUrl }) => {
               Climate tech, etc.
             </p>
             <div className="flex justify-center md:justify-start">
-              <button className="bg-[#FFD700] text-[#000033] font-extrabold  px-6 rounded-lg text-sm md:text-base lg:text-base hover:bg-yellow-400 transition duration-300">
+              <button className="bg-[#FFD700] text-[#000033] font-extrabold  px-6 py-4 rounded-lg text-sm md:text-base lg:text-base hover:bg-yellow-400 transition duration-300">
                 EXPLORE MORE ABOUT THE COMMUNITY
               </button>
             </div>

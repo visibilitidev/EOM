@@ -23,7 +23,7 @@ const JoinTheCommunity = () => {
 
       {/* Join Button */}
       <div className="">
-        <button className="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-yellow-500 transition duration-300">
+        <button className="bg-yellow-400 text-black font-extrabold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
           JOIN THE TRIBE
         </button>
       </div>

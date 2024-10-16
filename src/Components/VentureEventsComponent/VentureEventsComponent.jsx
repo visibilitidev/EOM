@@ -46,7 +46,11 @@ const VenturePartnersComponent = () => {
       {/* Partners Section */}
       <div className="relative w-full mx-auto">
         {/* Background Image with reduced opacity */}
-        <div className="absolute inset-0 bg-[url('/palace.png')] bg-cover bg-center opacity-45 pointer-events-none"></div>
+        <div
+  className="absolute inset-0 h-auto  w-full bg-contain bg-center opacity-5 pointer-events-none -mt-52"
+  style={{ backgroundImage: `url(${assets.palace2})` }}
+></div>
+
 
         {/* Content on top of the background */}
         <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 w-[90%] md:w-3/4 mx-auto">

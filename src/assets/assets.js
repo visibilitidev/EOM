@@ -24,6 +24,7 @@ import group148 from "./Group 148.png";
 import logo from "./logo.png";
 import mountain from "./mountain.png";
 import palace from "./palace.png";
+import palace2 from "./palace2.png";
 import robot from "./robot.png";
 import trophy from "./trophy.png";
 import videoimg from "./videoimg.png";
@@ -180,4 +181,5 @@ export const assets = {
   gallery9,
   gallery10,
   pattern,
+  palace2,
 };

@@ -68,7 +68,7 @@ function Navbar() {
               <button
   type="button"
   className="focus:outline-none font-OpenSans font-extrabold text-base text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-lg px-5 me-2 mb-2 dark:focus:ring-yellow-900"
-  style={{ height: '36px' }}
+  style={{ height: '45px' }}
 >
   JOIN THE CLUB
 </button>

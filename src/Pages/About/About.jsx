@@ -32,7 +32,7 @@ const About = () => {
       </div>
       <EomRightForYou/>
       <div className='-mt-32'>
-      <Networking101 backgroundImage="public/palace.png"/>
+      <Networking101 backgroundImage={assets.palace}/>
       </div>
 
      
