@@ -26,7 +26,7 @@ const HeroSection = () => {
       <img
         src={assets.palace}
         alt="Palace Background"
-        className="reflection absolute inset-0 w-full h-full object-cover z-0"
+        className="reflection absolute inset-0 w-full h-full object-contain z-0"
       />
       
       <div className="relative z-10 text-center mb-8">
