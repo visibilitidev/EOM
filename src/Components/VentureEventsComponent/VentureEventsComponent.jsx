@@ -47,7 +47,7 @@ const VenturePartnersComponent = () => {
       <div className="relative w-full mx-auto">
         {/* Background Image with reduced opacity */}
         <div
-  className="absolute inset-0 h-auto  w-full bg-contain bg-center opacity-5 pointer-events-none -mt-52"
+  className="hidden md:block absolute inset-0 h-auto  w-full bg-contain bg-center opacity-5 pointer-events-none -mt-52"
   style={{ backgroundImage: `url(${assets.palace2})` }}
 ></div>
 

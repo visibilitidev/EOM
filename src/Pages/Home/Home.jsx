@@ -29,11 +29,15 @@ const Home = () => {
             <MarqueeCards/>
             <NoSoloJourneys/>
             <TestimonialCarousel/>
-            <AIConnect   heading={
-          <>
-            Connecting Made Simple —<br /> With AI Power
-          </>
-        } imgsrc={imgsrc}/>
+            <AIConnect
+  heading={
+    <>
+      Connecting Made Simple —<br /> With AI Power
+    </>
+  }
+  imgsrc={imgsrc}
+/>
+
            <EOMGrid/>
              <MarqueeImages/>
             <NetworkCommunity/>

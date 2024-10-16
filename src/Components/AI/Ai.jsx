@@ -13,9 +13,9 @@ const AIChatComponent = ({heading, imgsrc}) => {
     <h2 className="text-2xl lg:text-3xl font-bold  text-center"> {/* Center text */}
     {heading}
   </h2>
-    <div className="flex flex-col lg:flex-row mx-auto md:max-w-5xl items-center justify-center lg:justify-between gap-20 lg:px-20 p-8 lg:py-16">
+    <div className="flex flex-col lg:flex-row mx-auto md:max-w-5xl items-center justify-center lg:justify-between md:gap-20 lg:px-20 p-8 lg:py-16">
       {/* Left side with image (Message Box) */}
-      <div className="lg:w-1/2 scale-125 flex justify-center mb-8 lg:mb-0">
+      <div className="lg:w-1/2 md:scale-125 flex justify-center mb-8 lg:mb-0">
         <img
           src={imgsrc} // Replace with your image path
           alt="AI Chat"

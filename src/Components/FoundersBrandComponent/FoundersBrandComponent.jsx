@@ -14,7 +14,8 @@ const FoundersBrandComponent = () => {
         <img 
           src={assets.abouthero} 
           alt="groupimg" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-110"
+
         />
       </div>
     </div>

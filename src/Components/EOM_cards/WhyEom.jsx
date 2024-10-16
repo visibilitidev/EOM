@@ -4,10 +4,14 @@ import { assets } from "../../assets/assets";
 const WhyEOM = () => {
   return (
     <>
-      <div
-        className="max-w-full flex flex-col justify-center mb-8 bg-cover bg-center py-12"
-        style={{ backgroundImage: `url(${assets.palace})` }}
-      >
+      <div className="relative max-w-full flex flex-col justify-center mb-8 py-12 overflow-hidden">
+        {/* Background Image */}
+        <img
+          src={assets.palace}
+          alt="Background"
+          className="hidden md:block absolute inset-0 w-full h-full object-contain -z-10" // Ensure the image covers the entire section
+        />
+
         <h1 className="font-Montserrat font-bold text-3xl text-center my-1">
           Why is EOM one of a kind?
         </h1>
@@ -25,7 +29,6 @@ const WhyEOM = () => {
             description="Get The Chance To Engage In Honest, No-Nonsense Discussions With Fellow Founders. Share Your Challenges, Explore Opportunities & Gain Insights From Those Who've Faced Similar Crossroads."
             imgPosition={{ bottom: "0", right: "-30px" }} // Position for image 1
           />
-
           {/* Card 2 */}
           <Card
             title={["Founder-to-", "Founder Support"]}
@@ -80,6 +83,7 @@ const WhyEOM = () => {
     </>
   );
 };
+
 const Card = ({ title, imgSrc, imgWidth, imgHeight, description, imgPosition }) => (
   <div className="relative w-full h-48 rounded-2xl overflow-hidden hover:overflow-hidden group bg-gray-300 transition-all duration-300 group-hover:rounded-none">
     <div className="absolute inset-0 flex flex-col justify-center items-center bg-blue opacity-0 group-hover:opacity-100 transition duration-300 overflow-hidden rounded-2xl">
@@ -112,10 +116,10 @@ const Card = ({ title, imgSrc, imgWidth, imgHeight, description, imgPosition }) 
       }}
       className="absolute object-contain z-10 transition-opacity duration-300 group-hover:opacity-0"
     />
-  <div
-  className="absolute inset-0 h-full bg-contain bg-no-repeat group-hover:opacity-0 bg-bottom"
-  style={{ backgroundImage: `url(${assets.mountain})` }}
-></div>
+    <div
+      className="absolute inset-0 h-full bg-contain bg-no-repeat group-hover:opacity-0 bg-bottom"
+      style={{ backgroundImage: `url(${assets.mountain})` }}
+    ></div>
 
     <div className="absolute inset-0 bg-blue opacity-0 group-hover:opacity-50 transition duration-300"></div>
   </div>

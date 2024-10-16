@@ -41,14 +41,18 @@ const Networking101 = ({ backgroundImage }) => {
   };
 
   return (
-    <div
-      className="flex flex-col items-center pt-16 pb-0 sm:py-20"
-      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} // Applying background image
-    >
-      <h2 className="text-3xl font-bold text-center text-black">Networking 101</h2>
-      <p className="text-center text-black mb-8">Meet quality people to conquer</p>
+    <div className="relative flex flex-col items-center pt-16 pb-0 sm:py-20 overflow-hidden">
+      {/* Background Image */}
+      <img
+        src={backgroundImage}
+        alt=""
+        className="hidden md:block absolute inset-0 w-full h-full object-cover -z-10"
+      />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <h2 className="text-3xl font-bold text-center text-black relative">Networking 101</h2>
+      <p className="text-center text-black mb-8 relative">Meet quality people to conquer</p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative">
         {videos.map((video, index) => (
           <div key={index} className="w-full max-w-xs mx-auto relative group">
             <div className="relative group">
