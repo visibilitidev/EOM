@@ -44,7 +44,7 @@ const MembershipPlans = () => {
             <div className="bg-yellow-400 px-4 hover:bg-yellow-500">
               <button className="w-full py-2 text-navy-900 font-extrabold text-lg transition-transform transform 
                hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
-               active:translate-y-1 active:shadow-lg"    onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}>APPLY NOW</button>
+               active:translate-y-1"    onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}>APPLY NOW</button>
             </div>
           </div>
 
@@ -80,7 +80,7 @@ const MembershipPlans = () => {
             <div className="bg-yellow-400 px-4 hover:bg-yellow-500">
               <button className="w-full py-2 text-navy-900 font-extrabold text-lg transition-transform transform 
                hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
-               active:translate-y-1 active:shadow-lg">COMING SOON</button>
+               active:translate-y-1">COMING SOON</button>
             </div>
           </div>
         </div>
