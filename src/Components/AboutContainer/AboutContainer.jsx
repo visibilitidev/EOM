@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const AboutContainer = () => {
   const navigate = useNavigate();
   return (
-    <div className="max-w-5xl mx-auto p-4 font-sans mt-20 ">
+    <div className="max-w-5xl mx-auto p-4 font-sans mt-20 overflow-hidden">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 pr-4 mb-6 md:mb-0">
           <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight font-Montserrat">

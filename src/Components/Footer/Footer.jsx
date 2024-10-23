@@ -31,13 +31,13 @@ const Footer = () => {
         <div className="border-t border-yellow-500 my-6"></div>
 
         <div className="flex flex-col md:flex-row justify-between items-center md:items-center">
-          <div className="mb-6 md:mb-0 items-center">
+          <div className="mb-6 md:mb-0 flex flex-col items-center md:items-start">
             <h3 className=" text-sm lg:text-base font-semibold mb-2">LET'S START WORKING TOGETHER</h3>
             <a href="tel:+919710727517" className=" text-3xl lg:text-5xl font-bold">+91 97107 27517</a>
             <p><a href={`mailto:${email}`} className='text-white md:text-base lg:text-2xl font-semibold hover:text-slate-300 active:text-white mt-3'>entrepreneursofmadras@gmail.com.</a></p>
           </div>
 
-          <nav className="flex flex-col items-end  space-y-2 md:space-y-2 md:space-x-6">
+          <nav className="flex flex-col items-center md:items-end  space-y-2 md:space-y-2 md:space-x-6">
             <Link to="/about" className="hover:text-yellow-500 transition-colors lg:ml-8">About</Link>
             <Link to="/comingsoon" className="hover:text-yellow-500 transition-colors">FEBE</Link>
             <Link to="/comingsoon" className="hover:text-yellow-500 transition-colors">Resources</Link>
