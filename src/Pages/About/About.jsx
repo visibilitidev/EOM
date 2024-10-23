@@ -24,7 +24,7 @@ const About = () => {
         <AIConnect 
           heading={
             <>
-              India's first AI-Driven Club <br /> For Entrepreneurs
+              India's first AI-Driven Club <br />   <div className="bg-yellow-400 inline-block p-2 mt-2">For Entrepreneurs</div>
             </>
           }
           imgsrc={imgsrc}

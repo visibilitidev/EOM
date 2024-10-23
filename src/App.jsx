@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import Comingsoon from './Pages/Comingsoon/Comingsoon';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/comingsoon" element={<Comingsoon/>}/>
         </Routes>
       </Router>
       <ScrollToTop/>

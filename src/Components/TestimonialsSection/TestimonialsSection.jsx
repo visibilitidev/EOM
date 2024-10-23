@@ -97,9 +97,9 @@ const TestimonialGrid = () => {
         ))}
       </div>
 
-      <p className='font-medium text-base flex items-center text-white absolute bottom-10 left-1/2 transform -translate-x-1/2 hover:text-gray-200 cursor-pointer'>
+      {/* <p className='font-medium text-base flex items-center text-white absolute bottom-10 left-1/2 transform -translate-x-1/2 hover:text-gray-200 cursor-pointer'>
         See More <FaArrowRight className="ml-2" />
-      </p>
+      </p> */}
     </div>
   );
 };

@@ -39,13 +39,16 @@ const EOMStoryComponent = () => {
       {/* Full-width paragraph section */}
       <div className=" space-y-4 w-[90%] md:w-3/4 mx-auto">
         <p className="text-base text-black">
-          Every day, 80 startups launch in India—about 29,200 a year. But the tough reality: fewer than 10% make it past the five-year mark with any meaningful revenue.
+        So, it became clear that these growth-stage founders needed a different kind of support—mentorship, guidance, and real, honest conversations about the challenges of scaling. Not the fluffy motivational stuff, but actual, candid help to go from 10 to 100 from the messy middle. 
           <br />
           <br />
-          We observed the same in our Underdogs of Madras community. Passionate entrepreneurs who started strong reached a stalemate—not struggling to survive but struggling to grow. The excitement of starting up wore off, and suddenly, we found them questioning everything: their direction, their ability, their potential.
+         <span className='font-bold'> That’s why we started Entrepreneurs of Madras Club</span>
           <br />
           <br />
-          “Even startups that reach Series A funding—around 35% of them—don’t make it to Series B,” says reports.
+          —to give those entrepreneurs a space to find the answers they need, ask the tough questions, and connect with others who understand exactly what they’re going through. Be it finance to hiring, marketing to operations, pitching to fundraising – all in one place.
+          <br />
+          <br />
+          Built on the belief that together, we can push through the hardest part of entrepreneurship and build something truly lasting. 
         </p>
       </div>
     </div>

@@ -89,6 +89,11 @@ import gallery8 from "./gallery8.jpg";
 import gallery9 from "./gallery9.jpg";
 import gallery10 from "./gallery10.jpg";
 import pattern from "./pattern.png";
+import irfan from "./irfan.jpg";
+import mohan from "./mohan.jpg";
+import neeraj from "./neeraj.jpg";
+import ragapriya from "./ragapriya.jpg";
+import sultan from "./sultan.jpg";
 
 export const assets = {
   img1,
@@ -182,4 +187,9 @@ export const assets = {
   gallery10,
   pattern,
   palace2,
+  irfan,
+  mohan,
+  neeraj,
+  ragapriya,
+  sultan,
 };

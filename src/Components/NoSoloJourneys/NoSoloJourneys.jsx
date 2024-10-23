@@ -1,8 +1,11 @@
 import React from 'react';
 import { assets } from '../../assets/assets';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const NoSoloJourneys = ({ backgroundImageUrl }) => {
+  const navigate = useNavigate();
   return (
     <div 
   className="min-h-screen bg-contain bg-center p-8 pt-0 mb-8 bg-no-repeat" 
@@ -34,9 +37,17 @@ const NoSoloJourneys = ({ backgroundImageUrl }) => {
                 ))}
               </ul>
             </div>
-            <div className="bg-yellow-400 px-4">
-              <button className="w-full py-2 text-navy-900 font-extrabold text-lg">JOIN THE FOUNDERS' CIRCLE</button>
-            </div>
+            <div className="bg-yellow-400 px-4 hover:bg-yellow-500">
+  <button 
+    className="w-full py-2 text-navy-900 font-extrabold text-lg transition-transform transform 
+               hover:scale-105 active:scale-95 active:bg-yellow-400 active:shadow-md 
+               active:translate-y-1 active:shadow-lg"
+    onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
+  >
+    JOIN THE FOUNDERS' CIRCLE
+  </button>
+</div>
+
           </div>
 
           {/* For Service Providers */}
@@ -60,8 +71,10 @@ const NoSoloJourneys = ({ backgroundImageUrl }) => {
                 ))}
               </ul>
             </div>
-            <div className="bg-yellow-400 px-4">
-              <button className="w-full py-2 text-navy-900 font-extrabold text-lg">COMING SOON</button>
+            <div className="bg-yellow-400 px-4 hover:bg-yellow-500">
+              <button className="w-full py-2 text-navy-900 font-extrabold text-lg transition-transform transform 
+               hover:scale-105 active:scale-95 active:bg-yellow-400 active:shadow-md 
+               active:translate-y-1 active:shadow-lg">COMING SOON</button>
             </div>
           </div>
         </div>

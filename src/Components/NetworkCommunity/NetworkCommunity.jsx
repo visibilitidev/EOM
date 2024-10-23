@@ -1,18 +1,21 @@
 import React from 'react';
 import { assets } from '../../assets/assets';
 import './NetworkCommunity.css';
+import { useNavigate } from 'react-router-dom';
 
 const NetworkCommunity = ({ backgroundImageUrl }) => {
+  const navigate = useNavigate();
   return (
     <div className="relative min-h-96 flex items-center justify-center overflow-hidden">
       
       <div
         className="hidden md:block absolute inset-0 bg-center bg-cover"
         style={{
-          backgroundImage: `url(${backgroundImageUrl || assets.palace})`,
+          backgroundImage: `url(${backgroundImageUrl || assets.central})`,
           backgroundSize: 'cover',
-          backgroundPositionY: '-10rem',
+          backgroundPositionY: '-2rem',
           zIndex: 1,
+          opacity: 0.3,
         }}
       />
       
@@ -20,7 +23,7 @@ const NetworkCommunity = ({ backgroundImageUrl }) => {
         <div className="bg-[#10104b] rounded-[40px] overflow-visible w-full lg:w-3/4 mx-auto flex flex-col md:flex-row items-center p-6 lg:p-8 relative z-20">
           
       
-          <div className="absolute top-0 left-0 w-full h-full flex justify-around items-center pointer-events-none z-10">
+          <div className="absolute top-0 left-0 w-full h-full flex justify-around items-center pointer-events-none z-10 opacity-60">
             <img src={assets.pattern} alt="Pattern 1" className="pattern-image w-56 h-72" />
             <img src={assets.pattern} alt="Pattern 2" className="pattern-image w-56 h-72" />
             <img src={assets.pattern} alt="Pattern 3" className="pattern-image w-56 h-72" />
@@ -46,8 +49,10 @@ const NetworkCommunity = ({ backgroundImageUrl }) => {
               spread across sectors such as SaaS, Fintech, Healthcare, D2C, 
               Climate tech, etc.
             </p>
-            <div className="flex justify-center md:justify-start">
-              <button className="bg-[#FFD700] text-[#000033] font-extrabold px-6 py-4 rounded-lg text-sm md:text-base lg:text-base hover:bg-yellow-400 transition duration-300">
+            <div className="flex justify-center md:justify-start bg-[#FFD700] hover:bg-yellow-500">
+              <button className=" text-[#000033] font-extrabold px-6 py-4 rounded-lg text-sm md:text-base lg:text-base transition-transform transform 
+               hover:scale-105 active:scale-90 active:bg-yellow-400 active:shadow-md 
+               active:translate-y-1 active:shadow-lg"  onClick={() => window.location.href = '/about'}>
                 EXPLORE MORE ABOUT THE COMMUNITY
               </button>
             </div>

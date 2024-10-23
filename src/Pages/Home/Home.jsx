@@ -21,6 +21,8 @@ import { assets } from '../../assets/assets'
 
 
 const Home = () => {
+ 
+  
     const imgsrc = assets.group81;
     return (
         <>
@@ -32,7 +34,8 @@ const Home = () => {
             <AIConnect
   heading={
     <>
-      Connecting Made Simple —<br /> With AI Power
+      Connecting Made Simple —<br />
+      <div className="bg-yellow-400 inline-block p-2 mt-2">With AI Power</div> 
     </>
   }
   imgsrc={imgsrc}

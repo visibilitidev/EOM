@@ -3,6 +3,7 @@ import { Linkedin, Youtube, Instagram } from 'lucide-react';
 import './Footer.css';
 import { assets } from '../../assets/assets';
 const Footer = () => {
+  const email = 'entrepreneursofmadras@gmail.com.';
   return (
     <footer className="bg-blue text-white p-6 mt-8">
       <div className="container mx-auto md:w-3/4">
@@ -30,12 +31,13 @@ const Footer = () => {
           <div className="mb-6 md:mb-0 items-center">
             <h3 className=" text-sm lg:text-base font-semibold mb-2">LET'S START WORKING TOGETHER</h3>
             <a href="tel:+919710727517" className=" text-3xl lg:text-5xl font-bold">+91 97107 27517</a>
+            <p><a href={`mailto:${email}`} className='text-white font-semibold hover:text-slate-300 active:text-white mt-3'>entrepreneursofmadras@gmail.com.</a></p>
           </div>
           
           <nav className="flex flex-col  space-y-2 md:space-y-2 md:space-x-6">
             <a href="#about" className="hover:text-yellow-500 transition-colors lg:ml-8">About</a>
-            <a href="#mentors" className="hover:text-yellow-500 transition-colors">Mentors</a>
-            <a href="#partners" className="hover:text-yellow-500 transition-colors">Partners</a>
+            <a href="#mentors" className="hover:text-yellow-500 transition-colors">FEBE</a>
+            <a href="#partners" className="hover:text-yellow-500 transition-colors">Resources</a>
             <a href="#join" className="hover:text-yellow-500 transition-colors">Join EOM</a>
           </nav>
         </div>

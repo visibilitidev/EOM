@@ -4,7 +4,6 @@ import { assets } from '../../assets/assets';
 
 const MarqueeCards = () => {
   const images = [
-    assets.marquee1,
     assets.club1,
     assets.club2,
     assets.club3,

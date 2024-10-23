@@ -1,7 +1,9 @@
 import React from 'react';
 import { assets } from '../../assets/assets';
+import { useNavigate } from 'react-router-dom';
 
 const JoinTheCommunity = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative flex my-10 flex-col items-center justify-center text-center py-12">
       {/* Background Image Container */}
@@ -29,8 +31,10 @@ const JoinTheCommunity = () => {
         </div>
 
         {/* Join Button */}
-        <div className="">
-          <button className="bg-yellow-400 text-black font-extrabold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+        <div className="bg-yellow-400 hover:bg-yellow-500 inline-block">
+          <button className=" text-black font-extrabold py-3 px-6 rounded-lg shadow-lg  transition duration-300 transition-transform transform 
+               hover:scale-105 active:scale-90 active:bg-yellow-400 active:shadow-md 
+               active:translate-y-1 active:shadow-lg"    onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}>
             JOIN THE TRIBE
           </button>
         </div>

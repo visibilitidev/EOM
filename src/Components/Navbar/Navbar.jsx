@@ -28,7 +28,7 @@ function Navbar() {
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
-            aria-expanded="false"
+            aria-expanded={isSidebarOpen}
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -55,24 +55,26 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-black">
-                  DEALS
+                <a href="/comingsoon" className="block py-2 px-3 text-black">
+                  FEBE
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-black">
+                <a href="/comingsoon" className="block py-2 px-3 text-black">
                   RESOURCES
                 </a>
               </li>
               <li>
-              <button
-  type="button"
-  className="focus:outline-none font-OpenSans font-extrabold text-base text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-lg px-5 me-2 mb-2 dark:focus:ring-yellow-900"
+              <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block">
+          <button className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300   text-lg  transition-transform transform 
+               hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
+               active:translate-y-1 active:shadow-lg"
   style={{ height: '45px' }}
+  onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'} 
 >
-  JOIN THE CLUB
+  JOIN EOM
 </button>
-
+</div>
 
               </li>
             </ul>
@@ -107,17 +109,17 @@ function Navbar() {
         </button>
         <ul className="p-6 space-y-4">
           <li>
-            <a href="/about" className="block py-2 px-3 text-black">
+            <a href="/about" className="block py-2 px-3 text-black font-bold">
               ABOUT
             </a>
           </li>
           <li>
-            <a href="#" className="block py-2 px-3 text-black">
-              DEALS
+            <a href="/comingsoon" className="block py-2 px-3 text-black font-bold">
+              FEBE
             </a>
           </li>
           <li>
-            <a href="#" className="block py-2 px-3 text-black">
+            <a href="/comingsoon" className="block py-2 px-3 text-black font-bold">
               RESOURCES
             </a>
           </li>
@@ -125,8 +127,9 @@ function Navbar() {
             <button
               type="button"
               className="w-full focus:outline-none font-OpenSans font-extrabold text-base text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-lg px-5 py-2.5 dark:focus:ring-yellow-900"
+              onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
             >
-              JOIN THE CLUB
+              JOIN EOM
             </button>
           </li>
         </ul>

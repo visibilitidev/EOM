@@ -1,0 +1,9 @@
+/* Add to your CSS file */
+ul li {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+}
+
+ul li span:first-child {
+  margin-right: 10px; /* Adjust spacing between bullet and text */
+}

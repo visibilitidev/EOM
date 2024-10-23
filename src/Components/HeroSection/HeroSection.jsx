@@ -2,8 +2,9 @@ import React, { useRef, useState } from 'react';
 import { FaPlayCircle, FaPauseCircle } from 'react-icons/fa'; // Import the pause icon
 import { assets } from '../../assets/assets';
 import './HeroSection.css';
-
+import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
+  const navigate = useNavigate();
   // Create a ref for the video element
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false); // State to manage video visibility
@@ -29,13 +30,21 @@ const HeroSection = () => {
         className="mt-40 reflection opacity-20 absolute inset-0 w-full h-full object-contain z-0"
       />
       
-      <div className="relative z-10 text-center mb-8">
-        <p className="text-base uppercase tracking-wide mb-4 font-OpenSans">Start strong, scale stronger with</p>
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 font-Montserrat">THE FINEST<br />FOUNDERS-ONLY CLUB</h1>
+      <div className="relative z-10 text-center mb-16">
+        <p className="text-base uppercase tracking-wide mb-5 font-OpenSans">Start strong, scale stronger with</p>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 font-Montserrat leading-snug lg:leading-tight">THE FINEST<br />FOUNDERS-ONLY CLUB</h1>
         <p className="text-lg mx-auto mb-4 font-OpenSans md:max-w-[45%]">EOM is an exclusive community for growth-focused entrepreneurs who are ready for the next big leap.</p>
-        <button className="bg-yellow-400 text-black font-extrabold  px-4 rounded-lg hover:bg-yellow-500 transition duration-300 text-lg" style={{ height: '45px' }}>
-          Become a Member
-        </button>
+        <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block">
+          <button className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300   text-lg  transition-transform transform 
+               hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
+               active:translate-y-1 active:shadow-lg"
+  style={{ height: '45px' }} 
+  onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
+>
+  Become a Member
+</button>
+</div>
+
       </div>
 
       <div className="relative">

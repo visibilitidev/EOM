@@ -31,24 +31,32 @@ const FAQ = () => {
   const faqData = [
     {
       question: "Is EOM for entrepreneurs only in Madras (Chennai)?",
-      answer: "Not at all! We celebrate the relentless spirit of the South (aka \"Madrasi\"). Our members are from all districts of Tamil Nadu, a few even from neighboring states such as Bangalore, Hyderabad & Mumbai."
+      answer: "Not at all! We celebrate the relentless spirit of the South (aka “Madrasi”). Our members are from all districts of Tamil Nadu, a few even from neighboring states such as Bangalore, Hyderabad & Mumbai.",
     },
     {
       question: "What are the benefits of joining EOM?",
-      answer: "Joining EOM provides networking opportunities, mentorship, access to resources, and a supportive community for entrepreneurs."
+      answer: "Check out all the perks on our [Membership Page].",
     },
     {
       question: "How can I get more information?",
-      answer: "You can visit our website, reach out to us via email, or attend one of our open events to learn more about EOM."
+      answer: "Send us a message on WhatsApp at +91 97107 27517, and we'll figure out the best way to assist you. We welcome all questions and concern.",
     },
     {
       question: "How do I stay updated on EOM events and initiatives?",
-      answer: "Follow us on social media, subscribe to our newsletter, or become a member to receive regular updates on our events and initiatives."
+      answer: "Join our exclusive EOM Founders-only WhatsApp group. As a member, you get priority invites to investor meetups, private dinners, and early registration for major editions & getaways. Or you can always follow us on our social media handles.",
     },
     {
       question: "Does EOM invest in startups?",
-      answer: "While EOM primarily focuses on providing support and resources, we occasionally connect promising startups with potential investors in our network."
-    }
+      answer: "No, we don’t. But we do connect you with the right investors!",
+    },
+    {
+      question: "Can EOM help me raise funds?",
+      answer: "Absolutely! We partner with VCs and angels. Our Investor Meetups and Private Dinners are perfect opportunities to connect.",
+    },
+    {
+      question: "What is Madrasi Connect?",
+      answer: "Madrasi Connect is an AI-powered Whatsapp bot. It helps members find resources, connect, and network through keyword searches & recommendations from the vast EOM database.",
+    },
   ];
 
   return (
