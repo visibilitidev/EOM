@@ -65,8 +65,8 @@ function Navbar() {
                 </a>
               </li>
               <li>
-              <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block">
-          <button className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300   text-lg  transition-transform transform 
+              <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block rounded-lg">
+          <button className="text-black font-extrabold py-2 px-4 rounded-lg transition duration-300   text-lg  transition-transform transform 
                hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
                active:translate-y-1 active:shadow-lg"
   style={{ height: '45px' }}
@@ -126,7 +126,7 @@ function Navbar() {
           <li>
             <button
               type="button"
-              className="w-full focus:outline-none font-OpenSans font-extrabold text-base text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-lg px-5 py-2.5 dark:focus:ring-yellow-900"
+              className="w-full focus:outline-none rounded-lg font-OpenSans font-extrabold text-base text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-30 px-5 py-2.5 dark:focus:ring-yellow-900"
               onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
             >
               JOIN EOM

@@ -16,7 +16,7 @@ const FoundersBrandComponent = () => {
   Together, we're founders building brands we truly believe in.
 </h1>
 
-      <div className="bg-yellow-400 hover:bg-yellow-500 inline-block mb-14">
+      <div className="bg-yellow-400 hover:bg-yellow-500 inline-block mb-14 rounded-lg">
         <button
           className="text-sm sm:text-base text-black font-extrabold py-2 px-6 rounded-lg transition-transform transform hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md active:translate-y-1 active:shadow-lg"
           onClick={handleExplorePlans}

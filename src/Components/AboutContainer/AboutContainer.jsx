@@ -17,24 +17,24 @@ const AboutContainer = () => {
           <p className="mb-6 text-gray-700">
             Entrepreneurs of Madras offers a trusted, high-level environment where you can talk openly, connect deeply, and exchange growth potential - from finance to hiring, marketing to operations, pitching to fundraising - all in one place.
           </p>
-          <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block">
-          <button className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300   text-lg  transition-transform transform 
+          <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block rounded-lg">
+            <button className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300   text-lg  transition-transform transform 
                hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
                active:translate-y-1 active:shadow-lg"
-          onClick={() => window.location.href = '/about'}>
-            STORY OF EOM
-          </button>
+              onClick={() => window.location.href = '/about'}>
+              STORY OF EOM
+            </button>
           </div>
         </div>
         <div className=" w-full mx-auto md:w-1/2 relative">
           <div className="bg-gray-200 h-full rounded-[40px] overflow-hidden">
-            <img 
+            <img
               src={assets.aboutimg}
-              alt="Placeholder" 
+              alt="Placeholder"
               className="w-full h-full object-cover"
             />
             <div className=" hidden sm:block absolute -bottom-24 -right-16 md:-bottom-16 md:-right-20 w-48 h-52 md:w-[236.32px] md:h-[209.47px] gap-0 rotate-[-15.78deg]">
-              <img src={assets.trophy} alt=''/>
+              <img src={assets.trophy} alt='' />
             </div>
           </div>
         </div>

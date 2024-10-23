@@ -31,7 +31,7 @@ const JoinTheCommunity = () => {
         </div>
 
         {/* Join Button */}
-        <div className="bg-yellow-400 hover:bg-yellow-500 inline-block">
+        <div className="bg-yellow-400 hover:bg-yellow-500 inline-block rounded-lg">
           <button className=" text-black font-extrabold py-3 px-6 rounded-lg shadow-lg  transition duration-300 transition-transform transform 
                hover:scale-105 active:scale-90 active:bg-yellow-400 active:shadow-md 
                active:translate-y-1 active:shadow-lg"    onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}>

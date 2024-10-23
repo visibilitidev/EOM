@@ -29,21 +29,21 @@ const HeroSection = () => {
         alt="Palace Background"
         className="mt-40 reflection opacity-20 absolute inset-0 w-full h-full object-contain z-0"
       />
-      
+
       <div className="relative z-10 text-center mb-16">
         <p className="text-base uppercase tracking-wide mb-5 font-OpenSans">Start strong, scale stronger with</p>
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 font-Montserrat leading-snug lg:leading-tight">THE FINEST<br />FOUNDERS-ONLY CLUB</h1>
         <p className="text-lg mx-auto mb-4 font-OpenSans md:max-w-[45%]">EOM is an exclusive community for growth-focused entrepreneurs who are ready for the next big leap.</p>
-        <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block">
+        <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block rounded-lg">
           <button className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300   text-lg  transition-transform transform 
                hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
                active:translate-y-1 active:shadow-lg"
-  style={{ height: '45px' }} 
-  onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
->
-  Become a Member
-</button>
-</div>
+            style={{ height: '45px' }}
+            onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
+          >
+            Become a Member
+          </button>
+        </div>
 
       </div>
 
@@ -53,7 +53,7 @@ const HeroSection = () => {
         </div>
         <div className="border-4 max-w-3xl mx-auto border-black rounded-lg overflow-hidden relative">
           {/* Video Element */}
-          <video 
+          <video
             ref={videoRef}
             src={assets.heroVideo} // Ensure this path is correct
             className={`w-full h-auto object-cover ${isPlaying ? 'block' : 'hidden'}`} // Toggle visibility based on state
