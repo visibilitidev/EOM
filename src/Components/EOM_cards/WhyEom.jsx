@@ -1,6 +1,6 @@
 import React from "react";
 import { assets } from "../../assets/assets";
-import './WhyEOM.css';
+
 
 const WhyEOM = () => {
   return (
