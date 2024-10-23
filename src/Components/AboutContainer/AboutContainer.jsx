@@ -21,7 +21,7 @@ const AboutContainer = () => {
             <button className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300   text-lg  transition-transform transform 
                hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
                active:translate-y-1 active:shadow-lg"
-              onClick={() => window.location.href = '/about'}>
+              onClick={() => navigate('/about')}>
               STORY OF EOM
             </button>
           </div>

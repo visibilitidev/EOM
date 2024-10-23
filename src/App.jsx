@@ -6,21 +6,23 @@ import Footer from './Components/Footer/Footer';
 import './App.css';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import Comingsoon from './Pages/Comingsoon/Comingsoon';
+import ScrollToTopPage from './Components/ScrollToTopPage/ScrollToTopPage';
 
 function App() {
 
   return (
     <>
-      <Navbar />
       <Router>
+        <ScrollToTopPage />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/comingsoon" element={<Comingsoon/>}/>
+          <Route path="/comingsoon" element={<Comingsoon />} />
         </Routes>
+        <Footer />
       </Router>
-      <ScrollToTop/>
-      <Footer/>
+      <ScrollToTop />
     </>
   )
 }
