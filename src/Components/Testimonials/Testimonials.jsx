@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Star } from 'lucide-react';
+import { ChevronRight, ChevronLeft  } from 'lucide-react';
 import { assets } from '../../assets/assets';
 import './Testimonials.css'
 
@@ -75,16 +75,6 @@ const TestimonialCarousel = () => {
         setProfiles(newProfiles);
     }, []);
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            const thirdProfileIndex = profiles.findIndex(profile => profile.position === 'left-mid');
-            if (thirdProfileIndex !== -1) {
-                handleClick(thirdProfileIndex);
-            }
-        }, 2000);
-
-        return () => clearInterval(intervalId);
-    }, [profiles]);
 
     const getSize = (index, centerIndex) => {
         if (index === centerIndex) return 'xl';
@@ -116,6 +106,16 @@ const TestimonialCarousel = () => {
         });
         setProfiles(newProfiles);
         setActiveIndex(3);
+    };
+
+    const handleNext = () => {
+        const newIndex = (activeIndex + 1) % profiles.length;
+        handleClick(newIndex);
+    };
+
+    const handlePrevious = () => {
+        const newIndex = (activeIndex - 1 + profiles.length) % profiles.length;
+        handleClick(newIndex);
     };
 
     const sizeClasses = {
@@ -160,11 +160,12 @@ const TestimonialCarousel = () => {
                         >
                             <img src={profile.image} alt={profile.name} className="w-full h-full object-cover object-top" />
                         </button>
-                    ))}
+                    ))}~
                 </div>
 
-                <div className="absolute top-14 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-2xl">
+                <div className="absolute flex flex-row items-center top-14 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-2xl">
                     <img src={assets.double} alt='' className='w-10 h-10 md:w-16 md:h-16 absolute -top-10 -left-2 md:-left-6' />
+                    <ChevronLeft color='black' size={100} onClick={handlePrevious} />
                     <div className="bg-white rounded-lg shadow-md p-6 transition-all duration-300">
                         <div className="relative text-center mb-4">
                             <blockquote className="text-lg  px-8">
@@ -184,6 +185,7 @@ const TestimonialCarousel = () => {
                             </div> */}
                         </div>
                     </div>
+                    <ChevronRight color='black' size={100} onClick={handleNext} />
                     <img src={assets.double} alt='' className='w-5 h-5 absolute bottom-0 right-0 rotate-180' />
                 </div>
             </div>

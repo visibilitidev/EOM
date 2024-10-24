@@ -126,7 +126,7 @@ function Navbar() {
           <li>
             <button
               type="button"
-              className="w-full focus:outline-none rounded-lg font-OpenSans font-extrabold text-base text-black bg-yellow-400 hover:bg-white hover:shadow-[0_0_15px_5px_rgba(250,204,21,0.8)] transition-shadow duration-300"
+              className="w-full focus:outline-none rounded-lg font-OpenSans font-extrabold text-base text-black bg-yellow-400"
               onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
             >
               JOIN EOM

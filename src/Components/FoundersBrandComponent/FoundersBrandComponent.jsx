@@ -12,7 +12,7 @@ const FoundersBrandComponent = () => {
 
   return (
     <div className="max-w-5xl mx-auto p-4 text-center">
-      <h1 className="text-2xl head-font sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 font-Montserrat md:max-w-[80%] mx-auto leading-snug lg:leading-tight">
+      <h1 className="head-font text-4xl lg:text-5xl font-extrabold mb-6 font-Montserrat md:max-w-[80%] mx-auto leading-snug lg:leading-tight">
         Together, we're founders building brands we truly believe in.
       </h1>
 
