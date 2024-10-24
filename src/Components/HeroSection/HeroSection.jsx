@@ -66,7 +66,7 @@ const HeroSection = () => {
         </p>
         <div className="bg-yellow-400 px-4 inline-block rounded-lg hover:bg-white hover:shadow-[0_0_15px_5px_rgba(250,204,21,0.8)] transition-shadow duration-300">
           <button
-            className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300 text-lg transform hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md active:translate-y-1 active:shadow-lg"
+            className=" text-black font-extrabold py-2 px-4 rounded-md transition duration-300 text-lg transform hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md active:translate-y-1 active:shadow-lg"
             style={{ height: '45px' }}
             onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
           >
