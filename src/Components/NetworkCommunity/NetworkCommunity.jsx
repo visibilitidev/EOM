@@ -49,7 +49,7 @@ const NetworkCommunity = ({ backgroundImageUrl }) => {
               spread across sectors such as SaaS, Fintech, Healthcare, D2C, 
               Climate tech, etc.
             </p>
-            <div className="flex justify-center md:justify-start bg-[#FFD700] hover:bg-yellow-500 rounded-[10px]">
+            <div className="flex justify-center md:justify-start bg-[#FFD700]  hover:bg-white hover:shadow-[0_0_15px_5px_rgba(250,204,21,0.8)] transition-shadow duration-300 rounded-[10px]">
               <button className=" text-[#000033] font-extrabold px-6 py-4 rounded-lg text-sm md:text-base lg:text-base transition-transform transform 
                hover:scale-105 active:scale-90 active:bg-yellow-400 active:shadow-md 
                active:translate-y-1 active:shadow-lg"  onClick={() => window.location.href = '/about'}>

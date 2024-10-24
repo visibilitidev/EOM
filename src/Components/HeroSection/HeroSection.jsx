@@ -91,7 +91,7 @@ const HeroSection = () => {
             <source src={assets.heroVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-
+          <img src={assets.videoimg} alt="Founders meeting" className={`w-full h-full absolute top-0 bottom-0 object-cover ${isPlaying ? 'hidden' : 'block'}`} />
           {!isMobile && (
             <div className={`absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 transition-opacity duration-500 ${showControls ? 'opacity-100' : 'opacity-0'}`}>
               {!isPlaying ? (
