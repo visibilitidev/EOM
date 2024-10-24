@@ -41,7 +41,7 @@ const Networking101 = ({ backgroundImage }) => {
   };
 
   return (
-    <div className="relative flex flex-col items-center pt-16 pb-0 sm:py-20 overflow-hidden">
+    <div className="relative flex flex-col items-center py-16 sm:py-20 overflow-hidden">
       {/* Background Image */}
       <img
         src={backgroundImage}
