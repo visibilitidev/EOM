@@ -11,7 +11,7 @@ const AIChatComponent = ({ heading, imgsrc }) => {
   const email = 'entrepreneursofmadras@gmail.com.';
   const tel = '+91 97107 27517';
   return (
-    <section className='my-2 sm:mt-[-10rem] md:mt-[-10rem]'>
+    <section className='my-8 sm:mt-[-10rem] md:mt-[-10rem]'>
       <h2 className="text-2xl lg:text-3xl font-bold  text-center"> {/* Center text */}
         {heading}
       </h2>
