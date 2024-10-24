@@ -80,7 +80,7 @@ const HeroSection = () => {
           <img src={assets.sun} className="w-28 h-28 rounded-full" alt="Sun Icon" />
         </div>
 
-        <div className="border-4 max-w-3xl mx-auto border-black rounded-lg overflow-hidden relative">
+        <div onClick={handlePlayPauseVideo} className="border-4 max-w-3xl mx-auto border-black rounded-lg overflow-hidden relative">
           {/* Video Element */}
           <video
             ref={videoRef}
