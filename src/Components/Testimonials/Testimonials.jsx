@@ -136,7 +136,7 @@ const TestimonialCarousel = () => {
     };
 
     return (
-        <div className="max-w-6xl mx-auto p-4 my-20">
+        <div className="max-w-6xl mx-auto p-4 md:my-20">
             <h2 className="text-3xl font-bold text-center mb-2">
                 Members Of EOM Club Are Constantly Progressing Every Month.
             </h2>
@@ -168,7 +168,7 @@ const TestimonialCarousel = () => {
                     <ChevronLeft color='black' size={100} onClick={handlePrevious} />
                     <div className="bg-white rounded-lg shadow-md p-6 transition-all duration-300">
                         <div className="relative text-center mb-4">
-                            <blockquote className="text-lg  px-8">
+                            <blockquote className="text-base md:text-lg md:px-8">
                                 {profiles[activeIndex]?.quote}
                             </blockquote>
                         </div>
