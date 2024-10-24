@@ -48,7 +48,7 @@ const PoweredByBestComponent = () => {
   }, []);
 
   return (
-    <div className="w-[100%] px-4 font-sans mt-20">
+    <div className="w-[100%] font-sans mt-20">
       <h2 className="text-3xl font-bold text-center mb-2">Powered By The Best</h2>
       <p className="text-center mb-8">EOM is supported by the top founders & angel investors in the ecosystem</p>
       
