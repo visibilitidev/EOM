@@ -29,7 +29,7 @@ const Home = () => {
     },
     {
       question: "What are the benefits of joining EOM?",
-      answer: "Check out all the perks on our [Membership Page].",
+      answer: "Check out all the perks on our <a style='color:blue;font-weight:bold' href='/about'>Membership Page</a>",
     },
     {
       question: "How can I get more information?",
@@ -66,7 +66,7 @@ const Home = () => {
         heading={
           <>
             Connecting Made Simple —<br />
-            <div className="bg-yellow-400 inline-block p-2 mt-2">With AI Power</div>
+            <div className="bg-yellow-400 inline-block p-2 mt-2 rounded-lg">With AI Power</div>
           </>
         }
         imgsrc={imgsrc}

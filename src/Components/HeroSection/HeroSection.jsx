@@ -1,23 +1,47 @@
-import React, { useRef, useState } from 'react';
-import { FaPlayCircle, FaPauseCircle } from 'react-icons/fa'; // Import the pause icon
+import React, { useRef, useState, useEffect } from 'react';
+import { FaPlayCircle, FaPauseCircle } from 'react-icons/fa';
 import { assets } from '../../assets/assets';
 import './HeroSection.css';
 import { useNavigate } from 'react-router-dom';
+
 const HeroSection = () => {
   const navigate = useNavigate();
-  // Create a ref for the video element
   const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false); // State to manage video visibility
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [showControls, setShowControls] = useState(true); // Manage visibility of play/pause buttons
 
-  // Function to play/pause the video
+  // Detect screen size changes
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Hide pause button after 1 second when video is playing
+  useEffect(() => {
+    let timeout;
+    if (isPlaying && showControls) {
+      timeout = setTimeout(() => setShowControls(false), 1000);
+    }
+    return () => clearTimeout(timeout);
+  }, [isPlaying, showControls]);
+
   const handlePlayPauseVideo = () => {
     if (videoRef.current) {
       if (isPlaying) {
-        videoRef.current.pause(); // Pause the video
+        videoRef.current.pause();
       } else {
-        videoRef.current.play(); // Play the video
+        videoRef.current.play();
+        setShowControls(true); // Show controls when video plays
       }
-      setIsPlaying(!isPlaying); // Toggle the playing state
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const handleMouseMove = () => {
+    if (isPlaying) {
+      setShowControls(true); // Re-show controls on mouse movement
     }
   };
 
@@ -31,62 +55,62 @@ const HeroSection = () => {
       />
 
       <div className="relative z-10 text-center mb-16">
-        <p className="text-base uppercase tracking-wide mb-5 font-OpenSans">Start strong, scale stronger with</p>
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 font-Montserrat leading-snug lg:leading-tight">THE FINEST<br />FOUNDERS-ONLY CLUB</h1>
-        <p className="text-lg mx-auto mb-4 font-OpenSans md:max-w-[45%]">EOM is an exclusive community for growth-focused entrepreneurs who are ready for the next big leap.</p>
-        <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block rounded-lg">
-          <button className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300   text-lg  transition-transform transform 
-               hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
-               active:translate-y-1 active:shadow-lg"
+        <p className="text-base uppercase tracking-wide mb-5 font-OpenSans">
+          Start strong, scale stronger with
+        </p>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 font-Montserrat leading-snug lg:leading-tight">
+          THE FINEST<br />FOUNDERS-ONLY CLUB
+        </h1>
+        <p className="text-lg mx-auto mb-4 font-OpenSans md:max-w-[45%]">
+          EOM is an exclusive community for growth-focused entrepreneurs who are ready for the next big leap.
+        </p>
+        <div className="bg-yellow-400 px-4 inline-block rounded-lg hover:bg-white hover:shadow-[0_0_15px_5px_rgba(250,204,21,0.8)] transition-shadow duration-300">
+          <button
+            className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300 text-lg transform hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md active:translate-y-1 active:shadow-lg"
             style={{ height: '45px' }}
             onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
           >
             Become a Member
           </button>
         </div>
-
       </div>
 
-      <div className="relative">
+      <div className="relative" onMouseMove={handleMouseMove}>
         <div className="absolute left-6 top-1/2 transform -translate-y-1/2">
           <img src={assets.sun} className="w-28 h-28 rounded-full" alt="Sun Icon" />
         </div>
+
         <div className="border-4 max-w-3xl mx-auto border-black rounded-lg overflow-hidden relative">
           {/* Video Element */}
           <video
             ref={videoRef}
-            src={assets.heroVideo} // Ensure this path is correct
-            className={`w-full h-auto object-cover ${isPlaying ? 'block' : 'hidden'}`} // Toggle visibility based on state
+            src={assets.heroVideo}
+            className="w-full h-auto object-cover"
+            controls={isMobile}
           >
-            <source src={assets.heroVideo} type="video/mp4" /> {/* Ensure the correct type */}
+            <source src={assets.heroVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <img src={assets.videoimg} alt="Founders meeting" className={`w-full h-auto object-cover ${isPlaying ? 'hidden' : 'block'}`} />
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-            {/* Show play or pause icon based on isPlaying state */}
-            {!isPlaying ? (
-              <FaPlayCircle
-                size={64}
-                className="text-white opacity-80 hover:opacity-100 cursor-pointer"
-                onClick={handlePlayPauseVideo} // Call the play function
-              />
-            ) : (
-              <FaPauseCircle
-                size={64}
-                className="text-white opacity-80 hover:opacity-100 cursor-pointer"
-                onClick={handlePlayPauseVideo} // Call the pause function
-              />
-            )}
-          </div>
+
+          {!isMobile && (
+            <div className={`absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 transition-opacity duration-500 ${showControls ? 'opacity-100' : 'opacity-0'}`}>
+              {!isPlaying ? (
+                <FaPlayCircle
+                  size={64}
+                  className="text-white opacity-80 hover:opacity-100 cursor-pointer"
+                  onClick={handlePlayPauseVideo}
+                />
+              ) : (
+                <FaPauseCircle
+                  size={64}
+                  className="text-white opacity-80 hover:opacity-100 cursor-pointer"
+                  onClick={handlePlayPauseVideo}
+                />
+              )}
+            </div>
+          )}
         </div>
       </div>
-
-      {/* Optional SVG for decorative effect */}
-      {/* <div className="mt-8">
-        <svg className="w-full h-24" viewBox="0 0 400 100">
-          <path d="M0,50 Q100,0 200,50 T400,50" fill="none" stroke="#000" strokeWidth="2" />
-        </svg>
-      </div> */}
     </div>
   );
 };

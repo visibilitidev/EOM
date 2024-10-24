@@ -17,7 +17,7 @@ const AboutContainer = () => {
           <p className="mb-6 text-gray-700">
             Entrepreneurs of Madras offers a trusted, high-level environment where you can talk openly, connect deeply, and exchange growth potential - from finance to hiring, marketing to operations, pitching to fundraising - all in one place.
           </p>
-          <div className="bg-yellow-400 px-4 hover:bg-yellow-500 inline-block rounded-lg">
+          <div className="bg-yellow-400 px-4  hover:bg-white hover:shadow-[0_0_15px_5px_rgba(250,204,21,0.8)] transition-shadow duration-300 inline-block rounded-lg ">
             <button className="b text-black font-extrabold py-2 px-4 rounded-md transition duration-300   text-lg  transition-transform transform 
                hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
                active:translate-y-1 active:shadow-lg"

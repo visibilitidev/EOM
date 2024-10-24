@@ -174,14 +174,14 @@ const TestimonialCarousel = () => {
                         <div className="text-center">
                             <h3 className="font-bold text-lg">{profiles[activeIndex]?.name}</h3>
                             <p className="text-gray-600">{profiles[activeIndex]?.role}</p>
-                            <div className="flex justify-center mt-2">
+                            {/* <div className="flex justify-center mt-2">
                                 {[...Array(5)].map((_, i) => (
                                     <Star
                                         key={i}
                                         className={`w-5 h-5 ${i < Math.floor(profiles[activeIndex]?.rating || 0) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
                                     />
                                 ))}
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <img src={assets.double} alt='' className='w-5 h-5 absolute bottom-0 right-0 rotate-180' />

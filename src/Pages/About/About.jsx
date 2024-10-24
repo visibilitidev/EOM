@@ -17,7 +17,7 @@ const About = () => {
   const faqData = [
     {
       question: "Do I have to be an entrepreneur to join?",
-      answer: "Yes, EOM is a super exclusive club for growth-stage founders who are in their 10-100 journey. If you're an aspiring entrepreneur or startup enthusiast, you can always join our Underdogs of Madras community for free <a  href='https://nas.io/theunderdogs'>https://nas.io/theunderdogs</a>."
+      answer: "Yes, EOM is a super exclusive club for growth-stage founders who are in their 10-100 journey. If you're an aspiring entrepreneur or startup enthusiast, you can always join our Underdogs of Madras community for free <a style='color:blue'  href='https://nas.io/theunderdogs'>https://nas.io/theunderdogs</a>."
     },
     {
       question: "What are the cities that you’re present in?",
@@ -57,7 +57,7 @@ const About = () => {
         <AIConnect
           heading={
             <>
-              India's first AI-Driven Club <br />   <div className="bg-yellow-400 inline-block p-2 mt-2">For Entrepreneurs</div>
+              India's first AI-Driven Club <br />   <div className="bg-yellow-400 inline-block p-2 mt-2 rounded-lg">For Entrepreneurs</div>
             </>
           }
           imgsrc={imgsrc}

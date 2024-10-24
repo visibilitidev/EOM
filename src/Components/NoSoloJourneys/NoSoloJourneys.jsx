@@ -21,7 +21,7 @@ const NoSoloJourneys = ({ backgroundImageUrl }) => {
           <div className="bg-blue rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full">
             <div className="p-6 flex-grow">
               <h2 className="text-3xl font-bold text-white mb-6 font-Inter">For Product Founders</h2>
-              <ul className="space-y-4 font-OpenSans">
+              <ul className="space-y-4 font-OpenSans flex flex-col gap-2 w-[90%]">
                 {[
                   "Access to 100 Cr founders-only WhatsApp group",
                   "Industry-specific high power network",
@@ -55,7 +55,7 @@ const NoSoloJourneys = ({ backgroundImageUrl }) => {
           <div className="bg-blue rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full">
             <div className="p-6 flex-grow">
               <h2 className="text-3xl font-bold text-white mb-6 font-Inter">For Service Providers</h2>
-              <ul className="space-y-4 font-OpenSans">
+              <ul className="space-y-4 font-OpenSans flex flex-col gap-2 w-[84%]">
                 {[
                   "Access to Madrasi Connect AI bot for hiring",
                   "Get a verified profile on the EOM club",
