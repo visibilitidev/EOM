@@ -94,6 +94,8 @@ import mohan from "./mohan.jpg";
 import neeraj from "./neeraj.jpg";
 import ragapriya from "./ragapriya.jpg";
 import sultan from "./sultan.jpg";
+import SaiPrasadRode from './Sai_Prasad_rode.JPG';
+import Yamini from './Yamini.jpg'
 
 export const assets = {
   img1,
@@ -192,4 +194,6 @@ export const assets = {
   neeraj,
   ragapriya,
   sultan,
+  SaiPrasadRode,
+  Yamini
 };
