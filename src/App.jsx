@@ -7,12 +7,13 @@ import './App.css';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import Comingsoon from './Pages/Comingsoon/Comingsoon';
 import ScrollToTopPage from './Components/ScrollToTopPage/ScrollToTopPage';
-
+import { Circle } from 'react-preloaders'
 function App() {
 
   return (
     <>
       <Router>
+        <Circle background="white" color="yellow" time={2000} />
         <ScrollToTopPage />
         <Navbar />
         <Routes>
