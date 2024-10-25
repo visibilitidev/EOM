@@ -21,8 +21,8 @@ const MembershipPlans = () => {
             <div className="p-6 flex-grow">
               <h2 className="text-3xl font-bold text-white mb-6 font-Inter">For Product Founders</h2>
               <div className="mb-4">
-                <span className="line-through text-white text-xl">₹45999/Yr</span>
-                <span className="text-3xl font-bold text-yellow-400 ml-2">₹15999/Yr</span>
+                <span className="line-through text-white text-xl">₹45,999/Yr</span>
+                <span className="text-3xl font-bold text-yellow-400 ml-2">₹19,999/Yr</span>
               </div>
               <ul className="space-y-4 font-OpenSans flex flex-col gap-2 w-[90%]">
                 {[
