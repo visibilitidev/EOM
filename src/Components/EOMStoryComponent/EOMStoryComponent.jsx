@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets';
 
 const EOMStoryComponent = () => {
   return (
-    <div className="max-w-7xl mx-auto p-4 font-sans mt-12 relative">
+    <div className="max-w-full overflow-hidden mx-auto p-4 font-sans mt-12 relative">
       <h2 className="text-3xl font-bold text-center mb-8">The Story Of EOM</h2>
       <div className='hidden md:block absolute w-44 h-44 -left-16 bottom-28  '>
             <img src={assets.book} alt=''/>
