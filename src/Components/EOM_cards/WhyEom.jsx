@@ -109,13 +109,20 @@ const Card = ({
     if (!isMobile()) return; // Skip observer for larger screens
 
     const observer = new IntersectionObserver(
-      ([entry]) => setIsHovered(entry.isIntersecting),
-      { threshold: 0.5 }
+      ([entry]) => {
+        setIsHovered(entry.isIntersecting); // True when the card touches the line, false otherwise
+      },
+      {
+        threshold: 0, // Trigger as soon as the card touches the line
+        rootMargin: '-50% 0px', // Place the invisible line at 50% of the viewport height
+      }
     );
 
     if (cardRef.current) observer.observe(cardRef.current);
+
     return () => observer.disconnect();
   }, []);
+
 
   const handleMouseEnter = () => {
     if (!isMobile()) setIsHovered(true); // Enable hover effect on larger screens
