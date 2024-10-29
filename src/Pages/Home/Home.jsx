@@ -17,6 +17,7 @@ import Networking101 from '../../Components/Networking101/Networking101'
 import MarqueeCards from '../../Components/MarqueeCards/MarqueeCards'
 import MarqueeImages from '../../Components/MarqueeImages/MarqueeImages'
 import TestimonialCarousel from '../../Components/Testimonials/Testimonials'
+import ScrollPopup from '../../Components/ScrollPopup/ScrollPopup'
 import { assets } from '../../assets/assets'
 
 
@@ -57,6 +58,7 @@ const Home = () => {
   const imgsrc = assets.group81;
   return (
     <>
+    <ScrollPopup/>
       <HeroSection />
       <AboutContainer />
       <MarqueeCards />

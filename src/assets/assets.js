@@ -95,7 +95,8 @@ import neeraj from "./neeraj.jpg";
 import ragapriya from "./ragapriya.jpg";
 import sultan from "./sultan.jpg";
 import SaiPrasadRode from './Sai_prasad_rode.JPG';
-import Yamini from './Yamini.jpg'
+import Yamini from './Yamini.jpg';
+import popup from "./Popup.png";
 
 export const assets = {
   img1,
@@ -195,5 +196,6 @@ export const assets = {
   ragapriya,
   sultan,
   SaiPrasadRode,
-  Yamini
+  Yamini,
+  popup,
 };
