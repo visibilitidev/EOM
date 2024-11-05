@@ -67,16 +67,19 @@ function Navbar() {
               </li>
               <li>
                 <div className="bg-yellow-400 px-4 inline-block rounded-lg hover:bg-white hover:shadow-[0_0_15px_5px_rgba(250,204,21,0.8)] transition-shadow duration-300">
-                  <button className="text-black font-extrabold py-2 px-4 rounded-lg transition duration-300   text-lg  transition-transform transform 
+                  <button
+                    className="text-black font-extrabold py-2 px-4 rounded-lg transition duration-300   text-lg  transition-transform transform 
                hover:scale-105 active:scale-75 active:bg-yellow-400 active:shadow-md 
                active:translate-y-1 active:shadow-lg "
-                    style={{ height: '45px' }}
-                    onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
+                    style={{ height: "45px" }}
+                    onClick={() =>
+                      (window.location.href =
+                        "https://nas.io/entrepreneurs-of-madras-application")
+                    }
                   >
                     JOIN EOM
                   </button>
                 </div>
-
               </li>
             </ul>
           </div>
@@ -85,8 +88,9 @@ function Navbar() {
 
       {/* Sidebar Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg transition-transform transform ${isSidebarOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+        className={`fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg transition-transform transform ${
+          isSidebarOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <button
           onClick={toggleSidebar}
@@ -109,17 +113,29 @@ function Navbar() {
         </button>
         <ul className="p-6 space-y-4">
           <li>
-            <Link to="/about" onClick={toggleSidebar} className="block py-2 px-3 text-black font-bold">
+            <Link
+              to="/about"
+              onClick={toggleSidebar}
+              className="block py-2 px-3 text-black font-bold"
+            >
               ABOUT
             </Link>
           </li>
           <li>
-            <Link to="/comingsoon" onClick={toggleSidebar} className="block py-2 px-3 text-black font-bold">
+            <Link
+              to="/comingsoon"
+              onClick={toggleSidebar}
+              className="block py-2 px-3 text-black font-bold"
+            >
               FEBE
             </Link>
           </li>
           <li>
-            <Link to="/comingsoon" onClick={toggleSidebar} className="block py-2 px-3 text-black font-bold">
+            <Link
+              to="/comingsoon"
+              onClick={toggleSidebar}
+              className="block py-2 px-3 text-black font-bold"
+            >
               RESOURCES
             </Link>
           </li>
@@ -127,7 +143,10 @@ function Navbar() {
             <button
               type="button"
               className="w-full focus:outline-none rounded-lg font-OpenSans font-extrabold text-base text-black bg-yellow-400"
-              onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
+              onClick={() =>
+                (window.location.href =
+                  "https://nas.io/entrepreneurs-of-madras-application")
+              }
             >
               JOIN EOM
             </button>

@@ -7,6 +7,7 @@ import './App.css';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import Comingsoon from './Pages/Comingsoon/Comingsoon';
 import ScrollToTopPage from './Components/ScrollToTopPage/ScrollToTopPage';
+import Resources from './Pages/Resources/Resources';
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/comingsoon" element={<Comingsoon />} />
+          <Route path="/Resources" element={<Resources />} />
         </Routes>
         <Footer />
       </Router>
