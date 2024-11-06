@@ -100,11 +100,8 @@ export default function GridBlog() {
             />
 
             {/* Conditionally render AnotherComponent after the third item (index 3) */}
-            {index === 3 && (
-              <AnotherComponent
-              // Pass any props you need for AnotherComponent
-              />
-            )}
+            {index === 3 && <NewsAd />}
+            {index === 4 && <Trending />}
           </React.Fragment>
         ))}
         {samplePosts.map((article) => (
@@ -117,8 +114,6 @@ export default function GridBlog() {
             commentsCount={article.commentsCount}
           />
         ))}
-        <Trending />
-        <NewsAd />
       </div>
     </>
   );

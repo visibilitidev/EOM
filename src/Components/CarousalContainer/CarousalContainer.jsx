@@ -1,8 +1,8 @@
 // ArticleGrid.js
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css'; // Import Swiper styles
-import { assets } from '../../assets/assets';
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css"; // Import Swiper styles
+import { assets } from "../../assets/assets";
 
 const ArticleGrid = ({ onArticleClick }) => {
   const [activeId, setActiveId] = useState(0); // Default active is the first article
@@ -11,27 +11,28 @@ const ArticleGrid = ({ onArticleClick }) => {
     {
       id: 1,
       image: assets.marquee1,
-      title: 'The Importance of Sleep: Tips for Better Rest and Recovery',
-      bgColor: 'bg-gray-100'
+      title: "12 Sources of Startup Capital You MUST know about",
+      bgColor: "bg-gray-100",
     },
     {
       id: 2,
       image: assets.marquee1,
-      title: 'The Future of Sustainable Living: Driving Eco-Friendly...',
-      bgColor: 'bg-gray-100'
+      title: "What Investors Look for in Startups",
+      bgColor: "bg-gray-100",
     },
     {
       id: 3,
       image: assets.marquee1,
-      title: 'Business Agility in the Digital Age: Leveraging AI and Automation',
-      bgColor: 'bg-gray-100'
+      title: "Top 4 Key Initiatives in Startup India Funding Support",
+      bgColor: "bg-gray-100",
     },
     {
       id: 4,
       image: assets.marquee1,
-      title: 'The Art of Baking: From Classic Bread to Artisan Pastries',
-      bgColor: 'bg-gray-100'
-    }
+      title:
+        "Growth Vs Scaling! 5 Kickass Strategies Scale Growth (2025 Edition)",
+      bgColor: "bg-gray-100",
+    },
   ];
 
   const handleArticleClick = (index) => {
@@ -60,10 +61,14 @@ const ArticleGrid = ({ onArticleClick }) => {
           <div
             onClick={() => handleArticleClick(index)}
             className={`p-4 flex flex-row gap-2 items-center cursor-pointer transition-colors duration-300 ${
-              activeId === index ? 'bg-blue text-white' : article.bgColor
+              activeId === index ? "bg-blue text-white" : article.bgColor
             }`}
           >
-            <img src={article.image} alt={article.title} className="w-16 h-16 object-cover" />
+            <img
+              src={article.image}
+              alt={article.title}
+              className="w-16 h-16 object-cover"
+            />
             <h2 className="text-lg font-semibold">{article.title}</h2>
           </div>
         </SwiperSlide>

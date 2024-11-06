@@ -4,6 +4,7 @@ import ArticleGrid from "../../Components/CarousalContainer/CarousalContainer";
 import GridBlog from "../../Components/GridBlog/GridBlog";
 
 import GridComponent from "../../Components/GridComponent/GridComponent";
+import Blog7 from "../../Components/BlogData/Blog7/Blog7";
 
 export default function Resources() {
   const [selectedSlide, setSelectedSlide] = useState(0);

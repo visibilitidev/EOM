@@ -1,7 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Clock, MessageSquare } from "lucide-react";
 
-// Individual Blog Post Component
 const CommonGrid = ({
   id,
   image,
@@ -11,10 +11,23 @@ const CommonGrid = ({
   commentsCount,
   className = "",
 }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/blog", {
+      state: {
+        title,
+        image,
+        componentId: id, // Pass componentId based on the `id` passed
+      },
+    });
+  };
+
   return (
     <article
       id={`post-${id}`}
-      className={`bg-white  overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 ${className}`}
+      className={`bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 ${className}`}
+      onClick={handleClick}
     >
       {/* Image Container */}
       <div className="relative aspect-[16/9]">
@@ -24,7 +37,7 @@ const CommonGrid = ({
       {/* Content Container */}
       <div className="p-4">
         {/* Category Badge */}
-        <span className="px-3 py-1 bg-white  text-gray-800 text-sm font-medium border-2 border-black shadow-sm">
+        <span className="px-3 py-1 bg-white text-gray-800 text-sm font-medium border-2 border-black shadow-sm">
           {category}
         </span>
 
@@ -47,28 +60,6 @@ const CommonGrid = ({
         </div>
       </div>
     </article>
-  );
-};
-
-const ExampleBlogPage = () => {
-  const samplePosts = [
-    {
-      id: 1,
-      image: "/api/placeholder/800/600",
-      category: "Travel",
-      title: "Solo Travel: Some Tips and Destinations for the...",
-      timeAgo: "2mo",
-      commentsCount: 5,
-    },
-    // Add more posts as needed
-  ];
-
-  return (
-    <BlogPostGrid
-      posts={samplePosts}
-      gridCols={{ sm: 1, md: 2, lg: 3 }}
-      gap={6}
-    />
   );
 };
 

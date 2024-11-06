@@ -13,7 +13,7 @@ const BlogHeader = ({ title, image, imageAlt }) => {
 
   return (
     <section className="w-full flex flex-col items-center justify-center">
-      <div className="max-w-3xl mx-auto px-4 py-8 space-y-8">
+      <div className="max-w-7xl md:max-w-5xl mx-auto px-4 py-8 space-y-8">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center leading-tight">
           {title}
         </h1>
@@ -31,13 +31,14 @@ const BlogHeader = ({ title, image, imageAlt }) => {
             );
           })}
         </div>
-      </div>
-      <div className="overflow-hidden  mt-8 px-6">
-        <img
-          src={image}
-          alt={imageAlt}
-          className="w-full h-auto object-cover transform transition-transform duration-300 hover:scale-105"
-        />
+
+        <div className="overflow-hidden  mt-8 ">
+          <img
+            src={image}
+            alt={imageAlt}
+            className="w-full h-auto object-cover transform transition-transform duration-300 hover:scale-110"
+          />
+        </div>
       </div>
     </section>
   );
