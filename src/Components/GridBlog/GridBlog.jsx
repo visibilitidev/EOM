@@ -4,107 +4,87 @@ import { assets } from "../../assets/assets";
 import CommonGrid from "../CommonGrid/CommonGrid";
 import Trending from "../TrendingPost/TrendingPost";
 import NewsAd from "../NewsAd/NewsAd";
+import styles from './GridBlog.module.css'
 
-export default function GridBlog() {
-  const sampleArticles = [
-    {
-      bigComponent: true,
-      id: 1,
-      image: assets.aboutimg,
-      category: "Gadgets",
-      title: "Balancing Work and Wellness: Tech Solutions for Healthy",
-      excerpt:
-        "Children over the past two decades, a Post investigation found. Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit.",
-      timeAgo: "1h",
-    },
-  ];
-  const samplePosts = [
-    {
-      id: 1,
-      image: assets.aboutimg2,
-      category: "Travel",
-      title: "Solo Travel: Some Tips and Destinations for the...",
-      timeAgo: "2mo",
-      commentsCount: 5,
-    },
-    {
-      id: 2,
-      image: assets.marquee2,
-      category: "Travel2",
-      title: "Solo Travel: Some Tips and Destinations for the...",
-      timeAgo: "2mo",
-      commentsCount: 5,
-    },
-    {
-      id: 3,
-      image: assets.marquee3,
-      category: "Travel3",
-      title: "Solo Travel: Some Tips and Destinations for the...",
-      timeAgo: "2mo",
-      commentsCount: 5,
-    },
-    {
-      id: 4,
-      image: assets.marquee4,
-      category: "Travel4",
-      title: "Solo Travel: Some Tips and Destinations for the...",
-      timeAgo: "2mo",
-      commentsCount: 5,
-    },
-    {
-      id: 5,
-      image: assets.marquee5,
-      category: "Travel5",
-      title: "Solo Travel: Some Tips and Destinations for the...",
-      timeAgo: "2mo",
-      commentsCount: 5,
-    },
-    {
-      id: 6,
-      image: assets.marquee6,
-      category: "Travel6",
-      title: "Solo Travel: Some Tips and Destinations for the...",
-      timeAgo: "2mo",
-      commentsCount: 5,
-    },
-    {
-      id: 7,
-      image: assets.marquee7,
-      category: "Travel7",
-      title: "Solo Travel: Some Tips and Destinations for the...",
-      timeAgo: "2mo",
-      commentsCount: 5,
-    },
-    {
-      id: 8,
-      image: assets.marquee8,
-      category: "Travel",
-      title: "Solo Travel: Some Tips and Destinations for the...",
-      timeAgo: "2mo",
-      commentsCount: 5,
-    },
-  ];
+export default function GridBlog({blogList}) {
+
+  const handleBlogClick = (blogId, category) => {
+    // Skip News and Trending blogs
+    if (category === 'News' || category === 'Trending') {
+      return;
+    }
+
+    // Redirect to the blog page for non-News and non-Trending blogs
+    navigate(`/blogs/${blogId}`);
+  };
+
+
   return (
     <>
-      <div className="mt-16 grid grid-cols-4 gap-4">
-        {sampleArticles.map((article, index) => (
-          <React.Fragment key={article.id}>
-            <GridOneComponent
-              id={index}
-              image={article.image}
-              category={article.category}
-              title={article.title}
-              excerpt={article.excerpt}
-              timeAgo={article.timeAgo}
-              bigComponent={article?.bigComponent || false}
-            />
+      <div className={styles.blogContainer}>
+        {blogList.map((article, index) => {
+          const isBigComponent = article?.bigComponent || false;
 
-            {/* Conditionally render AnotherComponent after the third item (index 3) */}
-            {index === 3 && <NewsAd />}
-            {index === 4 && <Trending />}
-          </React.Fragment>
-        ))}
-        {samplePosts.map((article) => (
+          // Adjusting the grid index for regular articles
+          let gridIndex = index;
+
+          // Handle when the index is 3 and 4 for NewsAd and Trending
+          if (index === 3) {
+            // Skip rendering the article at index 3 and render NewsAd in the 4th position
+            return (
+              <React.Fragment key={article.id}>
+                <div className={styles.gridItem4}>
+                  <NewsAd />
+                </div>
+              </React.Fragment>
+            );
+          }
+
+          if (index === 4) {
+            // Skip rendering the article at index 4 and render Trending in the 5th position
+            return (
+              <React.Fragment key={article.id}>
+                <div className={styles.gridItem5}>
+                  <Trending />
+                </div>
+              </React.Fragment>
+            );
+          }
+
+          return (
+            <React.Fragment key={article.id}>
+              {/* Render article components with dynamic grid item class */}
+              <div
+                className={isBigComponent ? styles.gridItem1 : styles[`gridItem${gridIndex + 1}`]}
+                onClick={() => handleBlogClick(article.id, article.category)} // Handle blog click
+              >
+                {isBigComponent ? (
+                  <GridOneComponent
+                    id={gridIndex}
+                    image={article.image}
+                    category={article.category}
+                    title={article.title}
+                    excerpt={article.excerpt}
+                    timeAgo={article.timeAgo}
+                  />
+                ) : (
+                  <CommonGrid
+                    key={article.id}
+                    image={article.image}
+                    category={article.category}
+                    title={article.title}
+                    timeAgo={article.timeAgo}
+                    commentsCount={article.commentsCount}
+                  />
+                )}
+              </div>
+            </React.Fragment>
+          );
+        })}
+
+
+
+        {/* {samplePosts.map((article) => (
           <CommonGrid
             key={article.id}
             image={article.image}
@@ -113,7 +93,7 @@ export default function GridBlog() {
             timeAgo={article.timeAgo}
             commentsCount={article.commentsCount}
           />
-        ))}
+        ))} */}
       </div>
     </>
   );

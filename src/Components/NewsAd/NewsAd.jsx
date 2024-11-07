@@ -11,7 +11,7 @@ const NewsAdCard = ({
 }) => {
   return (
     <div
-      className={` bg-[#1c1c1c] shadow-2xl overflow-hidden sticky top-0 ${className}`}
+      className={`bg-[#1c1c1c] shadow-2xl overflow-hidden sticky top-0 ${className}`}
     >
       <div className="px-6 py-8 text-center">
         <h1 className="text-4xl font-bold text-white tracking-wider mb-3">
@@ -52,7 +52,7 @@ const NewsAd = () => {
   };
 
   return (
-    <div className="min-h-screenp-8 flex ">
+    <div className="min-h-screenp-8 flex sticky top-0">
       <NewsAdCard
         onButtonClick={handleBuyNow}
         title="NEWS"

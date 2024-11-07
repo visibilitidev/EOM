@@ -32,7 +32,7 @@ const TrendingPosts = ({
       </div>
 
       {/* Posts List with Fixed Height and Overflow Scroll */}
-      <div className="max-h-80 overflow-y-auto divide-y divide-gray-100">
+      <div className="max-h-[81vh] overflow-y-auto divide-y divide-gray-100">
         {" "}
         {/* Adjust max-h as needed */}
         {posts.map((post, index) => (

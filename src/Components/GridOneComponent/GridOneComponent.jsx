@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 // Individual Blog Card Component
-const GridOneComponent = ({ image, category, title, excerpt, timeAgo }) => {
+const GridOneComponent = ({ image, category, title, excerpt, timeAgo, bigComponent }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
