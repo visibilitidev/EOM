@@ -5,17 +5,20 @@ import CommonGrid from "../CommonGrid/CommonGrid";
 import Trending from "../TrendingPost/TrendingPost";
 import NewsAd from "../NewsAd/NewsAd";
 import styles from './GridBlog.module.css'
+import { useNavigate } from "react-router-dom";
 
-export default function GridBlog({blogList}) {
+export default function GridBlog({ blogList }) {
 
-  const handleBlogClick = (blogId, category) => {
-    // Skip News and Trending blogs
-    if (category === 'News' || category === 'Trending') {
-      return;
-    }
+  const navigate = useNavigate();
 
-    // Redirect to the blog page for non-News and non-Trending blogs
-    navigate(`/blogs/${blogId}`);
+  const handleBlogClick = (blogId, title, image) => {
+    navigate("/blog", {
+      state: {
+        title: title,
+        image: image,
+        componentId: blogId, // Pass componentId based on the `id` passed
+      },
+    });
   };
 
 
@@ -56,7 +59,7 @@ export default function GridBlog({blogList}) {
               {/* Render article components with dynamic grid item class */}
               <div
                 className={isBigComponent ? styles.gridItem1 : styles[`gridItem${gridIndex + 1}`]}
-                onClick={() => handleBlogClick(article.id, article.category)} // Handle blog click
+                onClick={() => handleBlogClick(article.id, article.title, article.image)} // Handle blog click
               >
                 {isBigComponent ? (
                   <GridOneComponent
