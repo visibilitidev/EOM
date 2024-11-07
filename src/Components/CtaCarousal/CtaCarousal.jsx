@@ -3,71 +3,43 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { assets } from "../../assets/assets";
 import { useNavigate } from "react-router-dom";
 
-const CtaCarousel = ({ selectedSlide }) => {
+const CtaCarousel = ({ selectedSlide, blogList }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigate = useNavigate();
-
-  const slides = [
-    {
-      image: assets.abouthero,
-      title: "12 Sources of Startup Capital You MUST know about",
-      description: "Discover our latest summer styles",
-      ctaText: "Read More",
-    },
-    {
-      image: assets.abouthero,
-      title: "What Investors Look for in Startups",
-      description: "Check out our newest products",
-      ctaText: "Read More",
-    },
-    {
-      image: assets.abouthero,
-      title: "Top 4 Key Initiatives in Startup India Funding Support",
-      description: "Get up to 50% off on selected items",
-      ctaText: "Read More",
-    },
-    {
-      image: assets.abouthero,
-      title:
-        "Growth Vs Scaling! 5 Kickass Strategies Scale Growth (2025 Edition)",
-      description: "Get up to 50% off on selected items",
-      ctaText: "Read More",
-    },
-  ];
 
   useEffect(() => {
     setCurrentSlide(selectedSlide);
   }, [selectedSlide]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setCurrentSlide((prev) => (prev + 1) % blogList.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrentSlide((prev) => (prev - 1 + blogList.length) % blogList.length);
   };
-  const goToBlog = (slide, componentId) => {
+  const goToBlog = (slide) => {
     navigate("/blog", {
       state: {
         title: slide.title,
         image: slide.image,
-        description: slide.description,
-        componentId,
+        componentId: slide.id,
       },
     });
   };
 
+
   return (
     <div className="relative w-full h-96 md:h-[31.25rem] overflow-hidden">
-      {/* Slides */}
+      {/* blogList */}
       <div
         className="flex transition-transform duration-500 ease-in-out h-full"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
-        {slides.map((slide, index) => (
+        {blogList.map((slide, index) => (
           <div key={index} className="w-full h-full flex-shrink-0 relative">
             <img
-              src={slide.image}
+              src={assets.abouthero}
               alt={slide.title}
               className="w-full h-full object-cover"
             />
@@ -80,10 +52,10 @@ const CtaCarousel = ({ selectedSlide }) => {
               </h2>
 
               <button
-                onClick={() => goToBlog(slide, index)}
+                onClick={() => goToBlog(slide)}
                 className="px-6 py-3 bg-white text-black rounded-md font-semibold hover:bg-gray-200 transition-colors duration-200 transform hover:scale-105"
               >
-                {slide.ctaText}
+                Read More
               </button>
             </div>
           </div>
@@ -108,13 +80,12 @@ const CtaCarousel = ({ selectedSlide }) => {
 
       {/* Slide indicators */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => (
+        {blogList.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-colors ${
-              currentSlide === index ? "bg-white" : "bg-white/50"
-            }`}
+            className={`w-2 h-2 rounded-full transition-colors ${currentSlide === index ? "bg-white" : "bg-white/50"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

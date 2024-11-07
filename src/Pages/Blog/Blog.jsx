@@ -13,14 +13,9 @@ import Blog8 from "../../Components/BlogData/Blog8/Blog8";
 
 export default function Blog() {
   const location = useLocation();
-  const { title, image, description, componentId } = location.state || {
-    title: "Default Blog Title",
-    image: "defaultImagePath",
-    description: "Default blog description text.",
-    componentId: 0,
-  };
+  const { title, image, componentId } = location.state || {};
 
-  // Create an array of blog components for looping
+  // Default components array
   const blogComponents = [
     <StartupCapital />,
     <Blog2 />,
@@ -32,16 +27,13 @@ export default function Blog() {
     <Blog8 />,
   ];
 
-  // Loop through the blog components based on componentId
-  const selectedComponent = blogComponents[componentId % blogComponents.length];
+  // Select the correct component based on `componentId`
+  const selectedComponent = blogComponents[componentId - 1];
 
   return (
     <>
       <BlogHeader title={title} image={image} imageAlt={title} />
-      <div>
-        {/* Render the selected blog component dynamically */}
-        {selectedComponent}
-      </div>
+      <div>{selectedComponent}</div>
       <TagsShare />
     </>
   );

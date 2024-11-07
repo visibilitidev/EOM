@@ -22,7 +22,8 @@ export default function Resources() {
       title: "12 Sources of Startup Capital You MUST know about",
       timeAgo: "2mo",
       commentsCount: 5,
-      bigComponent: true
+      bigComponent: true,
+      description: "Discover our latest summer styles",
     },
     {
       id: 2,
@@ -31,7 +32,8 @@ export default function Resources() {
       title: "What Investors Look for in Startups",
       timeAgo: "2mo",
       commentsCount: 5,
-      bigComponent: false
+      bigComponent: false,
+      description: "Check out our newest products",
     },
     {
       id: 3,
@@ -40,7 +42,8 @@ export default function Resources() {
       title: "Top 4 Key Initiatives in Startup India Funding Support",
       timeAgo: "2mo",
       commentsCount: 5,
-      bigComponent: false
+      bigComponent: false,
+      description: "Get up to 50% off on selected items",
     },
     {
       id: 4,
@@ -49,7 +52,8 @@ export default function Resources() {
       title: "Growth Vs Scaling! 5 Kickass Strategies Scale Growth (2025 Edition)",
       timeAgo: "2mo",
       commentsCount: 5,
-      bigComponent: false
+      bigComponent: false,
+      description: "Get up to 50% off on selected items",
     },
     {
       id: 5,
@@ -118,7 +122,7 @@ export default function Resources() {
 
   return (
     <>
-      <CtaCarousel selectedSlide={selectedSlide} />
+      <CtaCarousel selectedSlide={selectedSlide} blogList={blogList} />
       <ArticleGrid onArticleClick={handleArticleClick} />
       <GridBlog blogList={blogList} />
       {/* <GridComponent /> */}

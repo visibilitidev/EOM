@@ -11,15 +11,13 @@ export default function GridBlog({ blogList }) {
 
   const navigate = useNavigate();
 
-  const handleBlogClick = (blogId, title, image) => {
+  const handleBlogClick = (componentId, title, image) => {
     navigate("/blog", {
-      state: {
-        title: title,
-        image: image,
-        componentId: blogId, // Pass componentId based on the `id` passed
-      },
+      replace: true,  // Use replace to avoid adding extra history entries
+      state: { title, image, componentId }
     });
   };
+
 
 
   return (
