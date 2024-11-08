@@ -19,6 +19,7 @@
     "react-multi-carousel": "^1.4.7-0",
     "react-preloaders": "^3.0.3",
     "react-router-dom": "^6.26.2",
+    "react-spinners": "^0.14.1",
     "swiper": "^11.1.14"
   },
   "devDependencies": {

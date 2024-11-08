@@ -31,7 +31,7 @@ const NewsAdCard = ({
           <div className="col-span-2 relative">
             <div className="bg-gray-800 rounded-lg overflow-hidden aspect-[16/9]">
               <img
-                src={assets.club1}
+                src={assets.book}
                 alt="Main preview"
                 className="w-full h-full object-cover"
               />
