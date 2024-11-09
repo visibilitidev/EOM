@@ -4,7 +4,7 @@ import { ClipLoader } from 'react-spinners';
 
 const Preloader = () => (
   <div style={styles.loaderContainer}>
-    <ClipLoader color="#36d7b7" size={50} />
+    <ClipLoader color="#000000" size={50} />
   </div>
 );
 

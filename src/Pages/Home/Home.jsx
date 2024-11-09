@@ -58,7 +58,7 @@ const Home = () => {
   const imgsrc = assets.group81;
   return (
     <>
-    <ScrollPopup/>
+      {/* <ScrollPopup/> */}
       <HeroSection />
       <AboutContainer />
       <MarqueeCards />
