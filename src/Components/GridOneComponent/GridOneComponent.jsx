@@ -18,7 +18,7 @@ const GridOneComponent = ({ image, category, title, excerpt, timeAgo, bigCompone
   };
 
   return (
-    <div className="bg-white  shadow-md hover:shadow-xl transition-all duration-300">
+    <div className="bg-white  shadow-md hover:shadow-xl transition-all duration-300 h-full">
       <div className="relative cursor-pointer" onClick={handleClick}>
         <img
           src={image}

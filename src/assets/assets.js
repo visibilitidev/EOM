@@ -98,7 +98,27 @@ import SaiPrasadRode from './Sai_prasad_rode.JPG';
 import Yamini from './Yamini.jpg';
 import popup from "./Popup.png";
 
+
+import blog1 from './Blogs/blog1.webp'
+import seven_latest from './Blogs/7_latest_goverment.webp';
+import MostCommon21 from './Blogs/21MostCommanMistake.webp';
+import growth_scaling from './Blogs/growth_scaling.png';
+import how_big_1Lakh from './Blogs/how_big_1Lakh.png';
+import investorsLook9 from './Blogs/InvestorsLook9Hints.png';
+import top4keyInitiatives from './Blogs/top4keyInitiatives.png';
+import top8TN from './Blogs/top8TN.png';
+
 export const assets = {
+
+  blog1,
+  seven_latest,
+  MostCommon21,
+  growth_scaling,
+  how_big_1Lakh,
+  investorsLook9,
+  top4keyInitiatives,
+  top8TN,
+
   img1,
   img2,
   img3,

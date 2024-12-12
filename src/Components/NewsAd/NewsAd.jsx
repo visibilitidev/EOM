@@ -31,7 +31,7 @@ const NewsAdCard = ({
           <div className="col-span-2 relative">
             <div className="bg-gray-800 rounded-lg overflow-hidden aspect-[16/9]">
               <img
-                src={assets.book}
+                src={assets.abouthero}
                 alt="Main preview"
                 className="w-full h-full object-cover"
               />
@@ -48,17 +48,17 @@ const NewsAdCard = ({
 // Example Usage
 const NewsAd = () => {
   const handleBuyNow = () => {
-    console.log("Buy Now clicked");
+    window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'
   };
 
   return (
     <div className="min-h-screenp-8 flex sticky top-0">
       <NewsAdCard
         onButtonClick={handleBuyNow}
-        title="NEWS"
-        subtitle="Multi-Layout News & Editorial Blogging Template"
-        buttonText="BUY NOW"
-        adText="AD SLOT DEMO"
+        title="Join the EOM Club!"
+        subtitle="Empowering Innovators, Collaborators, and Change-Makers"
+        buttonText="JOIN NOW"
+        adText="Be part of an exclusive network of like-minded entrepreneurs. Connect, collaborate, and grow"
       />
     </div>
   );

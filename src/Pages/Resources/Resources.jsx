@@ -17,7 +17,7 @@ export default function Resources() {
   const blogList = [
     {
       id: 1,
-      image: assets.aboutimg2,
+      image: assets.blog1,
       category: "Finance",
       title: "12 Sources of Startup Capital You MUST know about",
       timeAgo: "2mo",
@@ -27,7 +27,7 @@ export default function Resources() {
     },
     {
       id: 2,
-      image: assets.marquee1,
+      image: assets.investorsLook9,
       category: "Startup",
       title: "What Investors Look for in Startups",
       timeAgo: "2mo",
@@ -37,7 +37,7 @@ export default function Resources() {
     },
     {
       id: 3,
-      image: assets.marquee2,
+      image: assets.top4keyInitiatives,
       category: "Government Initiatives",
       title: "Top 4 Key Initiatives in Startup India Funding Support",
       timeAgo: "2mo",
@@ -47,7 +47,7 @@ export default function Resources() {
     },
     {
       id: 4,
-      image: assets.marquee3,
+      image: assets.growth_scaling,
       category: "Startup Growth",
       title: "Growth Vs Scaling! 5 Kickass Strategies Scale Growth (2025 Edition)",
       timeAgo: "2mo",
@@ -57,7 +57,7 @@ export default function Resources() {
     },
     {
       id: 5,
-      image: assets.marquee4,
+      image: assets.MostCommon21,
       category: "Startup Growth",
       title: "21 Most common mistakes companies make when scaling too fast + Examples",
       timeAgo: "2mo",
@@ -66,7 +66,7 @@ export default function Resources() {
     },
     {
       id: 6,
-      image: assets.marquee6,
+      image: assets.how_big_1Lakh,
       category: "Finance",
       title: "How big Rs 1 Lakh can grow? Power of Compounding - The Rule of 114 & 144",
       timeAgo: "2mo",
@@ -75,7 +75,7 @@ export default function Resources() {
     },
     {
       id: 7,
-      image: assets.marquee7,
+      image: assets.seven_latest,
       category: "Women Empowerment",
       title: "7 Latest government schemes to support women startups 2025",
       timeAgo: "2mo",
@@ -84,7 +84,7 @@ export default function Resources() {
     },
     {
       id: 8,
-      image: assets.marquee8,
+      image: assets.top8TN,
       category: "Women Empowerment",
       title: "Top 8 Tamil Nadu State Government Schemes in 2025 for Women Startups",
       timeAgo: "2mo",
@@ -93,30 +93,33 @@ export default function Resources() {
     },
     {
       id: 9,
-      image: assets.marquee3,
+      image: assets.investorsLook9,
+      category: "Startup",
+      title: "What Investors Look for in Startups",
+      timeAgo: "2mo",
+      commentsCount: 5,
+      bigComponent: false,
+      description: "Check out our newest products",
+    },
+    {
+      id: 10,
+      image: assets.top4keyInitiatives,
+      category: "Government Initiatives",
+      title: "Top 4 Key Initiatives in Startup India Funding Support",
+      timeAgo: "2mo",
+      commentsCount: 5,
+      bigComponent: false,
+      description: "Get up to 50% off on selected items",
+    },
+    {
+      id: 11,
+      image: assets.growth_scaling,
       category: "Startup Growth",
       title: "Growth Vs Scaling! 5 Kickass Strategies Scale Growth (2025 Edition)",
       timeAgo: "2mo",
       commentsCount: 5,
-      bigComponent: false
-    },
-    {
-      id: 10,
-      image: assets.marquee4,
-      category: "Startup Growth",
-      title: "21 Most common mistakes companies make when scaling too fast + Examples",
-      timeAgo: "2mo",
-      commentsCount: 5,
-      bigComponent: false
-    },
-    {
-      id: 11,
-      image: assets.marquee6,
-      category: "Finance",
-      title: "How big Rs 1 Lakh can grow? Power of Compounding - The Rule of 114 & 144",
-      timeAgo: "2mo",
-      commentsCount: 5,
-      bigComponent: false
+      bigComponent: false,
+      description: "Get up to 50% off on selected items",
     },
   ];
 
