@@ -39,7 +39,7 @@ const CtaCarousel = ({ selectedSlide, blogList }) => {
         {blogList.map((slide, index) => (
           <div key={index} className="w-full h-full flex-shrink-0 relative">
             <img
-              src={assets.abouthero}
+              src={slide.image}
               alt={slide.title}
               className="w-full h-full object-cover"
             />

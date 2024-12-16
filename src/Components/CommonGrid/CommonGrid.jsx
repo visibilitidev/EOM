@@ -49,14 +49,13 @@ const CommonGrid = ({
         <div className="flex items-center text-sm text-gray-500 gap-4">
           <div className="flex items-center gap-1">
             <Clock size={16} />
-            <span>{timeAgo} ago</span>
+            <span>{
+              new Date(timeAgo).toLocaleDateString("en-GB", {
+                day: "2-digit",
+                month: "short", // "short" for abbreviated month (e.g., "Sept")
+                year: "numeric",
+              })}</span>
           </div>
-          {commentsCount !== undefined && (
-            <div className="flex items-center gap-1">
-              <MessageSquare size={16} />
-              <span>{commentsCount}</span>
-            </div>
-          )}
         </div>
       </div>
     </article>

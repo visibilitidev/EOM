@@ -107,6 +107,9 @@ import how_big_1Lakh from './Blogs/how_big_1Lakh.png';
 import investorsLook9 from './Blogs/InvestorsLook9Hints.png';
 import top4keyInitiatives from './Blogs/top4keyInitiatives.png';
 import top8TN from './Blogs/top8TN.png';
+import gamechanginplan from './Blogs/agameChangingPlan.JPG'
+import group1 from './Blogs/group_1.JPG';
+import duo1 from './Blogs/duo_1.JPG'
 
 export const assets = {
 
@@ -118,6 +121,11 @@ export const assets = {
   investorsLook9,
   top4keyInitiatives,
   top8TN,
+  gamechanginplan,
+
+  group1,
+  duo1,
+
 
   img1,
   img2,

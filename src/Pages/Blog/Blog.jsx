@@ -10,6 +10,7 @@ import Blog5 from "../../Components/BlogData/Blog5/Blog5";
 import Blog6 from "../../Components/BlogData/Blog6/Blog6";
 import Blog7 from "../../Components/BlogData/Blog7/Blog7";
 import Blog8 from "../../Components/BlogData/Blog8/Blog8";
+import Blog9 from "../../Components/BlogData/Blog9/Blog9";
 
 export default function Blog() {
   const location = useLocation();
@@ -25,6 +26,7 @@ export default function Blog() {
     <Blog6 />,
     <Blog7 />,
     <Blog8 />,
+    <Blog9 />,
   ];
 
   // Select the correct component based on `componentId`

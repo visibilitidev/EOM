@@ -18,22 +18,21 @@ export default function GridBlog({ blogList }) {
     });
   };
 
+  const adjustedBlogList = [...blogList]; // Clone the original blog list
+
+  // Insert placeholders for NewsAd and Trending at specific positions
+  adjustedBlogList.splice(3, 0, { type: "NewsAd" }); // Insert NewsAd at index 3
+  adjustedBlogList.splice(4, 0, { type: "Trending" }); // Insert Trending at index 4
+
 
 
   return (
     <>
       <div className={styles.blogContainer}>
-        {blogList.map((article, index) => {
-          const isBigComponent = article?.bigComponent || false;
-
-          // Adjusting the grid index for regular articles
-          let gridIndex = index;
-
-          // Handle when the index is 3 and 4 for NewsAd and Trending
-          if (index === 3) {
-            // Skip rendering the article at index 3 and render NewsAd in the 4th position
+        {adjustedBlogList.map((article, index) => {
+          if (article.type === "NewsAd") {
             return (
-              <React.Fragment key={article.id}>
+              <React.Fragment key={`newsAd-${index}`}>
                 <div className={styles.gridItem4}>
                   <NewsAd />
                 </div>
@@ -41,10 +40,9 @@ export default function GridBlog({ blogList }) {
             );
           }
 
-          if (index === 4) {
-            // Skip rendering the article at index 4 and render Trending in the 5th position
+          if (article.type === "Trending") {
             return (
-              <React.Fragment key={article.id}>
+              <React.Fragment key={`trending-${index}`}>
                 <div className={styles.gridItem5}>
                   <Trending />
                 </div>
@@ -52,16 +50,18 @@ export default function GridBlog({ blogList }) {
             );
           }
 
+          const isBigComponent = article?.bigComponent || false;
+
           return (
             <React.Fragment key={article.id}>
-              {/* Render article components with dynamic grid item class */}
               <div
-                className={isBigComponent ? styles.gridItem1 : styles[`gridItem${gridIndex + 1}`]}
+                className={isBigComponent ? styles.gridItem1 : styles[`gridItem${index + 1}`]}
                 onClick={() => handleBlogClick(article.id, article.title, article.image)} // Handle blog click
               >
                 {isBigComponent ? (
                   <GridOneComponent
-                    id={gridIndex}
+                    id={index}
+                    outsideDescription={article.outsideDescription}
                     image={article.image}
                     category={article.category}
                     title={article.title}
@@ -83,18 +83,6 @@ export default function GridBlog({ blogList }) {
           );
         })}
 
-
-
-        {/* {samplePosts.map((article) => (
-          <CommonGrid
-            key={article.id}
-            image={article.image}
-            category={article.category}
-            title={article.title}
-            timeAgo={article.timeAgo}
-            commentsCount={article.commentsCount}
-          />
-        ))} */}
       </div>
     </>
   );
