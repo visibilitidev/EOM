@@ -8,54 +8,54 @@ const TagsShare = () => {
       <div className="flex items-center mb-4 sm:mb-0">
         <span className="font-semibold mr-2">Tags:</span>
         <div className="space-x-2">
-          <a href="#" className="text-orange-500 hover:text-orange-600">
-            Food
-          </a>
+          <span className="text-orange-500 hover:text-orange-600">
+            Finanace
+          </span>
           ,
-          <a href="#" className="text-orange-500 hover:text-orange-600">
-            Life Style
-          </a>
+          <span className="text-orange-500 hover:text-orange-600">
+            Startup
+          </span>
           ,
-          <a href="#" className="text-orange-500 hover:text-orange-600">
+          <span className="text-orange-500 hover:text-orange-600">
             Tech
-          </a>
+          </span>
           ,
-          <a href="#" className="text-orange-500 hover:text-orange-600">
-            Travel
-          </a>
+          <span className="text-orange-500 hover:text-orange-600">
+            Goverment Initiative
+          </span>
         </div>
       </div>
 
       {/* Share Section */}
-      <div className="flex items-center">
+      {/* <div className="flex items-center">
         <span className="font-semibold mr-2">Share:</span>
         <div className="flex space-x-2">
-          <a
-            href="#"
+          <span
+
             className="flex items-center justify-center w-8 h-8 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200"
           >
             <FaFacebookF />
-          </a>
-          <a
-            href="#"
+          </span>
+          <span
+
             className="flex items-center justify-center w-8 h-8 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200"
           >
             <FaTimes />
-          </a>
-          <a
-            href="#"
+          </span>
+          <span
+
             className="flex items-center justify-center w-8 h-8 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200"
           >
             <FaEnvelope />
-          </a>
-          <a
-            href="#"
+          </span>
+          <span
+
             className="flex items-center justify-center w-8 h-8 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200"
           >
             <FaLink />
-          </a>
+          </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

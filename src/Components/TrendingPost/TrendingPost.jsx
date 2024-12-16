@@ -5,7 +5,12 @@ const TrendingPost = ({ time, title, isLast }) => (
   <div className={`py-4 ${!isLast && "border-b border-gray-100"}`}>
     <div className="flex items-start gap-3 flex-col">
       <span className="text-sm text-gray-500 font-medium min-w-[50px]">
-        {time}
+        {
+          new Date(time).toLocaleDateString("en-GB", {
+            day: "2-digit",
+            month: "short", // "short" for abbreviated month (e.g., "Sept")
+            year: "numeric",
+          })}
       </span>
       <h3 className="text-gray-900 font-medium line-clamp-2 w-4/5 hover:text-blue-600 transition-colors cursor-pointer">
         {title}
@@ -38,7 +43,7 @@ const TrendingPosts = ({
         {posts.map((post, index) => (
           <TrendingPost
             key={post.id}
-            time={post.time}
+            time={post.timeAgo}
             title={post.title}
             isLast={index === posts.length - 1}
           />
@@ -58,43 +63,14 @@ const TrendingPosts = ({
 };
 
 // Example Usage
-const Trending = () => {
-  const trendingPosts = [
-    {
-      id: 1,
-      time: "10:23",
-      title: "The Rise of AI-Powered Personal Assistants: How...",
-    },
-    {
-      id: 2,
-      time: "09:30",
-      title: "Tech Innovations Reshaping the Retail...",
-    },
-    {
-      id: 3,
-      time: "09:10",
-      title: "Balancing Work and Wellness: Tech Solutions f...",
-    },
-    {
-      id: 4,
-      time: "08:00",
-      title: "The Importance of Sleep: Tips for Better Rest and...",
-    },
-    {
-      id: 5,
-      time: "22:00",
-      title: "The Future of Sustainable Living: Driving Eco-Friendl...",
-    },
-    // Add more posts as needed
-  ];
-
+const Trending = ({ blogPosts }) => {
   const handleSeeAllClick = () => {
     console.log("See all posts clicked");
   };
 
   return (
     <div className="">
-      <TrendingPosts posts={trendingPosts} onSeeAllClick={handleSeeAllClick} />
+      <TrendingPosts posts={blogPosts} onSeeAllClick={handleSeeAllClick} />
     </div>
   );
 };

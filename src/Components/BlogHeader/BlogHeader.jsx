@@ -17,7 +17,7 @@ const BlogHeader = ({ title, image, imageAlt }) => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center leading-tight">
           {title}
         </h1>
-
+{/* 
         <div className="flex flex-wrap justify-center gap-3">
           {socialLinks.map((social) => {
             const Icon = social.icon;
@@ -30,7 +30,11 @@ const BlogHeader = ({ title, image, imageAlt }) => {
               </button>
             );
           })}
-        </div>
+        </div> */}
+
+        <h4>
+          
+        </h4>
 
         <div className="overflow-hidden  mt-8 ">
           <img

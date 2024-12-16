@@ -44,7 +44,7 @@ export default function GridBlog({ blogList }) {
             return (
               <React.Fragment key={`trending-${index}`}>
                 <div className={styles.gridItem5}>
-                  <Trending />
+                  <Trending blogPosts={blogList} />
                 </div>
               </React.Fragment>
             );
