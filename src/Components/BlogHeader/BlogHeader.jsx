@@ -1,5 +1,6 @@
 import React from "react";
 import { Share2, Mail, Facebook, Twitter, Linkedin, Link2 } from "lucide-react";
+import { assets } from "../../assets/assets";
 
 const BlogHeader = ({ title, image, imageAlt }) => {
   const socialLinks = [
@@ -13,7 +14,7 @@ const BlogHeader = ({ title, image, imageAlt }) => {
 
   return (
     <section className="w-full flex flex-col items-center justify-center">
-      <div className="max-w-7xl md:max-w-5xl mx-auto px-4 py-8 space-y-8">
+      <div className="max-w-7xl md:max-w-5xl mx-auto px-4 py-8 space-y-8 flex flex-col items-center justify-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center leading-tight">
           {title}
         </h1>
@@ -32,8 +33,13 @@ const BlogHeader = ({ title, image, imageAlt }) => {
           })}
         </div> */}
 
-        <h4 className="text-center font-Montserrat font-medium text-3xl">
-          - Guest Author
+        <div className="flex items-center justify-center w-16">
+          <img className="rounded-full" src={assets.dummyProfile} alt="profile-image" />
+        </div>
+
+        <h4 className="text-center font-Montserrat font-medium text-xl capitalize">
+
+          Guest Author
         </h4>
 
         <div className="overflow-hidden  mt-8 ">

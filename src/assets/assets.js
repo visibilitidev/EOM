@@ -110,6 +110,7 @@ import top8TN from './Blogs/top8TN.png';
 import gamechanginplan from './Blogs/agameChangingPlan.JPG'
 import group1 from './Blogs/group_1.JPG';
 import duo1 from './Blogs/duo_1.JPG'
+import dummyProfile from './Blogs/dummyProfile.png'
 
 export const assets = {
 
@@ -122,6 +123,7 @@ export const assets = {
   top4keyInitiatives,
   top8TN,
   gamechanginplan,
+  dummyProfile,
 
   group1,
   duo1,
