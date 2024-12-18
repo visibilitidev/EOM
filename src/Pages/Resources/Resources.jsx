@@ -96,7 +96,7 @@ export default function Resources() {
       image: assets.gamechanginplan,
       category: "Startup",
       title: "A Game-Changing Event for Chennai’s Product Founders",
-      timeAgo: "2024-10-14",
+      timeAgo: "2024-11-7",
       commentsCount: 5,
       bigComponent: false,
     }
