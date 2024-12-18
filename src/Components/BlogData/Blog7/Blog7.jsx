@@ -56,15 +56,6 @@ const Blog7 = () => {
           entrepreneurs with access to capital, training programs, and financial
           incentives.
         </p>
-
-        <p>
-          <a
-            href="https://docs.google.com/spreadsheets/d/1fP3dqMku4JEzHjd8KPlPyxIFF2RE3OepLryXWScnZE4/edit?usp=sharing"
-            className="text-blue-500 hover:underline"
-          >
-            (Excel)
-          </a>
-        </p>
       </div>
 
       <div align="left">
