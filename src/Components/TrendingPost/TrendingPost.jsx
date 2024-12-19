@@ -1,8 +1,9 @@
 import React from "react";
 import { Zap, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-const TrendingPost = ({ time, title, isLast }) => (
-  <div className={`py-4 ${!isLast && "border-b border-gray-100"}`}>
+const TrendingPost = ({ time, title, isLast, handlePostClick }) => (
+  <div onClick={handlePostClick} className={`py-4 ${!isLast && "border-b border-gray-100"}`}>
     <div className="flex items-start gap-3 flex-col">
       <span className="text-sm text-gray-500 font-medium min-w-[50px]">
         {
@@ -19,12 +20,19 @@ const TrendingPost = ({ time, title, isLast }) => (
   </div>
 );
 
-const TrendingPosts = ({
-  title = "Trending now",
-  posts = [],
-  onSeeAllClick,
-  className = "",
-}) => {
+const TrendingPosts = ({ title = "Trending now", posts = [], onSeeAllClick, className = "" }) => {
+  const navigate = useNavigate();
+
+  const handlePostClick = (componentId, title, image) => {
+    return () => {
+      // Call navigate when the post is clicked
+      navigate("/blog", {
+        replace: true,
+        state: { title, image, componentId }
+      });
+    };
+  };
+
   return (
     <div className={`bg-white shadow-sm p-4 mt-10 ${className}`}>
       {/* Header */}
@@ -38,14 +46,13 @@ const TrendingPosts = ({
 
       {/* Posts List with Fixed Height and Overflow Scroll */}
       <div className="max-h-[81vh] overflow-y-auto divide-y divide-gray-100">
-        {" "}
-        {/* Adjust max-h as needed */}
         {posts.map((post, index) => (
           <TrendingPost
             key={post.id}
             time={post.timeAgo}
             title={post.title}
             isLast={index === posts.length - 1}
+            handlePostClick={handlePostClick(post.id, post.title, post.image)} // Pass the function here
           />
         ))}
       </div>
@@ -62,7 +69,6 @@ const TrendingPosts = ({
   );
 };
 
-// Example Usage
 const Trending = ({ blogPosts }) => {
   const handleSeeAllClick = () => {
     console.log("See all posts clicked");
