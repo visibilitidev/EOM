@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import BlogHeader from "../../Components/BlogHeader/BlogHeader";
 import TagsShare from "../../Components/TagsShare/TagsShare";
 import StartupCapital from "../../Components/BlogData/Blog1/Blog1";
@@ -11,31 +11,44 @@ import Blog6 from "../../Components/BlogData/Blog6/Blog6";
 import Blog7 from "../../Components/BlogData/Blog7/Blog7";
 import Blog8 from "../../Components/BlogData/Blog8/Blog8";
 import Blog9 from "../../Components/BlogData/Blog9/Blog9";
+import { blogList } from "../../data/blogs";
 
 export default function Blog() {
-  const location = useLocation();
-  const { title, image, componentId } = location.state || {};
+  const { blogName } = useParams(); // Get the blog name from the URL
 
-  // Default components array
-  const blogComponents = [
-    <StartupCapital />,
-    <Blog2 />,
-    <Blog3 />,
-    <Blog4 />,
-    <Blog5 />,
-    <Blog6 />,
-    <Blog7 />,
-    <Blog8 />,
-    <Blog9 />,
-  ];
+  // Replace hyphens in the blogName from the URL with spaces to match the blogList title
+  const normalizedBlogName = blogName.replace(/-/g, " ");
 
-  // Select the correct component based on `componentId`
-  const selectedComponent = blogComponents[componentId - 1];
+  // Map blog components to blog IDs
+  const blogComponents = {
+    1: <StartupCapital />,
+    2: <Blog2 />,
+    3: <Blog3 />,
+    4: <Blog4 />,
+    5: <Blog5 />,
+    6: <Blog6 />,
+    7: <Blog7 />,
+    8: <Blog8 />,
+    9: <Blog9 />,
+  };
+
+  // Find the matching blog entry based on the normalized blog name
+  const matchedBlog = blogList.find(
+    (blog) => blog.title.toLowerCase() === normalizedBlogName.toLowerCase()
+  );
+
+  if (!matchedBlog) {
+    return <div>Blog not found!</div>; // Handle unmatched blog case
+  }
 
   return (
     <>
-      <BlogHeader title={title} image={image} imageAlt={title} />
-      <div>{selectedComponent}</div>
+      <BlogHeader
+        title={matchedBlog.title}
+        image={matchedBlog.image}
+        imageAlt={matchedBlog.title}
+      />
+      <div>{blogComponents[matchedBlog.id]}</div>
       <TagsShare />
     </>
   );

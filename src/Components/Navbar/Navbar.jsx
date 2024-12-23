@@ -61,7 +61,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/comingsoon" className="block py-2 px-3 text-black">
+                <Link to="/resources" className="block py-2 px-3 text-black">
                   RESOURCES
                 </Link>
               </li>

@@ -23,14 +23,14 @@ const TrendingPost = ({ time, title, isLast, handlePostClick }) => (
 const TrendingPosts = ({ title = "Trending now", posts = [], onSeeAllClick, className = "" }) => {
   const navigate = useNavigate();
 
-  const handlePostClick = (componentId, title, image) => {
-    return () => {
-      // Call navigate when the post is clicked
-      navigate("/blog", {
-        replace: true,
-        state: { title, image, componentId }
-      });
-    };
+  // Corrected function to handle post click
+  const handlePostClick = (post) => {
+    const blogUrl = post.title.toLowerCase().replace(/ /g, "-"); // Replace spaces with hyphens
+    navigate(`/resources/${blogUrl}`, {
+      state: {
+        componentId: post.id, // Pass the component ID or other required state
+      },
+    });
   };
 
   return (
@@ -52,22 +52,23 @@ const TrendingPosts = ({ title = "Trending now", posts = [], onSeeAllClick, clas
             time={post.timeAgo}
             title={post.title}
             isLast={index === posts.length - 1}
-            handlePostClick={handlePostClick(post.id, post.title, post.image)} // Pass the function here
+            handlePostClick={() => handlePostClick(post)} // Pass a reference, not a call
           />
         ))}
       </div>
 
       {/* See All Link */}
-      <button
+      {/* <button
         onClick={onSeeAllClick}
         className="flex items-center gap-1 text-orange-500 font-medium mt-4 hover:text-orange-600 transition-colors"
       >
         SEE ALL POSTS
         <ChevronRight size={16} />
-      </button>
+      </button> */}
     </div>
   );
 };
+
 
 const Trending = ({ blogPosts }) => {
   const handleSeeAllClick = () => {

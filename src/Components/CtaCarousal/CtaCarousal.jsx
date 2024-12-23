@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { assets } from "../../assets/assets";
-import { useNavigate } from "react-router-dom";
 
-const CtaCarousel = ({ selectedSlide, blogList }) => {
+const CtaCarousel = ({ selectedSlide, blogList, handleBlogClick }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const navigate = useNavigate();
 
   useEffect(() => {
     setCurrentSlide(selectedSlide);
@@ -17,15 +14,6 @@ const CtaCarousel = ({ selectedSlide, blogList }) => {
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + blogList.length) % blogList.length);
-  };
-  const goToBlog = (slide) => {
-    navigate("/blog", {
-      state: {
-        title: slide.title,
-        image: slide.image,
-        componentId: slide.id,
-      },
-    });
   };
 
 
@@ -52,7 +40,7 @@ const CtaCarousel = ({ selectedSlide, blogList }) => {
               </h2>
 
               <button
-                onClick={() => goToBlog(slide)}
+                onClick={() => handleBlogClick(slide)}
                 className="px-6 py-3 bg-white text-black rounded-md font-semibold hover:bg-gray-200 transition-colors duration-200 transform hover:scale-105"
               >
                 Read More
