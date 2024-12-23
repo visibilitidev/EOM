@@ -50,7 +50,7 @@ const blogList = [
         id: 6,
         image: assets.how_big_1Lakh,
         category: "Finance",
-        title: "How big Rs 1 Lakh can grow? Power of Compounding - The Rule of 114 & 144",
+        title: "How big Rs 1 Lakh can grow? Power of Compounding, The Rule of 114 & 144",
         timeAgo: "2024-11-04",
 
         commentsCount: 5,

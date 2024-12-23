@@ -1,26 +1,12 @@
 import { Clock } from "lucide-react";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 // Individual Blog Card Component
-const GridOneComponent = ({ image, category, title, excerpt, timeAgo, bigComponent, outsideDescription }) => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    // Navigate to the Blog page, passing Blog5 componentId (4)
-    navigate("/blog", {
-      state: {
-        title,
-        image,
-        description: excerpt,
-        componentId: 4, // Passing the componentId for Blog5
-      },
-    });
-  };
+const GridOneComponent = ({ image, category, title, excerpt, timeAgo, outsideDescription }) => {
 
   return (
     <div className="bg-white  shadow-md hover:shadow-xl transition-all duration-300 h-full">
-      <div className="relative cursor-pointer" onClick={handleClick}>
+      <div className="relative cursor-pointer">
         <img
           src={image}
           alt={title}
@@ -47,12 +33,6 @@ const GridOneComponent = ({ image, category, title, excerpt, timeAgo, bigCompone
                 month: "short", // "short" for abbreviated month (e.g., "Sept")
                 year: "numeric",
               })}</span>
-          <button
-            onClick={handleClick} // Trigger the same redirect for the button click
-            className="text-blue-600 hover:text-blue-800 text-sm font-medium"
-          >
-            More →
-          </button>
         </div>
       </div>
     </div>

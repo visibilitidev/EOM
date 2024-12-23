@@ -11,23 +11,11 @@ const CommonGrid = ({
   commentsCount,
   className = "",
 }) => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/blog", {
-      state: {
-        title,
-        image,
-        componentId: id, // Pass componentId based on the `id` passed
-      },
-    });
-  };
 
   return (
     <article
       id={`post-${id}`}
       className={`bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 ${className}`}
-      onClick={handleClick}
     >
       {/* Image Container */}
       <div className="relative aspect-[16/9]">
