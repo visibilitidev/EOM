@@ -79,7 +79,7 @@ const blogList = [
         id: 9,
         image: assets.gamechanginplan,
         category: "Startup",
-        title: "A Game-Changing Event for Chennai’s Product Founders",
+        title: "A Game Changing Event for Chennai’s Product Founders",
         timeAgo: "2024-11-7",
         commentsCount: 5,
         bigComponent: false,
