@@ -132,7 +132,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              to="/comingsoon"
+              to="/resources"
               onClick={toggleSidebar}
               className="block py-2 px-3 text-black font-bold"
             >
