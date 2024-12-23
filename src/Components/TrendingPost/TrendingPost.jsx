@@ -20,12 +20,24 @@ const TrendingPost = ({ time, title, isLast, handlePostClick }) => (
   </div>
 );
 
+const generateBlogUrl = (title) => {
+  // Remove all special characters, replace spaces with hyphens, and clean up multiple hyphens
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")  // Remove special characters
+    .replace(/\s+/g, "-")          // Replace spaces with hyphens
+    .replace(/-+/g, "-")           // Replace multiple hyphens with a single hyphen
+    .replace(/^-+/, "")            // Remove leading hyphens
+    .replace(/-+$/, "");           // Remove trailing hyphens
+};
+
+
 const TrendingPosts = ({ title = "Trending now", posts = [], onSeeAllClick, className = "" }) => {
   const navigate = useNavigate();
 
   // Corrected function to handle post click
   const handlePostClick = (post) => {
-    const blogUrl = post.title.toLowerCase().replace(/ /g, "-"); // Replace spaces with hyphens
+    const blogUrl = generateBlogUrl(post.title); // Replace spaces with hyphens
     navigate(`/resources/${blogUrl}`, {
       state: {
         componentId: post.id, // Pass the component ID or other required state

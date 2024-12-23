@@ -62,7 +62,7 @@ export default function Blog() {
   }
 
   return (
-    <>
+    <section className="p-2 overflow-hidden">
       <BlogHeader
         title={matchedBlog.title}
         image={matchedBlog.image}
@@ -70,6 +70,6 @@ export default function Blog() {
       />
       <div>{blogComponents[matchedBlog.id]}</div>
       <TagsShare />
-    </>
+    </section>
   );
 }

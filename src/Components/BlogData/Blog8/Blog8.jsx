@@ -50,9 +50,9 @@ const Blog8 = () => {
         </p>
       </div>
 
-      <div align="left">
+      <div align="left" className="overflow-x-scroll">
         <table
-          style={{ border: "none", borderCollapse: "collapse", width: "100%" }}
+          style={{ border: "none",overflowX:'auto',WebkitOverflowScrolling:'touch', borderCollapse: "collapse", width: "100%" }}
         >
           <tbody>
             <tr className="border border-gray-800 hover:bg-gray-100">

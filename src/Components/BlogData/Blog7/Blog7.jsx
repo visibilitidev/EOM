@@ -58,7 +58,7 @@ const Blog7 = () => {
         </p>
       </div>
 
-      <div align="left">
+      <div align="left" className="overflow-x-scroll">
         <table>
           <colgroup>
             <col width={22} />
