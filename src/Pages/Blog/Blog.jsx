@@ -13,13 +13,38 @@ import Blog8 from "../../Components/BlogData/Blog8/Blog8";
 import Blog9 from "../../Components/BlogData/Blog9/Blog9";
 import { blogList } from "../../data/blogs";
 
+// Function to normalize titles: remove non-alphabetical characters and replace hyphens with spaces
+const generateBlogUrl = (title) => {
+  // Remove all special characters, replace spaces with hyphens, and clean up multiple hyphens
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")  // Remove special characters
+    .replace(/\s+/g, "-")          // Replace spaces with hyphens
+    .replace(/-+/g, "-")           // Replace multiple hyphens with a single hyphen
+    .replace(/^-+/, "")            // Remove leading hyphens
+    .replace(/-+$/, "");           // Remove trailing hyphens
+};
+
+// Function to parse the incoming blogName from the URL
+const parseBlogUrl = (blogName) => {
+  // Normalize the URL parameter by removing non-alphabetical characters and replacing hyphens with spaces
+
+  // Find the matching blog from the blog list by comparing the normalized titles
+  const matchingBlog = blogList.find(
+    (blog) => generateBlogUrl(blog.title) === blogName
+  );
+
+  // Return the matching blog or undefined if no match is found
+  return matchingBlog ? matchingBlog : undefined;
+};
+
 export default function Blog() {
   const { blogName } = useParams(); // Get the blog name from the URL
 
-  // Replace hyphens in the blogName from the URL with spaces to match the blogList title
-  const normalizedBlogName = blogName.replace(/-/g, " ");
+  // Parse the blogName to find the corresponding blog
+  const matchedBlog = parseBlogUrl(blogName);
 
-  // Map blog components to blog IDs
+  // Map blog IDs to components
   const blogComponents = {
     1: <StartupCapital />,
     2: <Blog2 />,
@@ -31,11 +56,6 @@ export default function Blog() {
     8: <Blog8 />,
     9: <Blog9 />,
   };
-
-  // Find the matching blog entry based on the normalized blog name
-  const matchedBlog = blogList.find(
-    (blog) => blog.title.toLowerCase() === normalizedBlogName.toLowerCase()
-  );
 
   if (!matchedBlog) {
     return <div>Blog not found!</div>; // Handle unmatched blog case

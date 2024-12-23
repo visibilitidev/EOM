@@ -15,7 +15,7 @@ const CommonGrid = ({
   return (
     <article
       id={`post-${id}`}
-      className={`bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 ${className}`}
+      className={`bg-white overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all duration-300 ${className}`}
     >
       {/* Image Container */}
       <div className="relative aspect-[16/9]">

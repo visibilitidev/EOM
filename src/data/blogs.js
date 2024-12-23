@@ -2,13 +2,22 @@ import { assets } from "../assets/assets";
 
 const blogList = [
     {
+        id: 9,
+        image: assets.gamechanginplan,
+        category: "Startup",
+        title: "A Game-Changing Event for Chennai’s Product Founders",
+        timeAgo: "2024-11-7",
+        commentsCount: 5,
+        bigComponent: true,
+        outsideDescription: "On November 7th, Entrepreneurs of Madras (EoM) hosted one of our most exciting and impactful events to date: the Fireside Chat with Kannan Sitaram, Co-founder of Fireside Ventures, one of India’s leading venture capital firms. Held at the beautiful Villa 77 in Adyar, Chennai, this closed-door gathering saw over 50+ product founders come together for an evening of learning, networking, and growth."
+    },
+    {
         id: 1,
         image: assets.blog1,
         category: "Finance",
         title: "12 Sources of Startup Capital You MUST know about", timeAgo: "2024-12-09",
         commentsCount: 5,
-        bigComponent: true,
-        outsideDescription: " There is no one-fit-all funding source when it comes to startups. Everystartup is unique based on its industry, needs, challenges, potential,size &amp; scale - So, are the funding sources.No matter how good the product or service is, a startup needs funds to launch &amp; scale. While many founders invest their savings only sometimes is it adequate to meet their goals."
+        bigComponent: false,
     },
     {
         id: 2,
@@ -50,9 +59,8 @@ const blogList = [
         id: 6,
         image: assets.how_big_1Lakh,
         category: "Finance",
-        title: "How big Rs 1 Lakh can grow? Power of Compounding, The Rule of 114 & 144",
+        title: "How big Rs 1 Lakh can grow? Power of Compounding - The Rule of 114 & 144",
         timeAgo: "2024-11-04",
-
         commentsCount: 5,
         bigComponent: false
     },
@@ -74,15 +82,6 @@ const blogList = [
 
         commentsCount: 5,
         bigComponent: false
-    },
-    {
-        id: 9,
-        image: assets.gamechanginplan,
-        category: "Startup",
-        title: "A Game Changing Event for Chennai’s Product Founders",
-        timeAgo: "2024-11-7",
-        commentsCount: 5,
-        bigComponent: false,
     }
 ];
 

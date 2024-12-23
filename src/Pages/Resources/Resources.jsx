@@ -15,8 +15,20 @@ export default function Resources() {
     setSelectedSlide(index);
   };
 
+  const generateBlogUrl = (title) => {
+    // Remove all special characters, replace spaces with hyphens, and clean up multiple hyphens
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, "")  // Remove special characters
+      .replace(/\s+/g, "-")          // Replace spaces with hyphens
+      .replace(/-+/g, "-")           // Replace multiple hyphens with a single hyphen
+      .replace(/^-+/, "")            // Remove leading hyphens
+      .replace(/-+$/, "");           // Remove trailing hyphens
+  };
+
+
   const goToBlog = (slide) => {
-    const blogUrl = slide.title.toLowerCase().replace(/ /g, "-"); // Replace spaces with hyphens
+    const blogUrl = generateBlogUrl(slide.title) // Replace spaces with hyphens
     navigate(`/resources/${blogUrl}`, {
       state: {
         componentId: slide.id, // Pass the component ID or other required state

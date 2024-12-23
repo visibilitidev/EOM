@@ -46,7 +46,7 @@ export default function GridBlog({ blogList, handleBlogClick }) {
           return (
             <React.Fragment key={article.id}>
               <div
-                className={isBigComponent ? styles.gridItem1 : styles[`gridItem${index + 1}`]}
+                className={isBigComponent ? `${styles.gridItem1} cursor-pointer` : styles[`gridItem${index + 1} cursor-pointer`]}
                 onClick={() => handleBlogClick(article)} // Handle blog click
               >
                 {isBigComponent ? (
