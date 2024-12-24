@@ -3,7 +3,7 @@ import { assets } from '../../../assets/assets'
 
 const Blog9 = () => {
     return (
-        <section className='max-w-5xl mx-auto'>
+        <section className='max-w-5xl mx-auto px-4'>
             <>
                 <p>
                     <strong>
@@ -508,7 +508,7 @@ const Blog9 = () => {
                         Some key takeaways included:
                     </span>
                 </p>
-                <ul>
+                <ul className='px-2'>
                     <li
                         style={{
                             listStyleType: "disc",
@@ -534,7 +534,7 @@ const Blog9 = () => {
                 <p>
                     <br />
                 </p>
-                <ul>
+                <ul className='px-2'>
                     <li
                         style={{
                             listStyleType: "disc",
@@ -582,7 +582,7 @@ const Blog9 = () => {
                 <p>
                     <br />
                 </p>
-                <ul>
+                <ul className='px-2'>
                     <li
                         style={{
                             listStyleType: "disc",
@@ -607,7 +607,7 @@ const Blog9 = () => {
                 <p>
                     <br />
                 </p>
-                <ul>
+                <ul className='px-2'>
                     <li
                         style={{
                             listStyleType: "disc",
@@ -786,7 +786,7 @@ const Blog9 = () => {
                         played a huge role in making this event a success:
                     </span>
                 </p>
-                <ul>
+                <ul className='px-2'>
                     <li
                         style={{
                             listStyleType: "disc",
@@ -819,7 +819,7 @@ const Blog9 = () => {
                 <p>
                     <br />
                 </p>
-                <ul>
+                <ul className='px-2'>
                     <li
                         style={{
                             listStyleType: "disc",
@@ -850,7 +850,7 @@ const Blog9 = () => {
                 <p>
                     <br />
                 </p>
-                <ul>
+                <ul className='px-2'>
                     <li
                         style={{
                             listStyleType: "disc",
