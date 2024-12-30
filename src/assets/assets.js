@@ -111,7 +111,7 @@ import gamechanginplan from './Blogs/agameChangingPlan.JPG'
 import group1 from './Blogs/group_1.JPG';
 import duo1 from './Blogs/duo_1.JPG'
 import dummyProfile from './Blogs/dummyProfile.png'
-import dindugalPonram from './Blogs/dindugal_ponram.png'
+import dindugalPonram from './Blogs/dindugalPonram.png'
 
 export const assets = {
 
