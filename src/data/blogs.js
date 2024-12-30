@@ -2,13 +2,23 @@ import { assets } from "../assets/assets";
 
 const blogList = [
     {
+        id: 10,
+        image: assets.dindugalPonram,
+        category: "Startup Growth",
+        title: "Dindigul Ponram comes to Namma Madras through a New Partnership",
+        timeAgo: "2024-12-31",
+        commentsCount: 5,
+        bigComponent: true,
+        outsideDescription: "The iconic Dindigul Ponram, renowned for its legacy of authentic non-vegetarian delicacies and traditional biryanis, is all set to make its mark in the heart of Chennai. This exciting new outlet will open its doors in Ashok Nagar, bringing the rich flavors of Dindigul to the bustling streets of the city."
+    },
+    {
         id: 9,
         image: assets.gamechanginplan,
         category: "Startup",
         title: "A Game-Changing Event for Chennai’s Product Founders",
         timeAgo: "2024-11-7",
         commentsCount: 5,
-        bigComponent: true,
+        bigComponent: false,
         outsideDescription: "On November 7th, Entrepreneurs of Madras (EoM) hosted one of our most exciting and impactful events to date: the Fireside Chat with Kannan Sitaram, Co-founder of Fireside Ventures, one of India’s leading venture capital firms. Held at the beautiful Villa 77 in Adyar, Chennai, this closed-door gathering saw over 50+ product founders come together for an evening of learning, networking, and growth."
     },
     {
@@ -79,10 +89,9 @@ const blogList = [
         category: "Women Empowerment",
         title: "Top 8 Tamil Nadu State Government Schemes in 2025 for Women Startups",
         timeAgo: "2024-10-21",
-
         commentsCount: 5,
         bigComponent: false
-    }
+    },
 ];
 
 

@@ -111,6 +111,7 @@ import gamechanginplan from './Blogs/agameChangingPlan.JPG'
 import group1 from './Blogs/group_1.JPG';
 import duo1 from './Blogs/duo_1.JPG'
 import dummyProfile from './Blogs/dummyProfile.png'
+import dindugalPonram from './Blogs/dindugal_ponram.png'
 
 export const assets = {
 
@@ -124,6 +125,7 @@ export const assets = {
   top8TN,
   gamechanginplan,
   dummyProfile,
+  dindugalPonram,
 
   group1,
   duo1,
