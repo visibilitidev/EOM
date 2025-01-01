@@ -32,11 +32,13 @@ const Blog10 = () => {
                 <p className="text-base">
                     Their biryani, crafted with a perfect fat-to-meat ratio, offers rich flavor without the usual heaviness. Their commitment to authenticity goes beyond biryani, specializing in a wide range of traditional non-vegetarian dishes, emphasizing the "head-to-toe of mutton" approach. Every dish carries the hallmark of Dindigul’s culinary heritage, making this a true gastronomical experience.
                 </p>
+                <br />
                 <h3 className="text-lg font-bold">The Founders Behind Dindigul Ponram</h3>
                 <p className="text-base">
                     Dindigul Ponram was founded in 1973 by{' '}
                     <strong>V. Ponram Yadav</strong>, who transformed a small shop in Begampur, Dindigul, into a cherished eatery known for its iconic mutton biriyani. Over the decades, the Ponram family has nurtured this legacy, and the brand is now proudly managed by its fourth generation. Each member of the family remains committed to upholding the authentic flavors and traditions that have made Dindigul Ponram a household name.
                 </p>
+                <br />
                 <h3 className="text-lg font-bold">A Collaboration for Chennai</h3>
                 <p className="text-base">
                     This new outlet is a joint venture between the promoters of{' '}
@@ -90,6 +92,7 @@ const Blog10 = () => {
                 <p className="text-base">
                     This Chennai outlet stands out for its dedication to authenticity. To replicate the exact taste of Dindigul, the meat is sourced from goats brought directly from Dindigul and processed at nearby farms to ensure exceptional freshness. Additionally, the oil and spices are procured exclusively from Dindigul, preserving the rich, traditional flavors that define every dish. This meticulous approach ensures that every plate served in Chennai is as authentic as one would experience in Dindigul.
                 </p>
+                <br />
                 <h3 className="text-lg font-bold">A Dining Experience Like No Other</h3>
                 <p className="text-base">
                     The Ashok Nagar outlet is designed to offer an extraordinary dining experience. Spread across two floors, with 150 capacity, each space has been meticulously planned to blend comfort with style:
@@ -111,6 +114,103 @@ const Blog10 = () => {
                     Dindigul Ponram's menu showcases a "head-to-toe of mutton" approach, celebrating the versatility of mutton in every form. Their{' '}
                     <strong>signature mutton biriyani</strong> is a star attraction - tender pieces of lamb perfectly paired with fragrant, aged seeraga samba rice, delivering a burst of authentic Tamil flavors in every bite.
                 </p>
+                <p className="text-base">
+                    For those who love variety, dishes like{" "}
+                    <strong>Mutton Chukka</strong>, <strong>Mutton Egg Varuval</strong>,{" "}
+                    <strong>Nenju Chops</strong>, and the unique <strong>Mutton Cola Urundai</strong>{" "}
+                    are must-tries.
+                </p>
+                <p className="mt-2 text-base">
+                    And don’t forget to end your meal on a sweet note with their rich and
+                    indulgent <strong>Khasi Halwa</strong>.
+                </p>
+                <h3 className="text-lg font-bold mt-6">The Secret Behind the Flavors</h3>
+                <p className="mt-2 text-base">
+                    Dindigul Ponram’s unmatched flavor lies in the careful selection of spices
+                    sourced directly from specific regions in Tamil Nadu:
+                </p>
+                <ul className="list-disc ml-6 space-y-1">
+                    <li>
+                        <strong>Kottapatti Brinjals and Green Chillies</strong> from Dindigul.
+                    </li>
+                    <li>
+                        <strong>Pepper</strong> from Thandikudi.
+                    </li>
+                    <li>
+                        <strong>Coriander Seeds and Dry Chilli</strong> from Virudhunagar district.
+                    </li>
+                    <li>
+                        <strong>Cardamom</strong> from Bodi.
+                    </li>
+                    <li>
+                        <strong>Cloves</strong> from Thadiyankudisai.
+                    </li>
+                    <li>
+                        <strong>Nutmeg</strong> from Ayyampalayam.
+                    </li>
+                    <li>
+                        <strong>Hill Garlic</strong> from Poombarai.
+                    </li>
+                </ul>
+                <p className=" text-base">
+                    Ghee is sourced from their own farms, and most spices are pickled, dried,
+                    and powdered in their in-house milling units to ensure the authenticity of
+                    every dish.
+                </p>
+                <br />
+                <h3 className="text-lg font-bold">
+                    Why Should Chennai Foodies Be Excited?
+                </h3>
+                <ul className="list-disc ml-6  space-y-1">
+                    <li>
+                        <strong>Traditional Dishes</strong>: Bringing the best of Dindigul’s
+                        heritage with an emphasis on traditional non-veg specialties.
+                    </li>
+                    <li>
+                        <strong>Signature Spices</strong>: Every dish is crafted using spices
+                        sourced from specific regions in Dindigul, ensuring unmatched flavor and
+                        authenticity.
+                    </li>
+                    <li>
+                        <strong>A Dining Destination</strong>: It’s more than just food; it’s
+                        about immersing yourself in a rich cultural and culinary experience.
+                    </li>
+                </ul>
+                <br />
+                <h3 className="text-lg font-bold">A Milestone for Food Lovers</h3>
+                <p className=" text-base">
+                    Dindigul Ponram’s arrival in Chennai is not just the opening of another
+                    restaurant; it’s the meeting of two legacies.
+                </p>
+                <p className="mt-1 text-base">
+                    If you’re a die-hard biryani lover, a fan of traditional mutton dishes, or
+                    someone who simply enjoys exceptional food in an extraordinary setting,
+                    this outlet is set to be your next favorite destination.
+                </p>
+                <p className="mt-1 text-base">
+                    The aroma of Dindigul spices, the richness of authentic recipes, and the
+                    warmth of a vibrant dining experience await you at Ashok Nagar.
+                </p>
+                <hr className="my-8 border-gray-300" />
+                <h3 className="text-lg font-bold mt-6">About Entrepreneurs of Madras</h3>
+                <p className=" text-base">
+                    Entrepreneurs of Madras club is a premium community dedicated to empowering
+                    and supporting entrepreneurs in Tamil Nadu. The club serves as a platform
+                    for like-minded individuals to connect, collaborate, and grow. From
+                    networking events to mentorship opportunities, Entrepreneurs of Madras
+                    supports innovation and provides resources to help startups and businesses
+                    thrive in today’s competitive landscape.
+                </p>
+                <p className=" text-base">
+                    <a
+                        href="https://www.entrepreneursofmadras.com/"
+                        className="text-blue-600 underline"
+                    >
+                        Visit our website
+                    </a>{" "}
+                    to learn more and become a part of this vibrant entrepreneurial ecosystem.
+                </p>
+
             </div>
         </section>
     )
