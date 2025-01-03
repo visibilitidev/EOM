@@ -41,7 +41,7 @@ const BlogHeader = ({ title, image, imageAlt, authorImage = assets.dummyProfile,
             </div>
           </a>
           <a href={authorNameURL}>
-            <h4 className="text-center font-Montserrat font-medium text-xl capitalize">
+            <h4 className="text-center font-Montserrat font-medium text-xl capitalize text-blue-700 underline">
               {authorName}
             </h4>
           </a>
