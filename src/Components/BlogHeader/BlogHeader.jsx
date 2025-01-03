@@ -2,7 +2,7 @@ import React from "react";
 import { Share2, Mail, Facebook, Twitter, Linkedin, Link2 } from "lucide-react";
 import { assets } from "../../assets/assets";
 
-const BlogHeader = ({ title, image, imageAlt }) => {
+const BlogHeader = ({ title, image, imageAlt, authorImage = assets.dummyProfile, authorName = "Guest Author" }) => {
   const socialLinks = [
     { icon: Facebook },
     { icon: Twitter },
@@ -15,10 +15,13 @@ const BlogHeader = ({ title, image, imageAlt }) => {
   return (
     <section className="w-full flex flex-col items-center justify-center">
       <div className="max-w-7xl md:max-w-5xl mx-auto px-4 py-8 gap-8 flex flex-col items-center justify-center">
+
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center leading-tight">
           {title}
         </h1>
-        {/* 
+
+        <div className="flex flex-col items-center justify-center gap-4">
+          {/* 
         <div className="flex flex-wrap justify-center gap-3">
           {socialLinks.map((social) => {
             const Icon = social.icon;
@@ -33,13 +36,14 @@ const BlogHeader = ({ title, image, imageAlt }) => {
           })}
         </div> */}
 
-        <div className="flex items-center justify-center w-16">
-          <img className="rounded-full" src={assets.dummyProfile} alt="profile-image" />
+          <div className="flex items-center justify-center w-16">
+            <img className="rounded-full" src={authorImage} alt="profile-image" />
+          </div>
+          <h4 className="text-center font-Montserrat font-medium text-xl capitalize">
+            {authorName}
+          </h4>
         </div>
 
-        <h4 className="text-center font-Montserrat font-medium text-xl capitalize">
-          Guest Author
-        </h4>
 
         <div className="overflow-hidden">
           <img

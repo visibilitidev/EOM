@@ -69,6 +69,8 @@ export default function Blog() {
         title={matchedBlog.title}
         image={matchedBlog.image}
         imageAlt={matchedBlog.title}
+        authorImage={matchedBlog?.authorImage}
+        authorName={matchedBlog?.authorName}
       />
       <div>{blogComponents[matchedBlog.id]}</div>
       <TagsShare />

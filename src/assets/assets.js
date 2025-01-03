@@ -112,9 +112,11 @@ import group1 from './Blogs/group_1.JPG';
 import duo1 from './Blogs/duo_1.JPG'
 import dummyProfile from './Blogs/dummyProfile.png'
 import dindugalPonram from './Blogs/dindugalPonram.png'
+import blog10_author from './Blogs/blog10_author.jpeg'
 
 export const assets = {
 
+  blog10_author,
   blog1,
   seven_latest,
   MostCommon21,
