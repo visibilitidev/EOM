@@ -2,7 +2,7 @@ import React from "react";
 import { Share2, Mail, Facebook, Twitter, Linkedin, Link2 } from "lucide-react";
 import { assets } from "../../assets/assets";
 
-const BlogHeader = ({ title, image, imageAlt, authorImage = assets.dummyProfile, authorName = "Guest Author" }) => {
+const BlogHeader = ({ title, image, imageAlt, authorImage = assets.dummyProfile, authorName = "Guest Author", authorNameURL = "#" }) => {
   const socialLinks = [
     { icon: Facebook },
     { icon: Twitter },
@@ -35,13 +35,16 @@ const BlogHeader = ({ title, image, imageAlt, authorImage = assets.dummyProfile,
             );
           })}
         </div> */}
-
-          <div className="flex items-center justify-center w-16">
-            <img className="rounded-full" src={authorImage} alt="profile-image" />
-          </div>
-          <h4 className="text-center font-Montserrat font-medium text-xl capitalize">
-            {authorName}
-          </h4>
+          <a href={authorNameURL}>
+            <div className="flex items-center justify-center w-16">
+              <img className="rounded-full" src={authorImage} alt="profile-image" />
+            </div>
+          </a>
+          <a href={authorNameURL}>
+            <h4 className="text-center font-Montserrat font-medium text-xl capitalize">
+              {authorName}
+            </h4>
+          </a>
         </div>
 
 

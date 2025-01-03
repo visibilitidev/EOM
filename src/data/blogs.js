@@ -11,7 +11,8 @@ const blogList = [
         bigComponent: true,
         outsideDescription: "The iconic Dindigul Ponram, renowned for its legacy of authentic non-vegetarian delicacies and traditional biryanis, is all set to make its mark in the heart of Chennai. This exciting new outlet will open its doors in Ashok Nagar, bringing the rich flavors of Dindigul to the bustling streets of the city.",
         authorImage: assets.blog10_author,
-        authorName:"Rohini Subramanian"
+        authorName:"Rohini Subramanian",
+        authorNameURL:"https://www.linkedin.com/in/rohinicontentcreator"
     },
     {
         id: 9,

@@ -70,6 +70,7 @@ export default function Blog() {
         image={matchedBlog.image}
         imageAlt={matchedBlog.title}
         authorImage={matchedBlog?.authorImage}
+        authorNameURL={matchedBlog?.authorNameURL}
         authorName={matchedBlog?.authorName}
       />
       <div>{blogComponents[matchedBlog.id]}</div>
