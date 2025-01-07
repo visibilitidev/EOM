@@ -47,6 +47,7 @@ const Blog11 = () => {
             <p className="font-bold">
                 You’re here for results. Sales, profit, and growth. So let’s get to it.
             </p>
+
             <h4 className="text-lg font-bold mt-8">The Problem: Quantity Over Quality</h4>
             <p className="mt-4">
                 Just talking about your business everywhere (one step) may seem like it’s working. Sure, your email would grow. You get impressions. You get attention.
@@ -95,6 +96,7 @@ const Blog11 = () => {
                 Most businesses screw up by chasing the wrong audience, tracking useless metrics, and sending the wrong message.
             </p>
             <p>So what do you have to do now?</p>
+             <br />
             <h3 className="text-xl font-bold mt-8">The Two-Step Lead Generation Method</h3>
             <p>
                 The two-step method is about locking onto the leads who actually “matter”. Here’s how it works:
@@ -120,6 +122,7 @@ const Blog11 = () => {
             <p>
                 And trust converts. It happened to me. It happened to my clients. Maybe now… maybe in 20 days, in 60, or in 90 days. When you build trust with your ideal leads, you WILL close them SOMEDAY.
             </p>
+            <br />
             <h4 className="text-lg font-bold mt-8">Step Two: Nurture Like a Pro</h4>
             <p>
                 Great. You’ve got some leads now. But here’s the deal: letting it sit there does absolutely nothing. This step is where you turn “potential” into profit.
@@ -153,6 +156,7 @@ const Blog11 = () => {
                 If you want to set the 2-step lead-gen method for your business, click &lt;here&gt; and let’s see how we can get it done for you.
             </p>
             <p className="text-base">Back to the topic. There’s MORE value for you now.</p>
+            <br />
             <h3 className="text-lg font-bold">
                 Why This Method Works (And the Data to Back It Up)
             </h3>
@@ -175,6 +179,7 @@ const Blog11 = () => {
             <p className="text-base">
                 I’ve seen my clients get 3x more leads within 2-3 months after we’ve set this up for them.
             </p>
+            <br />
             <h3 className="text-lg font-bold">Who Is This Method For?</h3>
             <p className="text-base">
                 This method is perfect for anyone who needs “high-quality” leads...
@@ -208,7 +213,9 @@ const Blog11 = () => {
             <p className="text-base">
                 DO NOT skip this step. This is where you get leads. Now, nurture these leads and make them your clients.
             </p>
+            <br />
             <h3 className="text-lg font-bold">What Now?</h3>
+
             <p className="text-base">
                 The two-step lead-gen method is a proven strategy that works.
             </p>
@@ -216,7 +223,19 @@ const Blog11 = () => {
                 If you set it up correctly, you’ll convert more leads, and you’ll make more money from them.
             </p>
             <p className="text-base">Now, go out there and start closing.</p>
-
+            <div className="space-y-2">
+                <p className="text-base italic">About the Author</p>
+                <p className="text-base">
+                    Mahesh is a go-to-market consultant. He helps businesses with marketing, lead generation, sales growth, and client retention. To get in touch, check out his{" "}
+                    <a
+                        href="http://linkedin.com/in/vrmahesh117"
+                        className="text-blue-600 underline"
+                    >
+                        LinkedIn
+                    </a>
+                    .
+                </p>
+            </div>
         </section>
     )
 }

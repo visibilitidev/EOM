@@ -5,7 +5,7 @@ const blogList = [
     {
         id: 11,
         image: assets.cashBurn,
-        category: "Business Startegies",
+        category: "Business Strategies",
         title: "Why Most Lead Generation Strategies Crash and Burn",
         timeAgo: "2025-01-06",
         commentsCount: 5,
