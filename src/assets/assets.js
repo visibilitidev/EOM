@@ -113,9 +113,14 @@ import duo1 from './Blogs/duo_1.JPG'
 import dummyProfile from './Blogs/dummyProfile.png'
 import dindugalPonram from './Blogs/dindugalPonram.png'
 import blog10_author from './Blogs/blog10_author.jpeg'
+import blog_11_author from './Blogs/blog_11_author.png'
+import cashBurn from './Blogs/cash_burn.png'
+import JCB from './JCB.webp'
 
 export const assets = {
-
+  JCB,
+  cashBurn,
+  blog_11_author,
   blog10_author,
   blog1,
   seven_latest,

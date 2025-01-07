@@ -1,6 +1,20 @@
 import { assets } from "../assets/assets";
 
 const blogList = [
+
+    {
+        id: 11,
+        image: assets.cashBurn,
+        category: "Business Startegies",
+        title: "Why Most Lead Generation Strategies Crash and Burn",
+        timeAgo: "2025-01-06",
+        commentsCount: 5,
+        bigComponent: true,
+        outsideDescription: "You’re here for results. Sales, profit, and growth. So let’s get to it.The Problem: Quantity Over QualityJust talking about your business everywhere (one step) may seem like it’s working.Sure, your email would grow. You get impressions. You get attention.",
+        authorImage: assets.blog_11_author,
+        authorName: "Mahesh VR",
+        authorNameURL: "https://www.linkedin.com/in/vrmahesh117/"
+    },
     {
         id: 10,
         image: assets.dindugalPonram,
@@ -8,11 +22,11 @@ const blogList = [
         title: "Dindigul Ponram comes to Namma Madras through a New Partnership",
         timeAgo: "2024-12-31",
         commentsCount: 5,
-        bigComponent: true,
+        bigComponent: false,
         outsideDescription: "The iconic Dindigul Ponram, renowned for its legacy of authentic non-vegetarian delicacies and traditional biryanis, is all set to make its mark in the heart of Chennai. This exciting new outlet will open its doors in Ashok Nagar, bringing the rich flavors of Dindigul to the bustling streets of the city.",
         authorImage: assets.blog10_author,
-        authorName:"Rohini Subramanian",
-        authorNameURL:"https://www.linkedin.com/in/rohinicontentcreator"
+        authorName: "Rohini Subramanian",
+        authorNameURL: "https://www.linkedin.com/in/rohinicontentcreator"
     },
     {
         id: 9,
