@@ -116,8 +116,12 @@ import blog10_author from './Blogs/blog10_author.jpeg'
 import blog_11_author from './Blogs/blog_11_author.png'
 import cashBurn from './Blogs/cash_burn.png'
 import JCB from './JCB.webp'
+import blog_12_author from './Blogs/selma-sayed.png'
+import blog12_banner from './Blogs/blog-12-banner.jpeg'
 
 export const assets = {
+  blog_12_author,
+  blog12_banner,
   JCB,
   cashBurn,
   blog_11_author,

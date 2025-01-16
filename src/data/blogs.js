@@ -3,13 +3,26 @@ import { assets } from "../assets/assets";
 const blogList = [
 
     {
+        id: 12,
+        image: assets.blog12_banner,
+        category: "Business Strategies",
+        title: "Why Hire a Content Marketer When You’ve Got AI Tools?",
+        timeAgo: "2025-01-15",
+        commentsCount: 5,
+        bigComponent: true,
+        outsideDescription: "You’re here for results. Sales, profit, and growth. So let’s get to it.The Problem: Quantity Over QualityJust talking about your business everywhere (one step) may seem like it’s working.Sure, your email would grow. You get impressions. You get attention.",
+        authorImage: assets.blog_12_author,
+        authorName: "salma seyed",
+        authorNameURL: "https://www.linkedin.com/in/salmaseyed93/"
+    },
+    {
         id: 11,
         image: assets.cashBurn,
         category: "Business Strategies",
         title: "Why Most Lead Generation Strategies Crash and Burn",
         timeAgo: "2025-01-06",
         commentsCount: 5,
-        bigComponent: true,
+        bigComponent: false,
         outsideDescription: "You’re here for results. Sales, profit, and growth. So let’s get to it.The Problem: Quantity Over QualityJust talking about your business everywhere (one step) may seem like it’s working.Sure, your email would grow. You get impressions. You get attention.",
         authorImage: assets.blog_11_author,
         authorName: "Mahesh VR",

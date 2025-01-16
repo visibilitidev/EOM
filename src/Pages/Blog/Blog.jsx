@@ -14,6 +14,7 @@ import Blog9 from "../../Components/BlogData/Blog9/Blog9";
 import Blog10 from "../../Components/BlogData/Blog10/Blog10";
 import Blog11 from "../../Components/BlogData/Blog11/Blog11";
 import { blogList } from "../../data/blogs";
+import Blog12 from "../../Components/BlogData/Blog12";
 
 // Function to normalize titles: remove non-alphabetical characters and replace hyphens with spaces
 const generateBlogUrl = (title) => {
@@ -58,7 +59,8 @@ export default function Blog() {
     8: <Blog8 />,
     9: <Blog9 />,
     10: <Blog10 />,
-    11: <Blog11 />
+    11: <Blog11 />,
+    12: <Blog12 />
   };
 
   if (!matchedBlog) {
