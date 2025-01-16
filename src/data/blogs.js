@@ -5,12 +5,12 @@ const blogList = [
     {
         id: 12,
         image: assets.blog12_banner,
-        category: "Business Strategies",
+        category: "Content Strategy",
         title: "Why Hire a Content Marketer When You’ve Got AI Tools?",
         timeAgo: "2025-01-15",
         commentsCount: 5,
         bigComponent: true,
-        outsideDescription: "You’re here for results. Sales, profit, and growth. So let’s get to it.The Problem: Quantity Over QualityJust talking about your business everywhere (one step) may seem like it’s working.Sure, your email would grow. You get impressions. You get attention.",
+        outsideDescription: " AI is everywhere these days. It’s writing articles, creating images, film scripts, and even composing music. So, you might be wondering, “Why should I bother hiring a content writer when I’ve got a ChatGPT subscription at my fingertips?” It’s a fair question... and I’m here to break it down for you in this blog!",
         authorImage: assets.blog_12_author,
         authorName: "salma seyed",
         authorNameURL: "https://www.linkedin.com/in/salmaseyed93/"
