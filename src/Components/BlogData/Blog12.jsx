@@ -89,7 +89,7 @@ const Blog12 = () => {
                     <h3 className="text-lg font-semibold font-sans">About the Author</h3>
                     <p className="mt-2 text-base font-sans">
                         Salma has spent 9 years in the dynamic marketing world, killing it with campaign strategy, copywriting, content creation, & social media.
-                        To get in touch, check out her LinkedIn.
+                        To get in touch, check out her <a className='text-blue-700' href="https://www.linkedin.com/in/salmaseyed93/">LinkedIn</a>.
                     </p>
                 </div>
             </div>
