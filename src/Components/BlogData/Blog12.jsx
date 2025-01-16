@@ -3,7 +3,7 @@ import React from 'react'
 const Blog12 = () => {
     return (
         <section className="max-w-5xl mx-auto p-4 space-y-2">
-            <div className="px-6 py-12 bg-white text-gray-900">
+            <div className="bg-white text-gray-900">
                 <h1 className="text-3xl font-bold font-sans">Why Hire a Content Marketer When You’ve Got AI Tools?</h1>
                 <p className="mt-4 text-base font-sans">
                     AI is everywhere these days. It’s writing articles, creating images, film scripts, and even composing music.
