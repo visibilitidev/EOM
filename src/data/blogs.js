@@ -3,13 +3,26 @@ import { assets } from "../assets/assets";
 const blogList = [
 
     {
+        id: 13,
+        image: assets.blog13bg,
+        category: "Business Strategies",
+        title: "How to Pitch Your Business Idea Like a Pro",
+        timeAgo: "2025-01-21",
+        commentsCount: 5,
+        bigComponent: true,
+        outsideDescription: "Do you know you pitch our business to 100s of people subconsciously? Your friends, family, strangers, customers, investors, team - who not? Pitching in business is nothing but presenting your business ideas to another party. Every time you need help or clarity you start pitching it - right from the idea stage. All you expect in return is validation, assurance & trust.",
+        authorImage: assets.blog10_author,
+        authorName: "Rohini Subramanian",
+        authorNameURL: "https://www.linkedin.com/in/rohinicontentcreator"
+    },
+    {
         id: 12,
         image: assets.blog12_banner,
         category: "Content Strategy",
         title: "Why Hire a Content Marketer When You’ve Got AI Tools?",
         timeAgo: "2025-01-15",
         commentsCount: 5,
-        bigComponent: true,
+        bigComponent: false,
         outsideDescription: " AI is everywhere these days. It’s writing articles, creating images, film scripts, and even composing music. So, you might be wondering, “Why should I bother hiring a content writer when I’ve got a ChatGPT subscription at my fingertips?” It’s a fair question... and I’m here to break it down for you in this blog!",
         authorImage: assets.blog_12_author,
         authorName: "salma seyed",

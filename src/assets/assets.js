@@ -118,8 +118,10 @@ import cashBurn from './Blogs/cash_burn.png'
 import JCB from './JCB.webp'
 import blog_12_author from './Blogs/selma-sayed.png'
 import blog12_banner from './Blogs/blog-12-banner.jpeg'
+import blog13bg from './Blogs/blog_13_bg.png'
 
 export const assets = {
+  blog13bg,
   blog_12_author,
   blog12_banner,
   JCB,
