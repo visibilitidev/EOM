@@ -1194,9 +1194,12 @@ const Blog13 = () => {
                     </p>
                 </li>
             </ol>
+
+            <br />
+
             <h2>
                 <span style={{ fontSize: "18pt", fontFamily: "Roboto,sans-serif" }}>
-                    7. Make Eye Contact and Be Enthusiastic
+                    8. Make Eye Contact and Be Enthusiastic
                 </span>
             </h2>
             <p>
@@ -1206,9 +1209,10 @@ const Blog13 = () => {
                     contagious.
                 </span>
             </p>
+            <br />
             <h2>
                 <span style={{ fontSize: "18pt", fontFamily: "Roboto,sans-serif" }}>
-                    8. Practice Makes Perfect
+                    9. Practice Makes Perfect
                 </span>
             </h2>
             <p>
