@@ -119,8 +119,12 @@ import JCB from './JCB.webp'
 import blog_12_author from './Blogs/selma-sayed.png'
 import blog12_banner from './Blogs/blog-12-banner.jpeg'
 import blog13bg from './Blogs/blog_13_bg.png'
+import blog14author from './Blogs/blog14author.jpeg'
+import blog14Banner from './Blogs/blog14Banner.png';
 
 export const assets = {
+  blog14Banner,
+  blog14author,
   blog13bg,
   blog_12_author,
   blog12_banner,

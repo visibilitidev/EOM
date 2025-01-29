@@ -3,13 +3,26 @@ import { assets } from "../assets/assets";
 const blogList = [
 
     {
+        id: 14,
+        image: assets.blog14Banner,
+        category: "Goverment",
+        title: "TN Government’s Design Roundtable Discussion in Chennai",
+        timeAgo: "2025-01-29",
+        commentsCount: 5,
+        bigComponent: true,
+        outsideDescription: "In a significant move towards advancing design education in Tamil Nadu, the state government, through Guidance Tamil Nadu, recently conducted a roundtable discussion bringing together key players in the design industry. The meeting centered around exploring the establishment of a new design school in Chennai, led by the renowned French institution École Intuit Lab. ",
+        authorImage: assets.blog14author,
+        authorName: "Kavin",
+        authorNameURL: "https://www.linkedin.com/in/kavinkn/"
+    },
+    {
         id: 13,
         image: assets.blog13bg,
         category: "Business Strategies",
         title: "How to Pitch Your Business Idea Like a Pro",
         timeAgo: "2025-01-21",
         commentsCount: 5,
-        bigComponent: true,
+        bigComponent: false,
         outsideDescription: "Do you know you pitch our business to 100s of people subconsciously? Your friends, family, strangers, customers, investors, team - who not? Pitching in business is nothing but presenting your business ideas to another party. Every time you need help or clarity you start pitching it - right from the idea stage. All you expect in return is validation, assurance & trust.",
         authorImage: assets.blog10_author,
         authorName: "Rohini Subramanian",
