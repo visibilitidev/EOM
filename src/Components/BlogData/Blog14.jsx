@@ -48,20 +48,12 @@ const Blog14 = () => {
             <p>
                 <br />
             </p>
-            <p>
-                <br />
-            </p>
-            <p>
-                <br />
-            </p>
             <h2>
                 <span style={{ fontSize: "16pt", fontFamily: "Arial,sans-serif" }}>
                     Guidance Tamil Nadu and Design Evolution
                 </span>
             </h2>
-            <p>
-                <br />
-            </p>
+            
             <p>
                 <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
                     Guidance Tamil Nadu, the state's premier investment promotion and
@@ -75,9 +67,7 @@ const Blog14 = () => {
                     before making significant educational investments.
                 </span>
             </p>
-            <p>
-                <br />
-            </p>
+           
             <p>
                 <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
                     <span style={{ border: "none" }}>
@@ -96,9 +86,7 @@ const Blog14 = () => {
                     École Intuit Lab: Bringing French Design Excellence to Chennai
                 </span>
             </h2>
-            <p>
-                <br />
-            </p>
+        
             <p>
                 <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
                     École Intuit Lab, a prestigious French design institution, has expressed
@@ -113,17 +101,12 @@ const Blog14 = () => {
             <p>
                 <br />
             </p>
-            <p>
-                <br />
-            </p>
             <h2>
                 <span style={{ fontSize: "16pt", fontFamily: "Arial,sans-serif" }}>
                     Collaborative Approach to Market Analysis
                 </span>
             </h2>
-            <p>
-                <br />
-            </p>
+          
             <p>
                 <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
                     The roundtable discussion exemplified a collaborative approach to market
@@ -132,9 +115,7 @@ const Blog14 = () => {
                     insights about:
                 </span>
             </p>
-            <p>
-                <br />
-            </p>
+          
             <ul>
                 <li
                     style={{
@@ -210,9 +191,7 @@ const Blog14 = () => {
                     Government's Vision and Our Contribution
                 </span>
             </h2>
-            <p>
-                <br />
-            </p>
+        
             <p>
                 <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
                     The Tamil Nadu government's initiative reflects a broader vision for
@@ -223,9 +202,7 @@ const Blog14 = () => {
                     educational excellence and innovation.
                 </span>
             </p>
-            <p>
-                <br />
-            </p>
+           
             <p>
                 <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
                     Alien Design Studio, represented at the meeting, played a crucial role in
@@ -252,17 +229,13 @@ const Blog14 = () => {
             <p>
                 <br />
             </p>
-            <p>
-                <br />
-            </p>
+           
             <h2>
                 <span style={{ fontSize: "16pt", fontFamily: "Arial,sans-serif" }}>
                     Future Implications
                 </span>
             </h2>
-            <p>
-                <br />
-            </p>
+          
             <p>
                 <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
                     This roundtable discussion represents more than just a preliminary meeting
@@ -271,9 +244,7 @@ const Blog14 = () => {
                     Chennai could:
                 </span>
             </p>
-            <p>
-                <br />
-            </p>
+            
             <ul>
                 <li
                     style={{
@@ -328,15 +299,7 @@ const Blog14 = () => {
                     </p>
                 </li>
             </ul>
-            <p>
-                <br />
-            </p>
-            <p>
-                <br />
-            </p>
-            <p>
-                <br />
-            </p>
+            
             <p>
                 <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
                     About the Author:
