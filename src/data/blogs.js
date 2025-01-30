@@ -5,7 +5,7 @@ const blogList = [
     {
         id: 14,
         image: assets.blog14Banner,
-        category: "Goverment",
+        category: "Government",
         title: "TN Government’s Design Roundtable Discussion in Chennai",
         timeAgo: "2025-01-29",
         commentsCount: 5,
