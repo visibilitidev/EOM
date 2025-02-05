@@ -4,7 +4,7 @@ const blogList = [
 
     {
         id: 15,
-        image: assets.blog14Banner,
+        image: assets.blog15Banner,
         category: "Startup",
         title: "  Dineout Co-founder Vivek Kapoor Shares Startup Lessons at Exclusive Entrepreneurs of Madras Event",
         timeAgo: "2025-02-05",

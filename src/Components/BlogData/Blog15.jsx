@@ -96,6 +96,7 @@ const Blog15 = () => {
                     both meaningful connections and actionable insights.
                 </span>
             </p>
+            <br />
             <h4>
                 <strong>
                     <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
@@ -756,6 +757,7 @@ const Blog15 = () => {
                     </span>
                 </span>
             </p>
+            <br />
             <h3>
                 <strong>
                     <span style={{ fontSize: "13pt", fontFamily: "Arial,sans-serif" }}>
@@ -1020,6 +1022,7 @@ const Blog15 = () => {
                     creative storytelling.&nbsp;
                 </span>
             </p>
+            <br />
             <ul>
                 <li
                     style={{
