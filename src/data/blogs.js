@@ -3,13 +3,26 @@ import { assets } from "../assets/assets";
 const blogList = [
 
     {
+        id: 15,
+        image: assets.blog14Banner,
+        category: "Startup",
+        title: "  Dineout Co-founder Vivek Kapoor Shares Startup Lessons at Exclusive Entrepreneurs of Madras Event",
+        timeAgo: "2025-02-05",
+        commentsCount: 5,
+        bigComponent: true,
+        outsideDescription: "turned out to be an electrifying experience, bringing together some of the most dynamic and forward-thinking entrepreneurs from across the city. With a packed hall of over 120 attendees, including 70+ entrepreneurs that includes 30+ product founders,",
+        authorImage: assets.blog10_author,
+        authorName: "Rohini Subramanian",
+        authorNameURL: "https://www.linkedin.com/in/rohinicontentcreator"
+    },
+    {
         id: 14,
         image: assets.blog14Banner,
         category: "Government",
         title: "TN Government’s Design Roundtable Discussion in Chennai",
         timeAgo: "2025-01-29",
         commentsCount: 5,
-        bigComponent: true,
+        bigComponent: false,
         outsideDescription: "In a significant move towards advancing design education in Tamil Nadu, the state government, through Guidance Tamil Nadu, recently conducted a roundtable discussion bringing together key players in the design industry. The meeting centered around exploring the establishment of a new design school in Chennai, led by the renowned French institution École Intuit Lab. ",
         authorImage: assets.blog14author,
         authorName: "Kavin",
