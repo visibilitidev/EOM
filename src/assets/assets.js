@@ -122,8 +122,10 @@ import blog13bg from './Blogs/blog_13_bg.png'
 import blog14author from './Blogs/blog14author.jpeg'
 import blog14Banner from './Blogs/blog14Banner.png';
 import blog15Banner from './Blogs/blog15Banner.jpg';
+import blog16Banner from './Blogs/blog-16-banner.png'
 
 export const assets = {
+  blog16Banner,
   blog15Banner,
   blog14Banner,
   blog14author,

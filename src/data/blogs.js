@@ -1,7 +1,19 @@
 import { assets } from "../assets/assets";
 
 const blogList = [
-
+    {
+        id: 16,
+        image: assets.blog16Banner,
+        category: "Content Strategy",
+        title: "Why Hire a Content Agency When You’ve Got AI Tools",
+        timeAgo: "2025-02-15",
+        commentsCount: 5,
+        bigComponent: true,
+        outsideDescription: "AI is everywhere these days. It’s writing articles, creating images, film scripts, and even composing music. So, you might be wondering, “Why should I bother hiring a content writer when I’ve got a chat GPT subscription at my fingertips?” It’s a fair question... and I’m here to break it down for you in this blog!",
+        authorImage: assets.blog_12_author,
+        authorName: "salma seyed",
+        authorNameURL: "https://www.linkedin.com/in/salmaseyed93/"
+    },
     {
         id: 15,
         image: assets.blog15Banner,
@@ -9,7 +21,7 @@ const blogList = [
         title: "  Dineout Co-founder Vivek Kapoor Shares Startup Lessons at Exclusive Entrepreneurs of Madras Event",
         timeAgo: "2025-02-05",
         commentsCount: 5,
-        bigComponent: true,
+        bigComponent: false,
         outsideDescription: "turned out to be an electrifying experience, bringing together some of the most dynamic and forward-thinking entrepreneurs from across the city. With a packed hall of over 120 attendees, including 70+ entrepreneurs that includes 30+ product founders,",
         authorImage: assets.blog10_author,
         authorName: "Rohini Subramanian",
