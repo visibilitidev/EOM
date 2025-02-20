@@ -39,6 +39,7 @@ const Footer = () => {
 
           <nav className="flex flex-col items-center md:items-end  space-y-2 md:space-y-2 md:space-x-6">
             <Link to="/about" className="hover:text-yellow-500 transition-colors lg:ml-8">About</Link>
+            <Link to="/angels" className="hover:text-yellow-500 transition-colors lg:ml-8">Angels</Link>
             <Link to="/comingsoon" className="hover:text-yellow-500 transition-colors">FEBE</Link>
             <Link to="/comingsoon" className="hover:text-yellow-500 transition-colors">Resources</Link>
             <a href="https://nas.io/entrepreneurs-of-madras-application" className="hover:text-yellow-500 transition-colors">Join EOM</a>
