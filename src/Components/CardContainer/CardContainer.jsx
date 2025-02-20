@@ -1,19 +1,31 @@
+import { Dot } from 'lucide-react'
 import React from 'react'
 
 const CardContainer = ({ heading, points, footer }) => {
     return (
-        <div>
-            <div className="max-w-section3W max-h-section3H flex-1 border py-6 pb-2 px-8 justify-center text-center rounded-xl bg-gradient-to-b from-blue-900 from-90% to-yellow-300 to-10%">
-                <h3 className="font-Inter font-bold text-text_32px text-left text-white">{heading}</h3>
-                <ul className="font-OpenSans font-normal text-lg text-left text-white py-6 ps-10 list-disc marker:text-yellow-300 marker:text-4xl flex flex-col gap-2 w-[90%]">
-                    {
-                        points?.map((point) => (
-                            <li className='py-2'>{point}</li>
-                        ))
-                    }
+        <div className="bg-blue rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full">
+            <div className="p-4 flex-grow">
+                <h2 className="text-3xl font-bold text-center text-white mb-6 font-Inter">{heading}</h2>
+                <ul className="space-y-4 font-OpenSans flex flex-col gap-2 w-[90%]">
+                    {points.map((item, index) => (
+                        <li key={index} className="flex items-center gap-2">
+                            <span className="text-yellow-400 self-start text-3xl font-extrabold leading-none"><Dot strokeWidth={8} /></span>
+                            <span className="text-white">{item}</span>
+                        </li>
+                    ))}
                 </ul>
-                <h2 className="font-OpenSans font-extrabold text-lg text-black text-center">{footer}</h2>
             </div>
+            <div className="bg-yellow-400 px-4 hover:bg-yellow-500">
+                <button
+                    className="w-full py-2 text-navy-900 font-extrabold text-lg transition-transform transform 
+                      hover:scale-105 active:scale-95 active:bg-yellow-400 active:shadow-md 
+                      active:translate-y-1 active:shadow-lg"
+                    onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
+                >
+                    {footer}
+                </button>
+            </div>
+
         </div>
     )
 }

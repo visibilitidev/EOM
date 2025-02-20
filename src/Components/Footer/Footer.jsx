@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const email = 'entrepreneursofmadras@gmail.com.';
   return (
-    <footer className="bg-blue text-white p-6 mt-8">
+    <footer className="bg-blue text-white p-6">
       <div className="container mx-auto md:w-3/4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-center">
           <div className="mb-6 md:mb-0 w-24">

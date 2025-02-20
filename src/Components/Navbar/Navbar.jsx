@@ -56,6 +56,11 @@ function Navbar() {
                 </Link>
               </li>
               <li>
+                <Link to="/angels" className="block py-2 px-3 text-black">
+                  ANGELS
+                </Link>
+              </li>
+              <li>
                 <Link to="/comingsoon" className="block py-2 px-3 text-black">
                   FEBE
                 </Link>
@@ -119,6 +124,15 @@ function Navbar() {
               className="block py-2 px-3 text-black font-bold"
             >
               ABOUT
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/angels"
+              onClick={toggleSidebar}
+              className="block py-2 px-3 text-black font-bold"
+            >
+              ANGELS
             </Link>
           </li>
           <li>

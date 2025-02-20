@@ -12,6 +12,7 @@ import Resources from "./Pages/Resources/Resources";
 import Blog from "./Pages/Blog/Blog";
 import Preloader from "./Components/Preloader/Preloader";
 import "./App.css";
+import Angels from "./Pages/Angels/Angels";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -36,6 +37,7 @@ function AppContent() {
             <Route path="/about" element={<About />} />
             <Route path="/comingsoon" element={<Comingsoon />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/angels" element={<Angels />} />
             <Route path="/resources/:blogName" element={<Blog />} />
           </Routes>
           <Footer />
