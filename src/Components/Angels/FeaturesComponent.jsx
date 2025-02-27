@@ -42,8 +42,18 @@ const FeaturesComponent = () => {
             </div>
 
             <div className="max-w-full flex flex-col lg:flex-row justify-center min-h-[450px] gap-4 mt-12">
-                <CardContainer heading="If You’re a Startup Founder" points={productFounders} footer="Apply Now" />
-                <CardContainer heading="If You're an Investor" points={investorPoints} footer="Register as an EOM Angel" />
+                <CardContainer
+                    heading="If You’re a Startup Founder"
+                    points={productFounders}
+                    footer="Apply Now"
+                    link='https://forms.gle/SbVX1tVico4o67kEA'
+                />
+                <CardContainer
+                    heading="If You're an Investor"
+                    points={investorPoints}
+                    footer="Register as an EOM Angel"
+                    link='https://docs.google.com/forms/d/1jq6zhFMrTsmYG3CmLzO-sNSDsCnDwbaz-PiikCLAPDk/edit'
+                />
             </div>
         </section>
     )

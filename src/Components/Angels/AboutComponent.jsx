@@ -25,7 +25,7 @@ const AboutComponent = () => {
                 <div className=" w-full mx-auto md:w-1/2 relative">
                     <div className="bg-gray-200 h-full rounded-[40px] overflow-hidden">
                         <img
-                            src={assets.aboutimg}
+                            src={assets.angles3}
                             alt="Placeholder"
                             className="w-full h-full object-cover"
                         />

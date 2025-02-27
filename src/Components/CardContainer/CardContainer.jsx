@@ -1,7 +1,7 @@
 import { Dot } from 'lucide-react'
 import React from 'react'
 
-const CardContainer = ({ heading, points, footer }) => {
+const CardContainer = ({ heading, points, footer, link = 'https://nas.io/entrepreneurs-of-madras-application' }) => {
     return (
         <div className="bg-blue rounded-xl shadow-lg overflow-hidden flex flex-col max-w-md w-full">
             <div className="p-4 flex-grow">
@@ -20,7 +20,7 @@ const CardContainer = ({ heading, points, footer }) => {
                     className="w-full py-2 text-navy-900 font-extrabold text-lg transition-transform transform 
                       hover:scale-105 active:scale-95 active:bg-yellow-400 active:shadow-md 
                       active:translate-y-1 active:shadow-lg"
-                    onClick={() => window.location.href = 'https://nas.io/entrepreneurs-of-madras-application'}
+                    onClick={() => window.location.href = { link }}
                 >
                     {footer}
                 </button>

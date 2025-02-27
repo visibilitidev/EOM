@@ -124,8 +124,12 @@ import blog14Banner from './Blogs/blog14Banner.png';
 import blog15Banner from './Blogs/blog15Banner.jpg';
 import blog16Banner from './Blogs/blog-16-banner.png'
 import rocket from './rocket.png'
+import angles2 from './Blogs/angels2.png'
+import angles3 from './Blogs/angels3.png'
 
 export const assets = {
+  angles3,
+  angles2,
   rocket,
   blog16Banner,
   blog15Banner,

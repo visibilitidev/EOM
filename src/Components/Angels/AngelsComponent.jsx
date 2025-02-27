@@ -16,16 +16,18 @@ const AngelsComponent = () => {
                 ctaText='Join the Community'
                 imgSrc={assets.gamechanginplan}
                 className='md:flex-row-reverse gap-8'
+                link="https://nas.io/entrepreneurs-of-madras-application"
             />
             <CTAWithImage
                 title='Are you an investor looking to back promising startups?'
                 ctaText='Register as an EOM Angel'
-                imgSrc={assets.gamechanginplan}
+                imgSrc={assets.angles2}
                 className='md:flex-row gap-8'
+                link='https://docs.google.com/forms/d/1jq6zhFMrTsmYG3CmLzO-sNSDsCnDwbaz-PiikCLAPDk/edit'
             />
             <FeaturesComponent />
             <AboutComponent />
-            <GetInTouch/>
+            <GetInTouch />
             <Networking101 />
         </section>
     )
