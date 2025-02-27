@@ -9,7 +9,7 @@ const TagsShare = () => {
         <span className="font-semibold mr-2">Tags:</span>
         <div className="space-x-2">
           <span className="text-orange-500 hover:text-orange-600">
-            Finanace
+          Finance 
           </span>
           ,
           <span className="text-orange-500 hover:text-orange-600">
